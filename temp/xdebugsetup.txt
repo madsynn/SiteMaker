@@ -1,0 +1,1370 @@
+
+addon to let me toggle styles and scripts for debugging purposes
+Remote toggle enable disable control the browser   Javascript stylesheets
+jquery or javascript generate a random number for form input that has class
+
+
+     <div class="slide" data-thumb="http://placehold.it/413/468B4E/FFFFFF" aria-hidden="true" style="width: 413px; float: left; display: block;">
+                            <a href="http://placehold.it/720x960/468B4E/FFFFFF?text=image+three" title="{!! $product->name !!}" data-lightbox="">
+                                <img src="http://placehold.it/720x960/468B4E/FFFFFF?text=image+three" alt="{!! $product->name !!} image" draggable="false">
+                            </a>
+                        </div>
+
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "/path/to/project"
+        }
+    ],
+    "settings":
+    {
+        "pb_load_bundle": "YourBundle"
+    }
+}
+
+
+@foreach ($products->chunk(3) as $chunk)
+    <div class="row">
+        @foreach ($chunk as $product)
+            <div class="col-xs-4">{{ $product->name }}</div>
+        @endforeach
+    </div>
+@endforeach
+
+select: Available, OnHold
+
+select:['available' => 'Available', 'onhold' => 'OnHold', 'online' => 'Online', 'offline' => 'Offline', 'removed' => 'Removed', 'archived' => 'Archived', 'onbackorder' => 'OnBackorder', 'soldout' => 'SoldOut', 'discontinued' => 'Discontinued']
+
+$product = new Product;
+$product->name = 'Fake Product Title';
+$product->description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem erat, luctus at diam sed, dapibus facilisis purus. In laoreet enim nunc, ut pretium arcu scelerisque in. Nunc eu cursus nibh. Etiam pulvinar vulputate libero sed molestie. In condimentum varius faucibus. Vestibulum non blandit sapien, quis tincidunt augue. Aliquam congue sapien eget mattis sagittis.';
+$product->save();
+
+
+
+       <td colspan="3">
+                <a href="#" id="{!! $product->id !!}" class="publish">
+                 &nbsp;   <img id="publish-image-{!! $product->id !!}" src="{!! url('/assets/images') !!}/{!! ($product->is_published) ? 'publish.png' : 'not_publish.png'  !!}"/>
+                </a>
+            </td>
+
+ factory(App\Models\Product::class, 5)->create()->each(function($u) {$u->categoryProducts()->save(factory(App\Models\CategoryProduct::class)->make()); $u->productPrices()->save(factory(App\Models\Price::class)->make()); });
+
+php artisan migrate:refresh --seed -vvv
+php artisan db:seed -vvv
+
+factory('App\Models\Product')->make();
+
+DB_DATABASE=mine
+DB_USERNAME=newuser
+DB_PASSWORD=admin
+
+composer create-project laravel/laravel=5.2 ./ --prefer-dist
+
+egrep -ir --include=*.{php,html,js} "Sentinel" .
+
+
+/etc/php/7.0/mods-available
+
+
+sudo ln -s /etc/php/7.0/mods-available/xdebug.ini /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+sudo ln -s /etc/php/7.0/mods-available/xdebug.ini /etc/php/7.0/cli/conf.d/20-xdebug.ini
+
+subl -f /etc/php/7.0/cli/php.ini
+
+sudo apt-get install php-xdebug
+
+
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get install apt-fast
+
+sudo apt-get update
+sudo apt-get install mcrypt php7.0-mcrypt
+whereis php  -shows the files with this name
+php -v   -shows the php version
+which php -shows current php version that is running on the server
+
+
+
+alias cyg='cinst cygwin -fy --not-silent'
+alias phpunitskel='php phpunit-skelgen.phar'
+
+php apigen.phar
+
+Hello everyone,  Hope you can help me.
+
+Windows 10 / Homestead
+Laravel 5.1
+
+/**
+// * @Resource('products')
+ * @Controller(prefix="admin", domain="grace.reset")
+// * @Middleware("sentinel.auth", except={"index", "show", "search"})
+ */
+
+
+composer global require "phpunit/phpunit-skeleton-generator=*"
+
+NPM
+npm install --global gulp-cli
+sudo npm install -g grunt-cli
+sudo npm install -g bower
+npm install express-generator -g
+
+
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   └── bootstrap.min.css.map
+└── js/
+    ├── bootstrap.js
+    └── bootstrap.min.js
+
+
+'user_id' => Sentinel::getUser()->id
+
+  public function store(TaskRequest $request)
+    {
+        $request->merge(['user_id' => Sentinel::getUser()->id]);
+        $task = new Task($request->except('_token'));
+        $task->save();
+
+        return $task->id;
+
+    }
+
+public function data()
+    {
+        return Task::where('user_id', Sentinel::getUser()->id)
+            ->orderBy('finished', 'ASC')
+            ->orderBy('task_deadline', 'DESC')
+            ->get()
+            ->toArray();
+
+    }
+
+
+
+
+            @foreach ($products as $product)
+           {!! $product->prices->price !!}
+            @endforeach
+
+
+
+if( typeof jRespond === 'undefined' ) {
+    console.log('responsiveClasses: jRespond not Defined.');
+    return true;
+}
+
+
+if( !$().magnificPopup ) {
+    console.log('lightbox: Magnific Popup not Defined.');
+    return true;
+}
+
+
+if( !$().isotope ) {
+    console.log('setFullColumnWidth: Isotope not Defined.');
+    return true;
+}
+
+
+f( !$().fitVids ) {
+                console.log('resizeVideos: FitVids not Defined.');
+                return true;
+            }
+
+
+
+
+$(".item").each(function() {
+    if ($(this).css("visibility") == "hidden") {
+        // handle non visible state
+    } else {
+        // handle visible state
+    }
+});
+
+
+
+
+<?php
+echo '<pre>';
+print_r($debug_array);
+echo '</pre>';
+exit;
+?>
+
+
+if (!Array.indexOf)
+{
+  Array.indexOf = [].indexOf ?
+      function (arr, obj, from) { return arr.indexOf(obj, from); }:
+      function (arr, obj, from) { // (for IE6)
+        var l = arr.length,
+            i = from ? parseInt( (1*from) + (from<0 ? l:0), 10) : 0;
+        i = i<0 ? 0 : i;
+        for (; i<l; i++) {
+          if (i in arr  &&  arr[i] === obj) { return i; }
+        }
+        return -1;
+      };
+}
+
+
+
+
+
+
+
+
+
+
+
+Object.defineProperty(Array.prototype, 'exists', {
+  value: function(element, index) {
+
+    var index = index || 0
+
+    return index === this.length ? -1 : this[index] === element ? index : this.exists(element, ++index)
+  }
+})
+
+
+
+// outputs 1
+console.log(['one', 'two'].exists('two'));
+
+// outputs -1
+console.log(['one', 'two'].exists('three'));
+
+console.log(['one', 'two', 'three', 'four'].exists('four'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$user = App\User::find(1);
+
+foreach ($user->roles as $role) {
+    echo $role->pivot->created_at;
+}
+
+
+/usr/bin/gulp -> /usr/lib/node_modules/gulp-cli/bin/gulp.js
+/usr/bin/bower -> /usr/lib/node_modules/bower/bin/bower
+/usr/bin/grunt -> /usr/lib/node_modules/grunt-cli/bin/grunt
+
+/usr/lib
+composer global require herrera-io/phar-update  apigen/apigen
+
+
+C:\tools\php\php.exe
+
+C:\ProgramData\ComposerSetup\bin\composer.phar
+
+C:\Users\Phillip\AppData\Roaming\Composer\vendor\bin\phpcs.bat
+C:\Users\Phillip\AppData\Roaming\Composer\vendor\bin\php-cs-fixer.bat
+C:\Users\Phillip\AppData\Roaming\Composer\vendor\bin\phpunit.bat
+
+C:\Users\Phillip\AppData\Roaming\Composer\vendor\bin\phpcbf.bat
+C:\Users\Phillip\AppData\Roaming\Composer\vendor\bin\phpmd.bat
+
+C:\Users\Phillip\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt
+C:\Users\Phillip\AppData\Roaming\npm\node_modules\bower\bin\bower
+C:\Users\Phillip\AppData\Roaming\npm\node_modules\express-generator\bin\express
+C:\Users\Phillip\AppData\Roaming\npm\node_modules\gulp-cli\bin\gulp.js
+D:\Program Files\nodejs\node.exe
+D:\Program Files\nodejs\npm.cmd
+
+
+ fabpot/php-cs-fixer
+
+
+apigen generate -s /home/vagrant/gr/grace.reset/ -d /home/vagrant/gr/grace.reset/public/docs
+
+
+DESKTOP-0L5PDDN+Phillip@DESKTOP-0L5PDDN:~$ composer global require  phpdocumentor/reflection-docblock  phpdocumentor/phpdocumentor
+Changed current directory to C:/Users/Phillip/AppData/Roaming/Composer
+You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+Using version ^3.1 for phpdocumentor/reflection-docblock
+Using version ^2.9 for phpdocumentor/phpdocumentor
+
+
+
+
+
+Download and setup for global access
+
+wget http://apigen.org/apigen.phar
+chmod +x apigen.phar
+mv apigen.phar /usr/local/bin/apigen
+apigen --version
+
+# get help for generate command
+apigen generate --help
+
+
+ 10.0.2.2 51690 10.0.2.15 22
+
+
+alias php='php -dzend_extension=xdebug.so'
+
+alias phpunit='php $(which phpunit)'
+
+
+sudo apt-get update
+sudo apt-get install mcrypt php7.0-mcrypt
+sudo apt-get upgrade
+
+sudo service php7.0-fpm restart
+
+https://gilbert.pellegrom.me/setting-up-xdebug-on-homestead-4-php-7/
+
+
+subl /root/.bashrc
+subl /etc/skel/.bashrc
+subl /home/ec2-user/.bashrc
+subl /home/rack/.bashrc
+subl /home/ngin/.bashrc
+subl /var/www/vhosts/gracecompany/live.grace/.bashrc
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+zend_extension=/usr/lib/php/20151012/xdebug.so
+xdebug.remote_enable=1
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
+xdebug.remote_autostart=1
+xdebug.profiler_enable=1
+xdebug.profiler_output_fir="/home/vagrant/gr/grace.reset/tmp
+xdebug.idekey=PHPSTROM
+xdebug.trace_output_dir="/home/vagrant/gr/grace.reset/trace/"
+xdebug.remote_log="/home/vagrant/gr/grace.reset/xdebug.log"
+
+
+
+php -i | grep php.ini
+sudo find / -name xdebug.so
+
+/usr/lib/php/20151012/xdebug.so
+
+subl php.ini-production.cli
+subl php.ini-production
+subl php.ini-develoment
+
+alias hs='cd ~/Homestead'
+alias hssh='cd ~/Homestead && vagrant ssh'
+alias chmod7="chmod 777 -Rf ./"
+alias chmod777='sudo chmod 777 -R ./'
+alias chmod6="chmod 644"
+alias chown="chown apache:apache ./ -R"
+alias vssh='vagrant ssh'
+
+subl /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+
+xdebug.profiler_append = 0
+xdebug.profiler_enable = 1
+xdebug.profiler_enable_trigger = 0
+xdebug.profiler_output_dir = /home/test_site/xdebug
+xdebug.profiler_output_name = "cachegrind.out.%s-%u.%h_%r"
+
+
+C:/Users/Phillip/Desktop
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+zend_extension=/usr/lib/php/20151012/xdebug.so
+xdebug.remote_enable=1
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
+xdebug.remote_autostart=1
+xdebug.profiler_enable=1
+xdebug.profiler_output_fir="/home/vagrant/gr/grace.reset/tmp
+xdebug.idekey=PHPSTROM
+xdebug.trace_output_dir="/home/vagrant/gr/grace.reset/trace/"
+xdebug.remote_log="/home/vagrant/gr/grace.reset/xdebug.log"
+
+
+
+
+zend_extension=/usr/lib/php/20151012/xdebug.so
+xdebug.default_enable=1
+xdebug.cli_color=1
+xdebug.show_local_vars=1
+xdebug.remote_enable=1
+xdebug.remote_connect_back=1
+xdebug.remote_port="9000"
+xdebug.idekey=phpstorm
+xdebug.scream = 0
+xdebug.max_nesting_level=300
+output_buffering=off
+
+xdebug.remote_host=127.0.0.1
+
+xdebug.remote_autostart=1
+xdebug.auto_trace=1
+xdebug.trace_output_dir="/home/vagrant/gr/grace.reset/trace/"
+xdebug.remote_log="/home/vagrant/gr/grace.reset/xdebug.log"
+;xdebug.remote_log="/var/log/xdebug/xdebug.log"
+
+extension=php_curl.dll
+extension=php_fileinfo.dll
+extension=php_gd2.dll
+extension=php_gettext.dll
+extension=php_mbstring.dll
+extension=php_exif.dll
+extension=php_openssl.dll
+extension_dir="ext"
+
+
+alias hccc='sudo /etc/init.d/php7.0-fpm restart && composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear && php artisan debugbar:clear'
+alias ccc='composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear && php artisan debugbar:clear'
+
+
+alias installx='sudo apt-get install php-xdebug'
+alias rstart="sudo /etc/init.d/php7.0-fpm restart"
+
+
+xdebug.cli_color=1
+xdebug.show_local_vars=1
+xdebug.remote_connect_back=0
+xdebug.scream = 0
+xdebug.max_nesting_level=300
+
+
+xdebug.auto_trace=1
+
+http://wiki.netbeans.org/HowToConfigureXDebug
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension = php_xdebug-2.4.1-7.0-vc14-nts-x86_64.dll
+xdebug.default_enable=1
+xdebug.idekey="PHPSTORM"
+xdebug.remote_enable=1
+xdebug.remote_host="192.168.100.10"
+xdebug.remote_autostart=0
+xdebug.remote_port=9000
+xdebug.remote_connect_back=1
+xdebug.remote_log=xdebug.log
+xdebug.show_local_vars=1
+xdebug.auto_trace=0
+output_buffering=off
+
+
+
+
+php --ini
+
+Configuration File (php.ini) Path: C:\WINDOWS
+Loaded Configuration File:         C:\tools\php\php.ini
+Scan for additional .ini files in: (none)
+Additional .ini files parsed:      (none)
+
+
+sudo service php7.0-fpm restart
+
+
+sudo service php5-fpm restart
+
+
+--------------------------------
+
+running: make INSTALL_ROOT="/tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1" install
+Installing shared extensions:     /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012/
+
+
+-----------------------------------------------------------------------
+
+extension_dir => /usr/lib/php/20151012 => /usr/lib/php/20151012
+
+
+PHP Variables
+
+Variable => Value
+$_SERVER['XDG_SESSION_ID'] => 16
+$_SERVER['TERM'] => xterm
+$_SERVER['SHELL'] => /bin/bash
+$_SERVER['SSH_CLIENT'] => 10.0.2.2 51561 22
+$_SERVER['SSH_TTY'] => /dev/pts/0
+$_SERVER['LC_ALL'] => en_US.UTF-8
+$_SERVER['USER'] => vagrant
+$_SERVER['LS_COLORS'] => rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+$_SERVER['MAIL'] => /var/mail/vagrant
+$_SERVER['PATH'] => /home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+$_SERVER['PWD'] => /home/vagrant
+$_SERVER['LANG'] => en_US
+$_SERVER['NODE_PATH'] => /usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript
+$_SERVER['SHLVL'] => 1
+$_SERVER['HOME'] => /home/vagrant
+$_SERVER['LANGUAGE'] => en_US:
+$_SERVER['LOGNAME'] => vagrant
+$_SERVER['SSH_CONNECTION'] => 10.0.2.2 51561 10.0.2.15 22
+$_SERVER['LESSOPEN'] => | /usr/bin/lesspipe %s
+$_SERVER['XDG_RUNTIME_DIR'] => /run/user/900
+$_SERVER['LESSCLOSE'] => /usr/bin/lesspipe %s %s
+$_SERVER['_'] => /usr/bin/php
+$_SERVER['PHP_SELF'] =>
+$_SERVER['SCRIPT_NAME'] =>
+$_SERVER['SCRIPT_FILENAME'] =>
+$_SERVER['PATH_TRANSLATED'] =>
+$_SERVER['DOCUMENT_ROOT'] =>
+$_SERVER['REQUEST_TIME_FLOAT'] => 1471896221.2971
+$_SERVER['REQUEST_TIME'] => 1471896221
+
+
+            <script type="text/javascript">
+                $(function() {
+                    $('#add_album_image').click(function() {
+
+                        $("#additional-images").find('#image-block')
+                                  .append("<hr /><div class='row'>" +
+                                                "<div class='col-md-5 image-cell'><div class='form-group'><div class='col-sm-12'><label>Additional Product Image</label>" +
+                                                "<input type='file' id='input-preview' class='file'></div></div></div><div class='col-md-3'>" +
+                                                "<div class='col-md-12'><h3>Image Details</h3></div>" +
+                                                "<div class='form-group col-md-12'><input type='text' id='caption' name='caption[]' class='form-control' placeholder='caption'></div>" +
+                                                "<div class='form-group col-md-12'><input type='text' id='alt' name='alt[]' class='form-control' placeholder='alt text'></div>" +
+                                                "<div class='form-group col-md-12'><input type='text' id='info' name='photoinfo[]' class='form-control' placeholder='image info'></div>" +
+                                                "</div><div class='col-md-3'><div class='col-md-12'><h3>Image Locations</h3></div><div class='form-group'><div class='col-sm-12'>" +
+                                                "<div class='checkbox'><label><input type='checkbox' name='use_main[]' value='1' class='m-t-10' checked><strong>Thumbnail Image</strong></label></div>" +
+                                                "<div class='checkbox'><label><input type='checkbox' name='use_thumb[]' value='1' class='m-t-10' checked><strong>Main Product Image</strong></label></div>" +
+                                                "<div class='checkbox'><label><input type='checkbox' name='use_gallery[]' value='1' class='m-t-10' checked><strong>Gallery Image</strong></label></div></div><small>if checked the location image is used</small></div></div>" +
+                                                "<div class='col-md-1'><a href='#' class='delete-img btn btn-sm btn-default m-t-10'><i class='fa fa-times-circle'></i> &nbsp; Remove</a></div>" +
+                                                "</div>")
+                                       .find("input[type*='file']")
+                                  .fileinput();
+                            });
+                });
+            </script>
+
+
+openssl
+
+OpenSSL support => enabled
+OpenSSL Library Version => OpenSSL 1.0.2h  3 May 2016
+OpenSSL Header Version => OpenSSL 1.0.2h  3 May 2016
+Openssl default config => /usr/lib/ssl/openssl.cnf
+
+
+
+
+Variable => Value
+XDG_SESSION_ID => 16
+TERM => xterm
+SHELL => /bin/bash
+SSH_CLIENT => 10.0.2.2 51561 22
+SSH_TTY => /dev/pts/0
+LC_ALL => en_US.UTF-8
+USER => vagrant
+LS_COLORS => rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+MAIL => /var/mail/vagrant
+PATH => /home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PWD => /home/vagrant
+LANG => en_US
+NODE_PATH => /usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript
+SHLVL => 1
+HOME => /home/vagrant
+LANGUAGE => en_US:
+LOGNAME => vagrant
+SSH_CONNECTION => 10.0.2.2 51561 10.0.2.15 22
+LESSOPEN => | /usr/bin/lesspipe %s
+XDG_RUNTIME_DIR => /run/user/900
+LESSCLOSE => /usr/bin/lesspipe %s %s
+_ => /usr/bin/php
+
+E:\[My]\omashu\app
+-----------------------------------------------------------------------
+xdebug
+
+xdebug support => enabled
+Version => 2.4.1
+IDE Key => phpstorm
+
+Supported protocols => Revision
+DBGp - Common DeBuGger Protocol => $Revision: 1.145 $
+
+Directive => Local Value => Master Value
+xdebug.auto_trace => On => On
+xdebug.cli_color => 1 => 1
+xdebug.collect_assignments => Off => Off
+xdebug.collect_includes => On => On
+xdebug.collect_params => 0 => 0
+xdebug.collect_return => Off => Off
+xdebug.collect_vars => Off => Off
+xdebug.coverage_enable => On => On
+xdebug.default_enable => On => On
+xdebug.dump.COOKIE => no value => no value
+xdebug.dump.ENV => no value => no value
+xdebug.dump.FILES => no value => no value
+xdebug.dump.GET => no value => no value
+xdebug.dump.POST => no value => no value
+xdebug.dump.REQUEST => no value => no value
+xdebug.dump.SERVER => no value => no value
+xdebug.dump.SESSION => no value => no value
+xdebug.dump_globals => On => On
+xdebug.dump_once => On => On
+xdebug.dump_undefined => Off => Off
+xdebug.extended_info => On => On
+xdebug.file_link_format => no value => no value
+xdebug.force_display_errors => Off => Off
+xdebug.force_error_reporting => 0 => 0
+xdebug.halt_level => 0 => 0
+xdebug.idekey => phpstorm => phpstorm
+xdebug.max_nesting_level => 300 => 300
+xdebug.max_stack_frames => -1 => -1
+xdebug.overload_var_dump => 2 => 2
+xdebug.profiler_aggregate => Off => Off
+xdebug.profiler_append => Off => Off
+xdebug.profiler_enable => Off => Off
+xdebug.profiler_enable_trigger => Off => Off
+xdebug.profiler_enable_trigger_value => no value => no value
+xdebug.profiler_output_dir => /tmp => /tmp
+xdebug.profiler_output_name => cachegrind.out.%p => cachegrind.out.%p
+xdebug.remote_addr_header => no value => no value
+xdebug.remote_autostart => On => On
+xdebug.remote_connect_back => On => On
+xdebug.remote_cookie_expire_time => 3600 => 3600
+xdebug.remote_enable => On => On
+xdebug.remote_handler => dbgp => dbgp
+xdebug.remote_host => localhost => localhost
+xdebug.remote_log => /home/vagrant/gr/grace.reset/xdebug.log => /home/vagrant/gr/grace.reset/xdebug.log
+xdebug.remote_mode => req => req
+xdebug.remote_port => 9000 => 9000
+xdebug.scream => Off => Off
+xdebug.show_error_trace => Off => Off
+xdebug.show_exception_trace => Off => Off
+xdebug.show_local_vars => On => On
+xdebug.show_mem_delta => Off => Off
+xdebug.trace_enable_trigger => Off => Off
+xdebug.trace_enable_trigger_value => no value => no value
+xdebug.trace_format => 0 => 0
+xdebug.trace_options => 0 => 0
+xdebug.trace_output_dir => /home/vagrant/gr/grace.reset/trace/ => /home/vagrant/gr/grace.reset/trace/
+xdebug.trace_output_name => trace.%c => trace.%c
+xdebug.var_display_max_children => 128 => 128
+xdebug.var_display_max_data => 512 => 512
+xdebug.var_display_max_depth => 3 => 3
+
+
+-----------------------------------------------------------------------
+
+alias installx='sudo pecl install xdebug'
+
+sudo pecl install xdebug
+
+
+alias installx='sudo pecl install xdebug'
+alias rstart="sudo /etc/init.d/php7.0-fpm restart"
+
+
+sudo /etc/init.d/php7.0-fpm restart
+
+
+
+sudo pecl install xdebug
+
+
+PEAR Version: 1.10.1
+PHP Version: 7.0.8-2+deb.sury.org~xenial+1
+Zend Engine Version: 3.0.0
+Running on: Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+
+
+
+  +----------------------------------------------------------------------+
+  |                                                                      |
+  |   INSTALLATION INSTRUCTIONS                                          |
+  |   =========================                                          |
+  |                                                                      |
+  |   See http://xdebug.org/install.php#configure-php for instructions   |
+  |   on how to enable Xdebug for PHP.                                   |
+  |                                                                      |
+  |   Documentation is available online as well:                         |
+  |   - A list of all settings:  http://xdebug.org/docs-settings.php     |
+  |   - A list of all functions: http://xdebug.org/docs-functions.php    |
+  |   - Profiling instructions:  http://xdebug.org/docs-profiling2.php   |
+  |   - Remote debugging:        http://xdebug.org/docs-debugger.php     |
+  |                                                                      |
+  |                                                                      |
+  |   NOTE: Please disregard the message                                 |
+  |       You should add "extension=xdebug.so" to php.ini                |
+  |   that is emitted by the PECL installer. This does not work for      |
+  |   Xdebug.                                                            |
+  |                                                                      |
+  +----------------------------------------------------------------------+
+
+
+running: find "/tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1" | xargs ls -dils
+654309    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1
+654376    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr
+654377    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib
+654378    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php
+654379    4 drwxr-xr-x 2 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012
+654374 1208 -rwxr-xr-x 1 root root 1234192 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012/xdebug.so
+
+Build process completed successfully
+Installing '/usr/lib/php/20151012/xdebug.so'
+install ok: channel://pecl.php.net/xdebug-2.4.1
+configuration option "php_ini" is not set to php.ini location
+You should add "zend_extension=/usr/lib/php/20151012/xdebug.so" to php.ini
+
+subl -f /etc/php/7.0/cli/php.ini
+
+-----------------------------------------------------------------------
+PHP Version => 7.0.8-2+deb.sury.org~xenial+1
+
+System => Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+Server API => Command Line Interface
+Virtual Directory Support => disabled
+Configuration File (php.ini) Path => /etc/php/7.0/cli
+Loaded Configuration File => /etc/php/7.0/cli/php.ini
+Scan this dir for additional .ini files => /etc/php/7.0/cli/conf.d
+Additional .ini files parsed => /etc/php/7.0/cli/conf.d/10-mysqlnd.ini,
+/etc/php/7.0/cli/conf.d/10-opcache.ini,
+/etc/php/7.0/cli/conf.d/10-pdo.ini,
+/etc/php/7.0/cli/conf.d/15-xml.ini,
+/etc/php/7.0/cli/conf.d/20-apcu.ini,
+/etc/php/7.0/cli/conf.d/20-apcu_bc.ini,
+/etc/php/7.0/cli/conf.d/20-bcmath.ini,
+/etc/php/7.0/cli/conf.d/20-calendar.ini,
+/etc/php/7.0/cli/conf.d/20-ctype.ini,
+/etc/php/7.0/cli/conf.d/20-curl.ini,
+/etc/php/7.0/cli/conf.d/20-dom.ini,
+/etc/php/7.0/cli/conf.d/20-exif.ini,
+/etc/php/7.0/cli/conf.d/20-fileinfo.ini,
+/etc/php/7.0/cli/conf.d/20-ftp.ini,
+/etc/php/7.0/cli/conf.d/20-gd.ini,
+/etc/php/7.0/cli/conf.d/20-gettext.ini,
+/etc/php/7.0/cli/conf.d/20-iconv.ini,
+/etc/php/7.0/cli/conf.d/20-igbinary.ini,
+/etc/php/7.0/cli/conf.d/20-imap.ini,
+/etc/php/7.0/cli/conf.d/20-intl.ini,
+/etc/php/7.0/cli/conf.d/20-json.ini,
+/etc/php/7.0/cli/conf.d/20-mbstring.ini,
+/etc/php/7.0/cli/conf.d/20-mcrypt.ini,
+/etc/php/7.0/cli/conf.d/20-msgpack.ini,
+/etc/php/7.0/cli/conf.d/20-mysqli.ini,
+/etc/php/7.0/cli/conf.d/20-pdo_mysql.ini,
+/etc/php/7.0/cli/conf.d/20-pdo_pgsql.ini,
+/etc/php/7.0/cli/conf.d/20-pdo_sqlite.ini,
+/etc/php/7.0/cli/conf.d/20-pgsql.ini,
+/etc/php/7.0/cli/conf.d/20-phar.ini,
+/etc/php/7.0/cli/conf.d/20-posix.ini,
+/etc/php/7.0/cli/conf.d/20-readline.ini,
+/etc/php/7.0/cli/conf.d/20-shmop.ini,
+/etc/php/7.0/cli/conf.d/20-simplexml.ini,
+/etc/php/7.0/cli/conf.d/20-soap.ini,
+/etc/php/7.0/cli/conf.d/20-sockets.ini,
+/etc/php/7.0/cli/conf.d/20-sqlite3.ini,
+/etc/php/7.0/cli/conf.d/20-sysvmsg.ini,
+/etc/php/7.0/cli/conf.d/20-sysvsem.ini,
+/etc/php/7.0/cli/conf.d/20-sysvshm.ini,
+/etc/php/7.0/cli/conf.d/20-tokenizer.ini,
+/etc/php/7.0/cli/conf.d/20-wddx.ini,
+/etc/php/7.0/cli/conf.d/20-xmlreader.ini,
+/etc/php/7.0/cli/conf.d/20-xmlwriter.ini,
+/etc/php/7.0/cli/conf.d/20-xsl.ini,
+/etc/php/7.0/cli/conf.d/20-zip.ini,
+/etc/php/7.0/cli/conf.d/25-memcached.ini,
+/etc/php/7.0/cli/conf.d/90-blackfire.ini
+
+PHP API => 20151012
+PHP Extension => 20151012
+Zend Extension => 320151012
+Zend Extension Build => API320151012,NTS
+PHP Extension Build => API20151012,NTS
+Debug Build => no
+Thread Safety => disabled
+Zend Signal Handling => disabled
+Zend Memory Manager => enabled
+Zend Multibyte Support => provided by mbstring
+IPv6 Support => enabled
+DTrace Support => enabled
+
+Registered PHP Streams => https, ftps, compress.zlib, php, file, glob, data, http, ftp, phar, zip
+Registered Stream Socket Transports => tcp, udp, unix, udg, ssl, tls, tlsv1.0, tlsv1.1, tlsv1.2
+Registered Stream Filters => zlib.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk, convert.iconv.*, mcrypt.*, mdecrypt.*
+
+
+-----------------------------------------------------------------------
+ssh://vagrant@127.0.0.1:222
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension="/etc/php/7.0/cli/conf.d/20-xdebug.ini"
+xdebug.default_enable=1
+xdebug.auto_trace=1
+xdebug.trace_output_dir="/home/vagrant/gr/grace.reset/trace/""
+xdebug.idekey="PHPSTORM"
+xdebug.remote_enable=1
+xdebug.remote_autostart=0
+xdebug.remote_port=9000
+xdebug.remote_host="grace.reset"
+xdebug.remote_connect_back=0
+xdebug.show_local_vars=1
+
+
+extension=php_curl.dll
+extension=php_fileinfo.dll
+extension=php_gd2.dll
+extension=php_gettext.dll
+extension=php_mbstring.dll
+extension=php_exif.dll
+extension=php_openssl.dll
+extension_dir="ext"
+
+
+
+xdebug.remote_enable=1
+
+ /home/vagrant/gr/grace.reset/public
+
+
+/home/myusername/.composer/vendor/laravel/homestead
+
+/home/myusername/.homestead
+
+
+
+KTOP-0L5PDDN:Homestead$ pwd
+
+vagrant plugin install vagrant-rekey-ssh vagrant-winnfsd vagrant-vbguest  vagrant-clean vagrant-faster
+
+
+vagrant-git vagrant-git-sync
+
+vagrant-remove-old-box-versions
+
+vagrant-scp vagrant-rake
+
+
+
+vagrant-rekey-ssh vagrant-nfs_guest vagrant-winnfsd vagrant-vbguest vagrant-ip-show vagrant-auto_network vagrant-clean vagrant-faster vagrant-rake
+
+config.vm.network "private_network", type: "dhcp"
+
+vagrant package --base='laravel/homestead' --output='phillips/working' --vagrantfile='/c/Users/Phillip/Homestead/vagrantfile'
+
+vagrant scp <some_local_file_or_dir> <somewhere_on_the_vm>
+
+Shared mounted folder configuration and Laravel install
+
+Run the guest box additions plugin and the winnfsd plugin (in Git bash):
+
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-winnfsd
+
+
+
+If you have just one VM, you can copy files to the VM like this:
+
+vagrant scp file_on_host.txt :file_on_vm.txt
+And from the VM like this
+
+vagrant scp :file_on_vm.txt file_on_host.txt
+
+
+vagrant rake db:migrate
+vagrant rake build
+vagrant rake test --cwd /some/other/directory
+
+
+extension_dir = "ext"
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension = ext\php_xdebug-2.4.1-7.0-vc14-nts-x86_64.dll
+xdebug.default_enable = 1
+xdebug.idekey="PHPSTORM"
+xdebug.remote_enable=1
+
+xdebug.remote_autostart=0
+xdebug.remote_port=9000
+xdebug.remote_connect_back=1
+
+sudo pecl install xdebug
+D:\HashiCorp\Vagrant\bin\vagrant.exe
+ /d/HashiCorp/Vagrant/bin/vagrant
+/etc/php/7.0/fpm/php.ini
+
+ # remove php5 modules
+apt-get autoremove --purge php5-*
+# add php-7.0 source list by [Ondřej Surý](https://github.com/oerdnj)
+sudo add-apt-repository ppa:ondrej/php
+
+# Update index
+sudo apt-get update
+
+# Install php7.0-fpm with needed extensions
+sudo
+
+
+apt-get install php7.0-fpm php7.0-cli php7.0-common php7.0-json php7.0-opcache php7.0-mysql php7.0-phpdbg php7.0-mbstring php7.0-gd php7.0-imap php7.0-ldap php7.0-pgsql php7.0-pspell php7.0-recode php7.0-snmp php7.0-tidy php7.0-dev php7.0-intl php7.0-gd php7.0-curl php7.0-zip php7.0-xml
+
+#RESTART
+ sudo /etc/init.d/php7.0-fpm restart
+
+ gpg: keyring `/tmp/tmpnafw5mq9/secring.gpg' created
+gpg: keyring `/tmp/tmpnafw5mq9/pubring.gpg' created
+gpg: requesting key E5267A6C from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmpnafw5mq9/trustdb.gpg: trustdb created
+gpg: key E5267A6C: public key "Launchpad PPA for Ondřej Surý" imported
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension = /etc/php/7.0/cli/conf.d/20-xdebug.ini
+xdebug.default_enable = 1
+xdebug.idekey = "PHPSTORM"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+;xdebug.remote_host=(ipaddress)
+xdebug.remote_connect_back=1
+
+
+ /etc/php/7.0/cli/conf.d/20-xdebug.ini,
+
+ /home/Phillip/.composer/vendor/laravel/homestead
+
+wget http://xdebug.org/files/xdebug-2.4.1.tgz
+
+tar -xvzf xdebug-2.4.1.tgz
+
+cd xdebug-2.4.1
+phpize
+
+
+ ./configure
+ make
+
+/usr/bin/php7.0
+
+PHP         : /usr/bin/php7.0
+PHP_SAPI    : cli
+PHP_VERSION : 7.0.8-2+deb.sury.org~xenial+1
+ZEND_VERSION: 3.0.0
+PHP_OS      : Linux - Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+INI actual  : /home/vagrant/xdebug-2.4.1/tmp-php.ini
+More .INIs  :
+CWD         : /home/vagrant/xdebug-2.4.1
+Extra dirs  :
+VALGRIND    : Not used
+
+/home/vagrant/xdebug-2.4.1/modules/xdebug.so
+/home/vagrant/xdebug-2.4.1/.libs/xdebug.so
+
+ C:/Users/Phillip/Homestead
+
+alias chmod7="sudo chmod 777 -R ./"
+
+Configuring for:
+PHP Api Version:         20151012
+Zend Module Api No:      20151012
+Zend Extension Api No:   320151012
+vagrant@homestead:~/xdebug-2.4.1$ ^C
+
+
+
+Enigmatic
+Enigmatic Bold
+ProFontWindows
+Ubuntu-Medium
+Ubuntu-Regular
+Ubuntu
+Puritan
+Puritan Bold
+Miso Bold
+Lato
+Lato-Black
+Lato-Bold
+DejaVuSans-Bold
+DejaVuSans
+DejaVuSerif
+
+--------------------------------
+sudo apt-get install php7.0-dev
+wget http://xdebug.org/files/xdebug-2.4.0rc2.tgz
+tar -xzf xdebug-2.4.0rc2.tgz
+cd xdebug-2.4.0RC2/
+phpize
+./configure --enable-xdebug
+make
+sudo cp modules/xdebug.so /usr/lib/.
+#FOR FPM
+sudo echo 'zend_extension="/usr/lib/xdebug.so"' > /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+sudo echo 'xdebug.remote_enable=1' >> /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+#FOR CLI
+sudo echo 'zend_extension="/usr/lib/xdebug.so"' > /etc/php/7.0/cli/conf.d/20-xdebug.ini
+sudo echo 'xdebug.remote_enable=1' >> /etc/php/7.0/cli/conf.d/20-xdebug.ini
+#RESTART
+sudo service php7.0-fpm restart
+
+sudo /etc/init.d/php7.0-fpm restart
+
+
+--------------------------------
+
+running: make INSTALL_ROOT="/tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1" install
+Installing shared extensions:     /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012/
+
+
+-----------------------------------------------------------------------
+
+alias installx='sudo pecl install xdebug'
+
+sudo pecl install xdebug
+
+sudo su
+
+
+
+
+
+
+
+
+
+
+alias hccc='sudo /etc/init.d/php7.0-fpm restart && composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear && php artisan debugbar:clear'
+alias ccc='composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear && php artisan debugbar:clear'
+
+
+alias installx='sudo apt-get install php-xdebug'
+alias superuser='sudo su'
+alias rstart="sudo /etc/init.d/php7.0-fpm reload && sudo /etc/init.d/php7.0-fpm restart && sudo /etc/init.d/nginx reload && sudo /etc/init.d/nginx restart"
+
+sudo /etc/init.d/php7.0-fpm reload && sudo /etc/init.d/php7.0-fpm restart
+
+sudo /etc/init.d/nginx reload
+sudo /etc/init.d/nginx restart
+
+sudo /etc/init.d/php7.0-fpm status
+sudo /etc/init.d/nginx status
+
+
+
+sudo /etc/init.d/networking reload
+
+
+table-data.html
+
+
+table-editable.html
+
+
+
+sudo pecl install xdebug
+
+
+PEAR Version: 1.10.1
+PHP Version: 7.0.8-2+deb.sury.org~xenial+1
+Zend Engine Version: 3.0.0
+Running on: Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+
+
+
+  +----------------------------------------------------------------------+
+  |                                                                      |
+  |   INSTALLATION INSTRUCTIONS                                          |
+  |   =========================                                          |
+  |                                                                      |
+  |   See http://xdebug.org/install.php#configure-php for instructions   |
+  |   on how to enable Xdebug for PHP.                                   |
+  |                                                                      |
+  |   Documentation is available online as well:                         |
+  |   - A list of all settings:  http://xdebug.org/docs-settings.php     |
+  |   - A list of all functions: http://xdebug.org/docs-functions.php    |
+  |   - Profiling instructions:  http://xdebug.org/docs-profiling2.php   |
+  |   - Remote debugging:        http://xdebug.org/docs-debugger.php     |
+  |                                                                      |
+  |                                                                      |
+  |   NOTE: Please disregard the message                                 |
+  |       You should add "extension=xdebug.so" to php.ini                |
+  |   that is emitted by the PECL installer. This does not work for      |
+  |   Xdebug.                                                            |
+  |                                                                      |
+  +----------------------------------------------------------------------+
+
+
+running: find "/tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1" | xargs ls -dils
+654309    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1
+654376    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr
+654377    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib
+654378    4 drwxr-xr-x 3 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php
+654379    4 drwxr-xr-x 2 root root    4096 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012
+654374 1208 -rwxr-xr-x 1 root root 1234192 Aug 22 19:39 /tmp/pear/temp/pear-build-rootKr4SQD/install-xdebug-2.4.1/usr/lib/php/20151012/xdebug.so
+
+Build process completed successfully
+Installing '/usr/lib/php/20151012/xdebug.so'
+install ok: channel://pecl.php.net/xdebug-2.4.1
+configuration option "php_ini" is not set to php.ini location
+You should add "zend_extension=/usr/lib/php/20151012/xdebug.so" to php.ini
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+https://www.youtube.com/watch?v=jDbF3UmV8jQ
+
+
+
+
+/home/vagrant/xdebug-2.4.0RC2/modules/xdebug.so
+/home/vagrant/xdebug-2.4.0RC2/.libs/xdebug.so
+
+/usr/lib/php/20131226/xdebug.so
+/usr/lib/php/20151012/xdebug.so
+/usr/lib/php/20121212/xdebug.so
+/usr/lib/xdebug.so
+
+
+barricuda
+
+php -i > phpinfo.txt
+alias pear="cmd //c /c/Users/sandbox/pear.bat"
+
+
+zip recruiter
+
+
+sed -i 's/Sefa/Phillip/g' *.php *.md *.txt *.css *.json *.js
+sed -i 's/Karagöz/Madsen/g' *.php *.md *.txt *.css *.json *.js
+sed -i 's/karagozsefa@gmail.com/pmadsen2013@gmail.com/g' *.php *.txt *.css *.json *.js
+sed -i 's/Fully/App/g' *.php *.txt *.css *.json *.js
+sed -i 's/AppCache/FullyCache/g' *.php *.md *.txt *.css *.json *.js
+sed -i 's/github.com:sseffa\/fullycms.git/github.com:phillipmadsen/g' *.php *.md *.txt *.css *.json *.js
+sed -i 's/sseffa/grace/g' *.php *.md *.txt *.css *.json *.js
+sed -i 's/fullycms/graceadmin/g' *.php *.md *.txt *.css *.json *.js
+
+
+
+extension_dir = "ext"
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension = ext\php_xdebug-2.4.1-7.0-vc14-nts-x86_64.dll
+xdebug.default_enable = 1
+xdebug.idekey = "PHPSTORM"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+xdebug.remote_connect_back=1;
+
+
+Loaded Configuration File => C:\tools\php\php.ini
+
+
+
+homestead
+
+
+Loaded Configuration File => /etc/php/7.0/cli/php.ini
+wget http://xdebug.org/files/xdebug-2.4.1.tgz
+
+tar -xvzf xdebug-2.4.1.tgz
+
+cd xdebug-2.4.1
+phpize
+
+
+ ./configure
+ make
+
+/usr/bin/php7.0
+
+ PHP         : /usr/bin/php7.0
+PHP_SAPI    : cli
+PHP_VERSION : 7.0.8-2+deb.sury.org~xenial+1
+ZEND_VERSION: 3.0.0
+PHP_OS      : Linux - Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+INI actual  : /home/vagrant/xdebug-2.4.1/tmp-php.ini
+More .INIs  :
+CWD         : /home/vagrant/xdebug-2.4.1
+Extra dirs  :
+VALGRIND    : Not used
+
+/home/vagrant/xdebug-2.4.1/modules/xdebug.so
+/home/vagrant/xdebug-2.4.1/.libs/xdebug.so
+
+
+
+
+
+D:\HashiCorp\Vagrant\bin\vagrant.exe
+ /d/HashiCorp/Vagrant/bin/vagrant
+
+
+
+
+
+
+apt-get install php7.0-fpm php7.0-cli php7.0-common php7.0-json php7.0-opcache php7.0-mysql php7.0-phpdbg php7.0-mbstring php7.0-gd php7.0-imap php7.0-ldap php7.0-pgsql php7.0-pspell php7.0-recode php7.0-snmp php7.0-tidy php7.0-dev php7.0-intl php7.0-gd php7.0-curl php7.0-zip php7.0-xml
+
+
+wget -O ~/c/Users/sandbox/xdebug-2.4.0.tgz http://xdebug.org/files/xdebug-2.4.0.tgz
+
+
+sudo apt-get install php7.0-dev
+wget http://xdebug.org/files/xdebug-2.4.0rc2.tgz tar -xzf xdebug-2.4.0rc2.tgz
+cd xdebug-2.4.0RC2/ phpize ./configure --enable-xdebug make sudo cp modules/xdebug.so /usr/lib/. #FOR FPM sudo echo 'zend_extension="/usr/lib/xdebug.so"' > /etc/php/7.0/fpm/conf.d/20-xdebug.ini sudo echo 'xdebug.remote_enable=1' >> /etc/php/7.0/fpm/conf.d/20-xdebug.ini #FOR CLI sudo echo 'zend_extension="/usr/lib/xdebug.so"' > /etc/php/7.0/cli/conf.d/20-xdebug.ini sudo echo 'xdebug.remote_enable=1' >> /etc/php/7.0/cli/conf.d/20-xdebug.ini #RESTART sudo service php7.0-fpm restart
+
+alias art='php artisan'
+alias autoload='composer dump-autoload'
+alias xoff='sudo phpdismod -s cli xdebug-cli; sudo /etc/init.d/php7.0-fpm restart'
+alias xon='sudo phpenmod -s cli xdebug-cli; sudo /etc/init.d/php7.0-fpm restart'
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension="/usr/lib/xdebug.so"
+xdebug.default_enable = 1
+xdebug.idekey = "15696"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+xdebug.remote_connect_back=1
+
+
+
+xdebug.remote_handler=dbgp
+xdebug.remote_log="/var/log/xdebug/xdebug.log"
+xdebug.remote_host=10.0.2.2 ;
+
+subl  /etc/php/7.0/cli/php.ini
+
+
+type -a php7.0-fpm
+
+php7.0-fpm
+
+sudo subl /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+
+zend_extension=xdebug.so
+
+xdebug.remote_enable = 1
+xdebug.remote_connect_back = 1
+xdebug.remote_port = 9000
+xdebug.scream=0
+xdebug.cli_color=1
+xdebug.show_local_vars=1
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension="[enter path here]"
+xdebug.default_enable = 1
+xdebug.idekey = "vagrant"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+xdebug.remote_handler=dbgp
+xdebug.remote_log="/var/log/xdebug/xdebug.log"
+xdebug.remote_host=10.0.2.2 ;
+
+
+
+Local path C:\Projects\wordpress-networkmarketing
+Path on the remote server /site/wwwroot/wp-content/plugins/jetbrains-networkmarketing
+Web path (URL) /wp-content/plugins/jetbrains-networkmarketing
+
+
+sudo pecl install xdebug
+
+ subl -f /etc/php/7.0/fpm/php.ini
+ subl -f /etc/php/7.0/cli/php.ini
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Added to enable Xdebug ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+zend_extension="/usr/lib/xdebug.so"
+xdebug.default_enable = 1
+xdebug.idekey = "15696"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+xdebug.remote_connect_back=1
+
+
+
+
+
+;extension=php_bz2.dll
+extension=php_curl.dll
+extension=php_fileinfo.dll
+;extension=php_gd2.dll
+;extension=php_gettext.dll
+;extension=php_gmp.dll
+;extension=php_intl.dll
+;extension=php_imap.dll
+;extension=php_interbase.dll
+;extension=php_ldap.dll
+extension=php_mbstring.dll
+extension=php_exif.dll      ; Must be after mbstring as it depends on it
+;extension=php_mysqli.dll
+;extension=php_oci8_12c.dll  ; Use with Oracle Database 12c Instant Client
+extension=php_openssl.dll
+;extension=php_pdo_firebird.dll
+;extension=php_pdo_mysql.dll
+;extension=php_pdo_oci.dll
+;extension=php_pdo_odbc.dll
+;extension=php_pdo_pgsql.dll
+;extension=php_pdo_sqlite.dll
+;extension=php_pgsql.dll
+;extension=php_shmop.dll
+
+
+
+
+
+
+
+
+
+sudo pecl install xdebug
+
+
+PEAR Version: 1.10.1
+PHP Version: 7.0.8-2+deb.sury.org~xenial+1
+Zend Engine Version: 3.0.0
+Running on: Linux homestead 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64
+
+
+

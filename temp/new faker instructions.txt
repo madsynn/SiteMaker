@@ -1,0 +1,135 @@
+
+php artisan make:provider ProductFakerServiceProvider
+
+/**
+ * Register the application services.
+ *
+ * @return void
+ */
+public function register()
+{
+    $this->app->singleton('Faker', function($app) {
+        $faker = \Faker\Factory::create();
+        $newClass = new class($faker) extends \Faker\Provider\Base {
+            public function title($nbWords = 5)
+            {
+                $sentence = $this->generator->sentence($nbWords);
+                return substr($sentence, 0, strlen($sentence) - 1);
+            }
+        };
+
+        $faker->addProvider($newClass);
+        return $faker;
+    });
+}
+I'm using an anonymous class here. If you have php < 7, you would likely need to create a new file with your new provider class and pass that in. Make sure you also add this new provider to your providers array in app/config.php.
+
+Now that it's registered, you can grab your new faker class using the following...
+
+$faker = app('Faker');
+echo $faker->title;
+Additionally, if you go through the docs at https://laravel.com/docs/5.2/facades you should also be able to make a Faker facade quite easily. All the heavy lifting is done, you'd just have to create the new facade class, have getFacadeAccessor return 'Faker', and add it to your facades array in app/config.php.
+
+Then you can simply use it like so...
+
+echo ProductFaker::title;
+
+
+
+
+
+http://www.yandataellan.com/
+
+
+
+$factory->define(App\City::class, function ($faker) {
+
+    $city = $faker->city;
+
+    return [
+        'city' => $city,
+        'value' => strtolower($city)
+    ];
+});
+
+
+ http://stackoverflow.com/questions/32425420/laravel-5-1-foreign-keys-in-model-factory/32907494#32907494
+
+
+I may be a bit late on this one but I was having the same issue, this fixed it for me. You should be able to do
+
+$factory->define(App\Organisation::class, function ($faker) {
+    return [
+      'name' => $faker->company,
+      'country_id' => factory(App\Country::class)->create()->id,
+    ];
+});
+and then in your seed you just need to call
+
+factory(App\Organisation::class, 5)->create();
+and it will create the countries for you as well.
+
+
+
+the code would probably be along the lines of this for the store function
+
+    if ($request->has('prices'))
+    {
+      foreach ($request->prices as $pricing)
+      {
+
+        $product_prices_id = $product->id;
+              $product_prices_title = Input::get('title');
+              $product_prices_price = Input::get('price');
+              $product_prices_model = Input::get('model');
+              $product_prices_sku = Input::get('sku');
+              $product_prices_upc = Input::get('upc');
+              $product_prices_quantity = Input::get('quantity');
+              $product_prices_alt_details = Input::get('alt_details');
+
+                  $product_id = DB::table('prices')->insertGetId([
+                  'product_id' => $product_prices_id,
+                  'title' => $product_prices_title,
+                  'price' => $product_prices_price,
+                  'model' => $product_prices_model,
+                  'sku' => $product_prices_sku,
+                  'upc' => $product_prices_upc,
+                  'quantity' => $product_prices_quantity,
+                  'alt_details' =>$product_prices_alt_details
+                ]);
+          }
+      }
+
+
+tawk.to
+
+
+
+
+The way that the Laravel team, Otwell, Stauffer et.al., suggest is like this.
+
+Testing > Adding Relations To Models http://laravel.com/docs/5.1/testing#working-with-databases
+
+Adding relationships to your models https://mattstauffer.co/blog/better-integration-testing-in-laravel-5.1-model-factories#adding-relationships-to-your-models
+
+ModelFactory.php
+
+$factory->define(App\Organisation::class, function ($faker) {
+   return [
+      'name' => $faker->company,
+      'country_id' => 197,
+   ];
+});
+
+$factory->define(App\Country::class, function ($faker) {
+   return [
+      'name' => $faker->country,
+   ];
+});
+seeder
+
+$organisations = factory('App\Organisation', 3)
+  ->create()
+  ->each(function($$organisation) {
+      $organisation->relatedItems()->save(factory('App\Country')->make());
+  });

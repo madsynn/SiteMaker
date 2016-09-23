@@ -1,0 +1,63 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": ">=5.5.9",
+		"laravel/framework": "5.1.*",
+		"laravelcollective/html": "5.1.*",
+		"cartalyst/sentinel": "2.0.*",
+		"mcamara/laravel-localization": "1.0.*",
+		"davejamesmiller/laravel-breadcrumbs": "3.0.*",
+		"sseffa/video-api": "2.0.*",
+		"laracasts/flash": "^1.3",
+		"rap2hpoutre/laravel-log-viewer": "^0.5.3",
+		"cviebrock/eloquent-sluggable": "^3.1",
+		"intervention/image": "^2.3",
+		"caffeinated/menus": "^2.3",
+		"doctrine/dbal": "^2.5",
+		"webpatser/laravel-uuid": "^2.0",
+		"stripe/stripe-php": "3.*",
+		"sentry/sentry-laravel": "^0.3.0",
+		"barryvdh/reflection-docblock": "^2.0",
+		"milon/barcode": "^5.2",
+		"laravelcollective/annotations": "5.1.*"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "~1.4",
+		"mockery/mockery": "0.9.*",
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1",
+		"mpociot/laravel-test-factory-helper": "^0.3.1",
+		"orangehill/iseed": "^2.1",
+		"barryvdh/laravel-debugbar": "^2.2",
+		"barryvdh/laravel-ide-helper": "^2.2",
+		"squizlabs/php_codesniffer": "^2.6",
+		"php-console/laravel-service-provider": "^5.1",
+		"phpdocumentor/phpdocumentor": "2.*",
+		"laracademy/generators": "^1.3",
+		"filp/whoops": "^2.1"
+	},
+	"autoload": {
+		"classmap": ["database"],
+		"psr-4": {
+			"App\\": "app/",
+			"App\\Ecommerce\\": "app/Ecommerce"
+		},
+		"files": ["app/Helper/helpers.php"]
+	},
+	"autoload-dev": {
+		"classmap": ["tests/TestCase.php"]
+	},
+	"scripts": {
+		"post-root-package-install": ["php -r \"copy('.env.example', '.env');\""],
+		"post-create-project-cmd": ["php artisan key:generate"],
+		"post-install-cmd": ["php artisan clear-compiled", "php artisan optimize"],
+		"post-update-cmd": ["php artisan clear-compiled", "php artisan optimize", "php artisan ide-helper:generate"]
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}

@@ -1,0 +1,1239 @@
+<div class="row prices">
+    <div class="form-group col-md-12">
+        <label for="prices">Product Prices : </label>
+        <div id="add_product_price">Add Price</div>
+        <div class="prices-group row">
+            <div class="price col-md-3" op-index="0">
+                <span class="fa fa-times fa-lg remove-price"></span>
+                <label for="prices">Price: </label>
+                <input type="text" name="prices[0][title]"><br>
+                <input type="text" name="prices[0][price]"><br>
+                <input type="text" name="prices[0][model]"><br>
+                <input type="text" name="prices[0][sku]"><br>
+                <input type="text" name="prices[0][upc]"><br>
+                <input type="text" name="prices[0][alt_details]"><br>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+      <div class="add_price_value">+ Add Value</div>
+                    <ul class="values">
+                        <li><input type="text" name="prices[0][values][]"></li>
+                    </ul>
+
+
+
+                    alias create='composer create-project laravel/laravel ./ --prefer-dist'
+
+alias create51='composer create-project laravel/laravel "5.1.*" ./ --prefer-dist'
+alias create52='composer create-project --prefer-dist laravel/laravel ./ "5.2.*"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if ($('.target').is(':hidden')) {
+  $('.target').show();
+} else {
+  $('.target').hide();
+}
+if ($('.target').is(':visible')) {
+  $('.target').hide();
+} else {
+  $('.target').show();
+}
+
+if ($('.target-visibility').css('visibility') == 'hidden') {
+  $('.target-visibility').css({
+    visibility: "visible",
+    display: ""
+  });
+} else {
+  $('.target-visibility').css({
+    visibility: "hidden",
+    display: ""
+  });
+}
+
+if ($('.target-visibility').css('opacity') == "0") {
+  $('.target-visibility').css({
+    opacity: "1",
+    display: ""
+  });
+} else {
+  $('.target-visibility').css({
+    opacity: "0",
+    display: ""
+  });
+}
+Useful jQuery toggle methods:
+$('.click').click(function() {
+  $('.target').toggle();
+});
+
+$('.click').click(function() {
+  $('.target').slideToggle();
+});
+
+$('.click').click(function() {
+  $('.target').fadeToggle();
+});
+
+
+
+
+
+<?php $i++ ?>
+
+
+
+"<td><input type='text' class='form-control' name='prices[][\'title'\]' value='' /></td>" +
+"<td><input type='text' class='text-center form-control' name='prices[][\'model\']' value=" + randommodel + "></td>" +
+"<td><input type='text' class='text-center form-control currency' name='prices[][\'price\']' value=" + randomprice + "></td>" +
+"<td><input type='text' class='text-center form-control' name='prices[][\'quantity\']' value=" + randomquantity + "></td>" +
+"<td><input type='text' class='text-center form-control' name='prices[][\'sku\']' value=" + randomsku + "></td>" +
+"<td><input type='text' class='text-center form-control' name='prices[][\'upc\']' value='636343" + randomupc + "'></td>" +
+"</tr><tr class='alt'><td colspan='1' class='labelTextarea'><label ><strong>Product Variation Details:</strong></label></td>" +
+"<td colspan='5'><textarea rows='3' class='form-control details-input' name='prices[][\'alt_details\']' placeholder='add the details or difference here:'></textarea></td>" +
+
+
+
+
+var row = $("<tr price-index='" + pricing_counter + "'>" +
+                "<td><input type='text' class='form-control' name='prices[][title]' value='' /></td>" +
+                "<td><input type='text' class='text-center form-control' name='prices[][\'model\']' value=" + randommodel + "></td>" +
+                "<td><input type='text' class='text-center form-control currency' name='prices[][\'price\']' value=" + randomprice + "></td>" +
+                "<td><input type='text' class='text-center form-control' name='prices[][\'quantity\']' value=" + randomquantity + "></td>" +
+                "<td><input type='text' class='text-center form-control' name='prices[][\'sku\']' value=" + randomsku + "></td>" +
+                "<td><input type='text' class='text-center form-control' name='prices[][\'upc\']' value='636343" + randomupc + "'></td>" +
+                "</tr><tr class='alt'><td colspan='1' class='labelTextarea'><label ><strong>Product Variation Details:</strong></label></td>" +
+                "<td colspan='5'><textarea rows='3' class='form-control details-input' name='prices[][\'alt_details\']' placeholder='add the details or difference here:'></textarea></td>" +
+        "</tr>");
+        $("table#product-pricing-table tbody").append(row)
+        $('table#product-pricing-table input.currency').maskMoney();
+});
+
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+
+
+  <tr class="alt">
+                                <td><input type="text" class="text-center form-control" name="model[]" value="{!! $price->model !!}" /></td>
+                                <td><input type="text" class="text-center form-control currency" name="price[]" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+                                <td><input type="text" class="text-center form-control" name="quantity[]" maxlength="4" value="{!! $price->quantity !!}" /></td>
+                                <td><input type="text" class="text-center form-control" name="sku[]" value="{!! $price->sku !!}" /></td>
+                                <td><input type="text" class="text-center form-control" name="upc[]" maxlength="12" value="{!! $price->upc !!}" /></td>
+                            </tr>
+
+
+                            <div class="row">
+    <div class="col-md-12">
+        <div class="adv-table editable-table ">
+            <div class="clearfix">
+                <div class="space15"></div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered" id="product-pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Title:</th>
+                                <th>Model:</th>
+                                <th>Price:</th>
+                                <th>Quantity:</th>
+                                <th>SKU:</th>
+                                <th>UPC:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @if(isset($product) && $product->prices->count()<0)
+
+                                @foreach($product->prices as $price)
+                                    <tr class="alt">
+                                        <td><input type="text" class="form-control" name="price[i]['title']" value="{!! $price->model !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['model']" value="{!! $price->model !!}" /></td>
+                                        <td><input type="text" class="text-center form-control currency" name="price[i]['price']" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['quantity']" maxlength="4" value="{!! $price->quantity !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="prices[sku]" value="{!! $price->sku !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['upc']" maxlength="12" value="{!! $price->upc !!}" /></td>
+
+                                    </tr>
+                                    <tr class="alt">
+                                        <td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>
+                                        <td colspan="5"> <textarea rows="3" class="form-control details-input" name="price[i]['alt_details']" value="{!! $price->alt_details !!}"></textarea></td>
+                                    </tr>
+                                    <tr class="spacer invis"><td colspan="5"></td></tr>
+                                @endforeach
+                            @else
+
+                                    <tr class="alt">
+                                        <td><input type="text" class="form-control" name="price[i]['title']" value="" /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['model']" value="" /></td>
+                                        <td><input type="text" class="text-center form-control currency" name="price[i]['price']" placeholder="$0.00" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['quantity']" maxlength="4" /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['sku']" value="" /></td>
+                                        <td><input type="text" class="text-center form-control" name="price[i]['upc']" maxlength="12" value="636343" /></td>
+
+
+                                    </tr>
+
+                                    <tr class="alt">
+                                        <td colspan="1" class="labelTextarea"><label><strong>Product Variation Details:</strong></label></td>
+                                        <td colspan="5"><textarea rows="3" class="form-control details-input" name="price[i]['alt_details']" placeholder="add the details or difference here:"></textarea></td>
+                                    </tr>
+                                    <tr class="spacer invis"><td colspan="5"></td></tr>
+                            @endif
+
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" id="addRow" class="btn default">
+                    Add New <i class="icon-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\PriceProduct;
+use App\Repositories\Category\CategoryInterface;
+use App\Repositories\Category\CategoryRepository;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\Models\Product;
+use App\Models\CategoryProduct;
+use App\Models\AlbumPhoto;
+use App\Models\Section;
+use App\Models\Cart;
+use App\Models\Option;
+use App\Models\OptionValue;
+use App\Models\ProductFeature;
+use App\Models\ProductVariant;
+use App\Models\OrderProduct;
+use App\Models\Price;
+use App\Models\Category;
+
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Validator;
+use Intervention\Image\ImageManager;
+use Illuminate\Database\Eloquent\Scope;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+//use Auth;
+use App;
+use Session;
+use \Illuminate\Database\Eloquent\Collection;
+use App\Ecommerce\helperFunctions;
+
+class ProductController extends Controller
+{
+
+    protected $product;
+    protected $category;
+    protected $sections;
+    protected $prices;
+
+    public function __construct(Product $product, Section $sections, CategoryInterface $category, Price $prices)
+    {
+        $this->product = $product;
+        $this->category = $category;
+        $this->section = $sections;
+        $this->price = $prices;
+//        $this->middleware('isAdmin', ['except' => [
+//            'index',
+//            'show',
+//            'search'
+//        ]]);
+    }
+
+    public function index()
+    {
+
+
+
+        $products = Product::orderBy('name', 'asc')->take(6)->get();
+        $new_products = Product::orderBy('created_at', 'desc')->take(12)->get();
+        $get_best_sellers = OrderProduct::select('product_id', \DB::raw('COUNT(product_id) as count'))->groupBy('product_id')->orderBy('count', 'desc')->take(8)->get();
+        $best_sellers = [];
+        foreach ($get_best_sellers as $product) {
+            $best_sellers[] = $product->product;
+        }
+//        helperFunctions::getPageInfo($sections,$cart,$total);
+        return view('frontend.shop.index', compact('new_products', 'best_sellers', 'sections', 'cart', 'total'));
+    }
+
+    public function show($id, $slug = Null)
+    {
+        $product = Product::findBySlugOrIdOrFail($id);
+
+        //  dd($product, $product->features, $product->categories, $product->prices, $product->options, $product->variants);
+
+
+        $product_categories = $product->categories()->lists('id', 'title')->toArray();
+
+//        dd($product_categories);
+        $similair = Category::find($product_categories[array_rand($product_categories)])->products()->whereNotIn('id', array($id))->orderByRaw("RAND()")->take(6)->get();
+        // helperFunctions::getPageInfo($sections,$cart,$total);
+        return view('frontend.shop.product', compact('sections', 'product', 'similair', 'cart', 'total'));
+    }
+
+
+
+
+
+    public function store(Request $request )
+    {
+
+
+
+       // $formData = $request->all();
+
+      //  dd($formData);
+
+        /**
+         * Validate the submitted Data
+         */
+//
+//        $rules = [
+//            'name' => 'required',
+////            'manufacturer' => 'required',
+////            'price' => 'required',
+////            'details' => 'required',
+////            'quantity' => 'required',
+////            'categories' => 'required',
+////            'thumbnail' => 'required|image',
+//        ];
+//
+//        $validator = Validator::make(Input::all(), $rules);
+
+        /**
+         * Validate the submitted Data
+         */
+        $validator =  $this->validate($request, [
+            'name' => 'required',
+//            'manufacturer' => 'required',
+//            'price' => 'required',
+//            'details' => 'required',
+//            'quantity' => 'required',
+//            'categories' => 'required',
+//            'thumbnail' => 'required|image',
+        ]);
+
+//        if ($validator->fails()) {
+//            // Ooops.. something went wrong
+//            return Redirect::back()->withRequest()->withErrors($validator);
+//        }
+
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo && strpos($photo->getMimeType(), 'image') === false) {
+                    return \Redirect()->back();
+                }
+            }
+        }
+
+        /**
+         * Upload a new thumbnail
+         */
+        $dest = "uploads/products/today";
+        $name = str_random(11)."_".$request->file('thumbnail')->getClientOriginalName();
+        $name2 = str_random(11)."_".$request->file('thumbnail2')->getClientOriginalName();
+        $request->file('thumbnail')->move($dest, $name);
+        $request->file('thumbnail2')->move($dest, $name2);
+        $product = $request->all();
+
+
+       // dd($product);
+
+        $product['thumbnail'] = "/".$dest.$name;
+        $product['thumbnail2'] = "/".$dest.$name2;
+
+        $product = Product::create($product);
+
+
+        // $product = Model::create($request->all());
+        // $product->price()->create($request->all());
+        // $product = Price::create($product);
+
+      //  $product = Product::create($product, $request->except('attribute_name', 'product_attribute_value', 'album', 'options'));
+
+        /**
+         * Upload Album Photos
+         */
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo) {
+                    $name = str_random(11)."_".$photo->getClientOriginalName();
+                    $photo->move($dest, $name);
+                    AlbumPhoto::create([
+                        'product_id' => $product->id,
+                        'photo_src' => "/".$dest.$name,
+                        'alt' => $request->get('alt'),
+                        'caption' => $request->get('caption'),
+                        'photoinfo' => $request->get('photoinfo'),
+                        'linkto' => $request->get('linkto'),
+                        'use_main' => $request->get('use_main'),
+                        'use_thumb' => $request->get('use_thumb'),
+                        'use_gallery' => $request->get('use_gallery')
+                    ]);
+                }
+            }
+        }
+
+
+        /**
+         * Linking the categories to the product
+         */
+
+        foreach ($request->categories as $category_id) {
+            CategoryProduct::create(['category_id' => $category_id, 'product_id' => $product->id]);
+        }
+
+        /**
+         * Linking the options to the product
+         */
+
+        if ($request->has('options')){
+            foreach ($request->options as $option_details) {
+                if (!empty($option_details['name']) && !empty($option_details['values'][0]) ) {
+                    $option = Option::create([
+                        'name' => $option_details['name'],
+                        'product_id' => $product->id
+                    ]);
+                    foreach ($option_details['values'] as $value) {
+                        OptionValue::create([
+                            'value' => $value,
+                            'option_id' => $option->id
+                        ]);
+                    }
+                }
+            }
+        }
+
+
+//        if (!empty($request->price))
+//        {
+//            foreach ($request->price as $key => $item)
+//            {
+//                $productPrice = new ProductVariant();
+//                $productPrice->price = $item;
+//                $productPrice->product_id = $product->id;
+//                $product->prices()->save($productPrice);
+//            }
+//        }
+
+
+        if (!empty($request->attribute_name))
+        {
+            foreach ($request->attribute_name as $key => $item)
+            {
+                $productVariant                          = new ProductVariant();
+                $productVariant->attribute_name          = $item;
+                $productVariant->product_attribute_value = $request->product_attribute_value[$key];
+                $product->productVariants()->save($productVariant);
+            }
+        }
+
+        if (!empty($request->feature_name))
+        {
+            foreach ($request->feature_name as $feature)
+            {
+                $productFeature               = new ProductFeature();
+                $productFeature->feature_name = $feature;
+                $product->productFeatures()->save($productFeature);
+
+            }
+        }
+
+        return \Redirect('/admin/products')->with([
+            'flash_message' => 'Product Created Successfully'
+        ]);
+    }
+
+
+
+    public function edit(Request $request, $id)
+    {
+        $product = Product::find($id);
+//        $slug = Str::slug($product->name);
+        /**
+         * Validate the submitted Data
+         */
+        $this->validate($request, [
+            'name' => 'required',
+            'manufacturer' => 'required',
+            'price' => 'required',
+            'details' => 'required',
+            'quantity' => 'required',
+            'categories' => 'required',
+            'thumbnail' => 'image',
+        ]);
+
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo && strpos($photo->getMimeType(), 'image') === false) {
+                    return \Redirect()->back();
+                }
+            }
+        }
+
+        /**
+         * Remove the old categories from the pivot table and maintain the reused ones
+         */
+        $added_categories = [];
+        foreach ($product->categories as $category) {
+            if (!in_array($category->id, $request->categories)) {
+                CategoryProduct::whereProduct_id($product->id)->whereCategory_id($category->id)->delete();
+            } else {
+                $added_categories[] = $category->id;
+            }
+        }
+
+        /**
+         * Link the new categories to the pivot table
+         */
+        foreach ($request->categories as $category_id) {
+            if (!in_array($category_id, $added_categories)) {
+                CategoryProduct::create(['category_id' => $category_id, 'product_id' => $product->id]);
+            }
+        }
+
+        $info = $request->all();
+
+        /**
+         * Upload a new thumbnail and delete the old one
+         */
+        $dest = "content/images/";
+        if ($request->file('thumbnail')) {
+            File::delete(public_path() . $product->thumbnail);
+            $name = str_random(11) . "_" . $request->file('thumbnail')->getClientOriginalName();
+            $request->file('thumbnail')->move($dest, $name);
+            $info['thumbnail'] = "/" . $dest . $name;
+        }
+        /**
+         * Upload Album Photos
+         */
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo) {
+                    $name = str_random(11) . "_" . $photo->getClientOriginalName();
+                    $photo->move($dest, $name);
+                    AlbumPhoto::create([
+                        'product_id' => $product->id,
+                        'photo_src' => "/" . $dest . $name
+                    ]);
+                }
+            }
+        }
+
+        $product->update($info);
+
+//        $pivotTableData = App\Models\Product::find(1)->prices()->pivot;
+
+        /**
+         * Linking the options to the product
+         */
+        if ($request->has('options')) {
+            foreach ($request->options as $option_details) {
+                if (!empty($option_details['name']) && !empty($option_details['values']['name'][0])) {
+                    if (isset($option_details['id'])) {
+                        $size = count($option_details['values']['id']);
+                        Option::find($option_details['id'])->update(['name' => $option_details['name']]);
+                        foreach ($option_details['values']['name'] as $key => $value) {
+                            if ($key < $size) {
+                                OptionValue::find($option_details['values']['id'][$key])->update(['value' => $value]);
+                            } else {
+                                OptionValue::create([
+                                    'value' => $value,
+                                    'option_id' => $option_details['id']
+                                ]);
+                            }
+                        }
+                    } else {
+                        $option = Option::create([
+                            'name' => $option_details['name'],
+                            'product_id' => $product->id
+                        ]);
+                        foreach ($option_details['values']['name'] as $value) {
+                            if (!empty($value)) {
+                                OptionValue::create([
+                                    'value' => $value,
+                                    'option_id' => $option->id
+                                ]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        return \Redirect()->back()->with([
+            'flash_message' => 'Product Successfully Modified'
+        ]);
+    }
+
+
+
+    /**
+     * @param array $variants
+     * @return mixed
+     */
+    private function getProductVariants($variants = [])
+    {
+        if (isset($variants))
+        {
+            $variants = array_map(
+                function ($v)
+                {
+                    return explode(':', $v);
+                },
+                explode(',', $variants)
+            );
+        }
+        return $variants;
+    }
+
+    private function getProductFeatures($features = [])
+    {
+        if (isset($features)) {
+            $features = array_map(
+                function ($v) {
+                    return explode(':', $v);
+                },
+                explode(',', $features)
+            );
+        }
+        return $features;
+    }
+
+    private function getPrices($prices = [])
+    {
+        if (isset($prices)) {
+            $prices = array_map(
+                function ($v) {
+                    return explode(':', $v);
+                },
+                explode(',', $prices)
+            );
+        }
+        return $prices;
+    }
+
+
+
+
+    public function togglePublish($id)
+    {
+        return $this->product->togglePublish($id);
+    }
+
+
+
+
+    public function delete($id)
+    {
+        $product = Product::find($id);
+
+        /**
+         * Remove the product , all its linked categories and delete the thumbnail
+         */
+        File::delete(public_path() . $product->thumbnail);
+        File::delete(public_path() . $product->thumbnail2);
+        CategoryProduct::whereProduct_id($id)->delete();
+        PriceProduct::whereProduct_id($id)->delete();
+        Price::whereProduct_id($id)->delete();
+        $product->delete();
+        return \Redirect::back();
+    }
+
+    public function deletePhoto($id, $photo_id)
+    {
+        $photo = AlbumPhoto::find($photo_id);
+        File::delete(public_path() . $photo->photo_src);
+        AlbumPhoto::destroy($photo_id);
+        return \Redirect()->back();
+    }
+
+    public function deleteOption($id)
+    {
+        Option::destroy($id);
+        return \Redirect()->back();
+    }
+
+    public function deleteOptionValue($id)
+    {
+        OptionValue::destroy($id);
+        return \Redirect()->back();
+    }
+
+    public function search(Request $request)
+    {
+        if (strtoupper($request->sort) == 'NEWEST') {
+            $products = Product::where('name', 'like', '%' . $request->q . '%')->orderBy('created_at', 'desc')->paginate(40);
+        } elseif (strtoupper($request->sort) == 'HIGHEST') {
+            $products = Product::where('name', 'like', '%' . $request->q . '%')->orderBy('price', 'desc')->paginate(40);
+        } elseif (strtoupper($request->sort) == 'LOWEST') {
+            $products = Product::where('name', 'like', '%' . $request->q . '%')->orderBy('price', 'asc')->paginate(40);
+        } else {
+            $products = Product::where('name', 'like', '%' . $request->q . '%')->paginate(40);
+        }
+        helperFunctions::getPageInfo($sections, $cart, $total);
+        $query = $request->q;
+        return view('site.search', compact('sections', 'cart', 'total', 'products', 'query'));
+    }
+
+}
+
+
+
+
+<hr />
+
+<script type='text/javascript'>
+
+    $(window).load(function () {
+        var options_counter = 0;
+        $("#addOptionValue").click(function () {
+            options_counter++;
+            var option =
+
+            var row = $("<tr>" +
+                    "<td class='tg-yw4l'></td>" +
+            "<td class='tg-yw4l'><a href='javascript:void(0)'><span id='removeOptionValue'><i class='fa fa-fw fa-times text-danger fa-lg'></i></span></a></td>" +
+            "<td class='tg-yw4l'><input type='text' name='options[0][values][]' /></td>" +
+            "<td class='tg-yw4l'><a href='javascript:void(0)'><span id='addOptionValue'><i class='fa fa-plus-circle fa-lg' aria-hidden='true'></i></span></a></td>" +
+            "</tr>");
+            $("table#productoptions tbody").append(row);
+//            $('table#product-pricing-table input.currency').maskMoney();
+        });
+    });
+//    $(function() {
+//        $('table#product-pricing-table input.currency').maskMoney();
+//
+//    })
+</script>
+<div class="col-md-12">
+<h3>Product Options</h3>
+    <hr>
+<div id="optionblock" class="col-md-3">
+
+    <div class="tg-wrap">
+        <table id="productoptions" class="tg table col-md-12 table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th class="tg-yw4l"><strong>Option Name</strong></th>
+                    <th class="tg-yw4l"></th>
+                    <th class="tg-yw4l">Variations</th>
+                    <th class="tg-yw4l"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-yw4l"><input type="text" name="options[0][name]" /></td>
+                    <td class="tg-yw4l">
+                        <a href="javascript:void(0)"><span id="removeOptionValue"><i class="fa fa-fw fa-times text-danger fa-lg"></i></span></a>
+                    </td>
+                    <td class="tg-yw4l"><input type="text" name="options[0][values][]" /></td>
+                    <td class="tg-yw4l">
+                        <a href="javascript:void(0)"><span id="addOptionValue"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></span></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="tg-yw4l">
+                        <span id="btn_new" class="btn btn-danger pull-right"> <i id="ui-icon" class="fa-trash fa " aria-hidden="true"></i>&nbsp Delete This Option</span>
+                    </td>
+                    <td class="tg-yw4l" colspan="3">
+                        <span id="btn_new" class="btn btn-success pull-right"> <i id="ui-icon" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>&nbsp Add New Option</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+{{--<a id="AddMoreFeatureBox" href="#">--}}
+    {{--<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-plus"></i> {{trans('product.add_item')}} </button>--}}
+{{--</a>--}}
+
+
+</div>
+
+
+
+<script>
+
+        $('#btn_new').click(function(){
+                $(this).find('#ui-icon').toggleClass('fa-plus-circle fa-trash');
+        };
+
+            $(function () {
+                var options_counter = 0;
+
+                $('#add_product_option').click(function () {
+                    options_counter++;
+                   //                    $('.options-group').append('<div class="option col-md-3" op-index="' + options_counter + '">' +
+//                            '<span class="fa fa-times fa-lg remove-option"></span>' +
+//                            '<label for="options">Option Name:</label>' +
+//                            '<strong><input type="text" name="options[' + options_counter + '][name]"></strong><br>' +
+//                            '<div class="add_option_value">+ Add Value</div>' +
+//                            '<ul class="values"><li>' +
+//                            '<input type="text" name="options[' + options_counter + '][values][]"></li>' +
+//                            '</ul>' +
+//                            '</div>');
+                });
+                $(document).on("click", ".remove-option", function () {
+                    $(this).parent().remove();
+                });
+                $(document).on("click", ".add_option_value", function () {
+                    $(this).parent().find('.values').append('<li>' +
+                            '<input type="text" name="options[' + $(this).parent().attr('op-index') + '][values][]">' +
+                            '<i class="fa fa-minus remove-value"></i>' +
+                            '</li>');
+                });
+                $(document).on("click", ".remove-value", function () {
+                    $(this).parent().remove();
+                });
+
+
+            });
+
+</script>
+
+<div class="col-md-12">
+    <div class="col-md-3"><img src="https://placehold.it/800x600/1A5276/FFFFFF?text=placeholder+image" alt="">
+    </div>
+    <div class="col-md-3"><img src="https://placehold.it/800x600/1A5276/FFFFFF?text=placeholder+image" alt="">
+    </div>
+    <div class="col-md-3"><img src="https://placehold.it/800x600/1A5276/FFFFFF?text=placeholder+image" alt="">
+    </div>
+    <div class="col-md-3"><img src="https://placehold.it/800x600/1A5276/FFFFFF?text=placeholder+image" alt="">
+    </div>
+</div>
+
+
+<hr />
+
+
+<div class="col-md-12">
+    <div class="table-responsive">
+    <table class="table table-reflow">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<table class="table table-sm table-inverse">
+
+<!-- On rows -->
+<tr class="bg-primary">...</tr>
+<tr class="bg-success">...</tr>
+<tr class="bg-warning">...</tr>
+<tr class="bg-danger">...</tr>
+<tr class="bg-info">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+    <td class="bg-primary">...</td>
+    <td class="bg-success">...</td>
+    <td class="bg-warning">...</td>
+    <td class="bg-danger">...</td>
+    <td class="bg-info">...</td>
+</tr>
+    </table>
+
+<hr />
+<style>
+    /*img {*/
+        /*width: 100%;*/
+        /*vertical-align: middle;*/
+    /*}*/
+    /*@-moz-document url-prefix() {*/
+        /*fieldset { display: table-cell; }*/
+    /*}*/
+    /*.tg  {border-collapse:collapse;border-spacing:0;}*/
+    /*.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}*/
+    /*.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}*/
+    /*.tg .tg-yw4l{vertical-align:top}*/
+    /*@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}*/
+</style>
+
+<script type='text/javascript'>
+    $(window).load(function () {
+    var options_counter = 0;
+    var values_counter = 0;
+
+
+
+        var options_counter = 0;
+
+        $("#addNewOption").click(function () {
+            options_counter++;
+
+            var option = $("<div id='optionblock' op-index=" + options_counter + ">" +
+                    "<div class='table-responsive'><div class='tg-wrap'>" +
+                    "<table id='productoptions' class='tg table table-striped table-hover table-bordered'>" +
+                    "<thead>" +
+                    "<tr><th class='tg-yw4l'><strong>Option Name</strong></th><th class='tg-yw4l'></th><th class='tg-yw4l'>Variations</th><th class='tg-yw4l'></th></tr>" +
+                    "</thead>" +
+                    "<tbody>" +
+                    "<tr>" +
+                    "<td class='tg-yw4l'><input type='text' name='options[" + options_counter + "][name]' /></td>" +
+                    "<td class='tg-yw4l'><a href='javascript:void(0)'><span id='removeOptionValue'><i class='fa fa-fw fa-times text-danger fa-lg'></i></span></a></td>" +
+                    "<td class='tg-yw4l'><input type='text' name='options[" + options_counter + "][values][]' />" +
+                    "</td><td class='tg-yw4l'><a href='javascript:void(0)'><span id='addOptionValue'><i class='fa fa-plus-circle fa-lg' aria-hidden='true'></i></span></a></td>" +
+                    "</tr>" +
+                    "</tbody>" +
+                    "<tfoot><tr>" +
+                    "<td class='tg-yw4l'><span id='btn_new' class='btn btn-danger pull-right'><i id='ui-icon' class='fa-trash fa ' aria-hidden='true'></i>&nbsp Delete This Option</span>" +
+                    "</td>" +
+                    "<td class='tg-yw4l' colspan='3'><span  id='addNewOption' class='btn btn-success pull-right'>" +
+                    "<i id='ui-icon' class='fa fa-plus-circle fa-lg' aria-hidden='true'></i>&nbsp Add New Option</span>" +
+                    "</td>" +
+                    "</tr>" +
+                    "</tfoot>" +
+                    "</table></div></div></div>");
+            $("#optionsblocks").append(option);
+        });
+
+
+        $("#addOptionValue").click(function () {
+
+            values_counter++;
+            var row = $("<tr><td class='tg-yw4l'></td>" +
+            "<td class='tg-yw4l'><a href='javascript:void(0)'><span id='removeOptionValue'><i class='fa fa-fw fa-times text-danger fa-lg'></i></span></a></td>" +
+            "<td class='tg-yw4l'><input type='text' name='options[" + $(this).parent().attr('op-index') + "][values][" + values_counter + "]' /></td>" +
+            "<td class='tg-yw4l'><a href='javascript:void(0)'><span id='addOptionValue'><i class='fa fa-plus-circle fa-lg' aria-hidden='true'></i></span></a></td>" +
+            "</tr>");
+            $("table#productoptions tbody").append(row);
+        });
+
+
+
+
+
+
+    });
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" />
+<div class="row">
+
+    <style>
+        .divTable{
+            display: table;
+            width: 100%;
+        }
+        .divTableRow {
+            display: table-row;
+        }
+        .divTableHeading {
+            background-color: #EEE;
+            display: table-header-group;
+        }
+        .divTableCell, .divTableHead {
+            border: 1px solid #999999;
+            display: table-cell;
+            padding: 3px 10px;
+        }
+        .divTableHeading {
+            background-color: #EEE;
+            display: table-header-group;
+            font-weight: bold;
+        }
+        .divTableFoot {
+            background-color: #EEE;
+            display: table-footer-group;
+            font-weight: bold;
+        }
+        .divTableBody {
+            display: table-row-group;
+        }
+    </style>
+
+
+
+
+<div class="row">
+    <div class="row-fluid">
+
+
+    <!-- DivTable.com -->
+
+    </div>
+</div>
+
+
+
+
+
+
+    <div class="divTable span12 " style="width: 100%;" >
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">x</div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">+</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">&nbsp;</div>
+                <div class="divTableCell">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="col-md-12" id="optionsblocks" >
+<h3>Product Options</h3>
+    <hr>
+    {{--<div class="col-md-3" id="optionblock" op-index="0">--}}
+        {{--<div class="tg-wrap">--}}
+            {{--<table id="productoptions" class="tg table col-md-12 table-striped table-hover table-bordered">--}}
+                {{--<thead>--}}
+                    {{--<tr>--}}
+                        {{--<th class="tg-yw4l"><strong>Option Name</strong></th>--}}
+                        {{--<th class="tg-yw4l"><span id="removeThisRow" class="btn btn-danger pull-right"> <i id="ui-icon" class="fa-trash fa " aria-hidden="true"></i></span></th>--}}
+                        {{--<th class="tg-yw4l">Variations</th>--}}
+                        {{--<th class="tg-yw4l"></th>--}}
+                    {{--</tr>--}}
+                {{--</thead>--}}
+                {{--<tbody>--}}
+                    {{--<tr>--}}
+                        {{--<td class="tg-yw4l"><input type="text" name="options[0][name]" /></td>--}}
+                        {{--<td class="tg-yw4l">--}}
+                            {{--<a href="javascript:void(0)"><span id="removeOptionValue"><i class="fa fa-fw fa-times text-danger fa-lg"></i></span></a>--}}
+                        {{--</td>--}}
+                        {{--<td class="tg-yw4l"><input type="text" name="options[0][values][0]" /></td>--}}
+                        {{--<td class="tg-yw4l">--}}
+                            {{--<a href="javascript:void(0)"><span id="addOptionValue"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></span></a>--}}
+                        {{--</td>--}}
+                    {{--</tr>--}}
+                {{--</tbody>--}}
+                {{--<tfoot>--}}
+                    {{--<tr>--}}
+                        {{--<td class="tg-yw4l">--}}
+                            {{--<span id="removeThisRow" class="btn btn-danger pull-right"> <i id="ui-icon" class="fa-trash fa " aria-hidden="true"></i>&nbsp Delete This Option</span>--}}
+                        {{--</td>--}}
+                        {{--<td class="tg-yw4l" colspan="4">--}}
+                            {{--<span id="addNewOption" class="btn btn-success pull-right"> <i id="ui-icon" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>&nbsp Add New Option</span>--}}
+                        {{--</td>--}}
+                    {{--</tr>--}}
+                {{--</tfoot>--}}
+            {{--</table>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+
+
+
+
+</div>
+</div>
+<a id="addNewOption" href="#">
+    <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-plus"></i>
+        {{--{{trans('product.add_item')}} --}} Add Option
+    </button>
+</a>
+
+<script>
+
+    $('#addNewOption').click(function() {
+        $(this)
+        // Find parent with the class that starts with "col-md"
+        // Change class to "col-md-3"
+                .closest('[class^="col-md"]')
+                .removeClass('col-md-3')
+                .addClass('col-md-6')
+
+                // Find siblings of parent with similar class criteria
+                // - if all siblings are the same, you can use ".siblings()"
+                // Change class to "col-md-2"
+                .siblings('[class^="col-md"]')
+                .removeClass('col-md-3')
+                .addClass('col-md-2');
+    });
+
+
+    //$("#myTable > tbody").append("<tr><td>row content</td></tr>");
+
+//    $('#btn_new').click(function(){ $(this).find('#ui-icon').toggleClass('fa-plus-circle fa-trash'); };
+//
+//            $(function () {
+//                var options_counter = 0;
+//
+//                $('#add_product_option').click(function () {
+//                    options_counter++;
+//                   //                    $('.options-group').append('<div class="option col-md-3" op-index="' + options_counter + '">' +
+////                            '<span class="fa fa-times fa-lg remove-option"></span>' +
+////                            '<label for="options">Option Name:</label>' +
+////                            '<strong><input type="text" name="options[' + options_counter + '][name]"></strong><br>' +
+////                            '<div class="add_option_value">+ Add Value</div>' +
+////                            '<ul class="values"><li>' +
+////                            '<input type="text" name="options[' + options_counter + '][values][]"></li>' +
+////                            '</ul>' +
+////                            '</div>');
+//                });
+//                $(document).on("click", ".remove-option", function () {
+//                    $(this).parent().remove();
+//                });
+//                $(document).on("click", ".add_option_value", function () {
+//                    $(this).parent().find('.values').append('<li>' +
+//                            '<input type="text" name="options[' + $(this).parent().attr('op-index') + '][values][]">' +
+//                            '<i class="fa fa-minus remove-value"></i>' +
+//                            '</li>');
+//                });
+//                $(document).on("click", ".remove-value", function () {
+//                    $(this).parent().remove();
+//                });
+//
+//
+//            });
+
+</script>
+
+
+
+
+FormElements.init();
+
+var options_counter = 0;
+$('.sidebar #products').addClass('active-section');
+
+
+$('#add_album_image').click(function(){
+$('.additional').append('<div class="row "><div class="form-group"><div class="col-md-8"><label for="album">Additional Photos:</label>' +
+            '<input id="album" type="file" name="album[]" class="file form-control"> </div></div></div>');
+});
+
+$('#add_product_option').click(function(){
+options_counter++;
+$('.options-group').append('<div class="option col-md-3" op-index="'+options_counter+'">' +
+    '<span class="fa fa-times fa-lg remove-option"></span>' +
+    '<label for="options">Option Name:</label><input type="text" name="options['+options_counter+'][name]"><br>' +
+    '<div class="add_option_value">+ Add Value</div><ul class="values"><li>' +
+            '<input type="text" name="options['+options_counter+'][values][]"></li></ul></div>');
+});
+
+$(document).on("click", ".remove-option", function() {
+$(this).parent().remove();
+});
+
+$(document).on("click", ".add_option_value", function() {
+$(this).parent().find('.values').append('<li><input type="text" name="options['+$(this).parent().attr('op-index')+'][values][]"><i class="fa fa-minus remove-value"></i></li>');
+});
+
+$(document).on("click", ".remove-value", function() {
+$(this).parent().remove();
+});
+
+var runTagsInput = function () {
+    $('#meta_keywords').tagsInput({
+        width: 'auto'
+    });
+};
+
+
+
+
+textarea {
+       background-color:green;
+}
+
+[class|="form-control"] {
+    background: yellow;
+}
+
+textarea#details {
+     background: orange;
+}
+
+textarea.form-control.summernote {
+
+}
+
+
+
+input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color],

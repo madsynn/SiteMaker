@@ -1,0 +1,41 @@
+Column type (User interface)
+
+This package makes use of laravelcollective/html, this means that you can use all the controls documented there. This section depends on the theme package used and Scaffolder\Compilers\Support\InputTypeResolverTrait.
+
+Example of controls currently supported:
+
+text
+number
+textarea
+date
+select:['value-1' => 'label-1
+value-2' => 'label-2']
+selectRange:4:8
+checkbox
+radio:value-1:value-2
+
+Column type (Schema)
+
+Here you can use the types defined by laravel, like integer, string and so on. Check out the list of all the column types.
+
+Schema column modifiers
+
+With this field, you can set the modifiers, for instance, nullable or unsigned.
+
+Foreign key
+
+Set a foreign key field using the following notation: field:table:referential option
+
+
+'size', ['L' => 'Large', 'S' => 'Small'], 'S'
+
+
+select:['available' => 'Available', 'onhold' => 'OnHold', 'online' => 'Online', 'offline' => 'Offline', 'removed' => 'Removed', 'archived' => 'Archived', 'onbackorder' => 'OnBackorder', 'soldout' => 'SoldOut', 'discontinued' => 'Discontinued']
+
+select:['available' => 'Available', 'onhold' => 'OnHold', 'online' => 'Online', 'offline' => 'Offline', 'removed' => 'Removed', 'archived' => 'Archived', 'onbackorder' => 'OnBackorder', 'soldout' => 'SoldOut', 'discontinued' => 'Discontinued'], 'available'
+
+
+Available, OnHold, Online, Offline, Removed, Archived, OnBackorder, SoldOut, Discontinued
+
+
+$input = $request->all();
