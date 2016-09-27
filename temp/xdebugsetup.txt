@@ -1,10 +1,26 @@
 
-
+{{old('description',!empty($seo)?$seo->description:'')}}
 <textarea name="google_analytics" class="form-control">{{old('google_analytics',!empty($seo)?$seo->google_analytics:'')}}</textarea>
 
 alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
 alias shop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
 alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
+alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
+alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
+alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
+
+alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
+
+
+
+if ($validator->fails()) {
+            return redirect('/administrator/create_product')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+
+{{ old('description',!empty($product)?$product->description:'') }}
 
 
 

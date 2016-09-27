@@ -1,0 +1,215 @@
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+cd ../var/www/vhosts/gracecompany/
+
+
+
+alias restarta='service httpd restart && service httpd reload'
+alias restartall='service httpd restart && service httpd reload && service varnish restart && service varnish reload'
+alias restartv='service varnish restart && service varnish reload'
+
+git clone phillipmadsen@gmail.com:~/hidden/test.git test
+exit
+
+git clone username@domain.com:~/repos/mywebsite.git mywebsite
+git clone test@104.130.13.157:~/repos/test.git test.devto
+
+alias vm="ssh test@104.130.13.157 -p test"
+write and quite
+escape :wq
+
+edit file
+i
+/var/www/sandbox/
+
+serve domain.app /home/vagrant/repos/sites/domain.app
+
+serve domain.app /home/vagrant/Code/path/to/public/directory
+
+
+alias vm="ssh vagrant@127.0.0.1 -p 2222"
+vagrant destroy --force
+https://vimeo.com/45858333
+
+ssh test@104.130.13.157
+sudo -i  gives root priv
+
+:%s/name/replace/
+alias stagevm="ssh root@104.130.169.19 -p 22000"
+
+alias stagevm="ssh root@104.130.169.19 -p 22000"
+
+
+ssh -i ~/.ssh/github_rsa.pub pmadsen2013@gmail.com
+
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAonbrgBaPxsdnXA0109qmx+w9v9H+orYnhcY7lf
+lrHait0duMjJPrOkGRy1tKgNXdQwJcowoOuXHQSW0w/QjK7DAzKF0L/BCiZr7tnsJ77bzr8e0J
+PZ+WdHjlYCLVuw9cioxuTnf4bvRq94sNvr+Y99PgGV4XUsKpnDlXEU9jPqsXITDznFfE7loNjM
+53wTij2b4NGX8JYcLNmNHg4sCWG1SfMiSRrfKjsc1RxzOF6H+Y1xvApbmMt1hDd0e/zMpXeLOl
+1pRw+TYFLqqJttxQ21tBEEFoPHiEr/iT5tjoUujA+fUzbTAhMy5UvlRzhw== root@web01
+
+phillipspassword
+
+git config --global alias.vmstage="ssh root@104.130.169.19 -p  "
+
+alias vm="ssh test@104.130.13.157 -p (stands for port)
+
+
+alias staged="ssh root@104.130.169.19"
+\\ DB01
+
+
+
+67.214.252.130
+
+
+
+MYSQL TUNNEL CONNECT
+ssh host= 162.242.218.155
+ssh port= 22
+ssh user= root
+ssh pass= phillipspassword
+
+gracefiles
+
+
+
+1- go to your windows control panel
+2- user accounts
+3- new user account Call it SANDBOX PASSWORD SANDBOX
+4- login to new account
+5- install sublimetext3
+6- install vagrant https://www.vagrantup.com/downloads.html
+7- install composer https://getcomposer.org/doc/00-intro.md#using-the-installer
+8- install virtualbox https://www.virtualbox.org/wiki/Downloads
+9- if you dont have it install winrar
+10- install windows github
+11- when you are ready i will walk you through setting this up but here is the repository link to clone
+git@github.com:phillipmadsen/sx-dev.git
+
+
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+
+command mode
+:
+:q (quit)
+
+i or o (insert or new line edit)
+
+
+
+ssh root@162.242.218.155
+phillipspassword
+
+service httpd restart
+service httpd reload
+service varnish restart
+service varnish reload
+mysql -h 10.176.138.198 -u local_dev -p^C
+mysql -h 10.176.138.198 -u graceuser -p
+
+git@github.com:phillipmadsen/stage.grace.git
+
+chown apache:apache storage/ -R
+grep Root /etc/httpd/vhost.d/stage.grace.conf
+
+curl localhost:8080 -H "host: stage.grace"
+
+gracefiles
+
+
+'driver'    => 'mysql',
+			'host'      => '10.176.138.198',
+			'database'  => 'dev_grace',
+			'username'  => 'local_dev',
+			'password'  => 'local_dev2015',
+
+
+oc2LWvciwVct
+
+git config --global --unset alias.ssh
+
+git clone git@github.com:phillipmadsen/dev.grace.git ./
+
+
+chmod +x .git/hooks/post-commit
+
+rm -rf .git/
+
+
+The command in its simpliest form looks like:
+
+rm myFile.txt myFile1.txt myFile2.txt …etc…
+You would notice however that listing all files/folders that need to be deleted can be quite time consuming. Fortunately, rm accepts several arguments which can ease us. In the above example, we could type:
+
+rm myFile*.txt
+To delete a whole folder and its content recursively, you can use:
+
+rm -rf foldername/
+
+To delete all files/folders in the current directory, without deleting the directory itself, you would need to use:
+
+rm -rf *
+https://www.siteground.com/tutorials/ssh/ssh_deleting.htm
+
+
+\\ WEB 01
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+cd ../var/www/vhosts/gracecompany/dev.grace
+
+git clone git@github.com:phillipmadsen/local.grace.dev.git dev.grace
+git@github.com:phillipmadsen/local.grace.dev.git
+
+git remote add origin git@github.com:phillipmadsen/local.grace.dev.git dev.grace
+git push origin dev.grace
+
+git remote rename gitrepo pmlocaldev-github
+
+
+git clone user@git.example.com:/opt/git/my_project.git
+cd ../var/www/vhosts/gracecompany/
+
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+
+-----------------
+Host github-project1
+    User git
+    HostName github.com
+    IdentityFile ~/.ssh/github.project1.key</p>
+Host github-org
+    User git
+    HostName github.com
+    IdentityFile ~/.ssh/github.org.key</p>
+Host github.com
+    User git
+    IdentityFile ~/.ssh/github.key
+-----------------
+
+git remote add origin git@github.com:phillipmadsen/devgrace.git
+git push -u origin master
+
+ssh-keygen -t rsa -C "pmadsen2013@gmail.com"
+
+
+
+scp –P 50001 root@104.130.169.19:phillips ./phillips
+
+
+Host github.com
+ 	IdentityFile /c/Users/sandbox/.ssh/github_rsa
+
+
+ 	   Production        - Production server which already have codes
+            ↑
+         Staging          - New staging server, will install Trac too
+         ↗↙ ↖↘
+  Developer1  Developer2  - Local development
