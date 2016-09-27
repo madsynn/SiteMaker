@@ -1,0 +1,630 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="adv-table editable-table ">
+            <div class="clearfix">
+                <div class="space15"></div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered" id="product-pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Title:</th>
+                                <th>Model:</th>
+                                <th>Price:</th>
+                                <th>Quantity:</th>
+                                <th>SKU:</th>
+                                <th>UPC:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{--@if(isset($product) && $product->prices->count()<0)--}}
+                                {{--@foreach($product->prices as $price)--}}
+                                    {{--<tr class="alt">--}}
+                                        {{--<td><input type="text" class="form-control" name="prices[0][title]" value="{!! $price->title !!}" /></td>--}}
+                                        {{--<td><input type="text" class="text-center form-control" name="prices[0][model]" value="{!! $price->model !!}" /></td>--}}
+                                        {{--<td><input type="text" class="text-center form-control currency" name="prices[0][price]" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>--}}
+                                        {{--<td><input type="text" class="text-center form-control" name="prices[0][quantity]" maxlength="4" value="{!! $price->quantity !!}" /></td>--}}
+                                        {{--<td><input type="text" class="text-center form-control" name="prices[0][sku]" value="{!! $price->sku !!}" /></td>--}}
+                                        {{--<td><input type="text" class="text-center form-control" name="prices[0][upc]" maxlength="12" value="{!! $price->upc !!}" /></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr class="alt">--}}
+                                        {{--<td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>--}}
+                                        {{--<td colspan="5"> <textarea rows="3" class="form-control details-input" name="prices[0][alt_details]" value="{!! $price->alt_details !!}"></textarea></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr class="spacer invis"><td colspan="5"></td></tr>--}}
+                                {{--@endforeach--}}
+                            {{--@else--}}
+                            @if(isset($product) && $product->prices->count()<0)
+                                @foreach($product->prices as $price)
+                                    <tr class="alt">
+                                        <td><input type="text" class="form-control" name="prices[{{ $price->id }}][title]" value="{!! $price->title !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][model]" value="{!! $price->model !!}" /></td>
+                                        <td><input type="text" class="text-center form-control currency" name="prices[{{ $price->id }}][price]" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+                                        <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][quantity]" maxlength="4" value="{!! $price->quantity !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][sku]" value="{!! $price->sku !!}" /></td>
+                                        <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][upc]" maxlength="12" value="{!! $price->upc !!}" /></td>
+                                    </tr>
+                                    <tr class="alt">
+                                        <td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>
+                                        <td colspan="5"> <textarea rows="3" class="form-control details-input" name="prices[{{ $price->id }}][alt_details]" value="{!! $price->alt_details !!}"></textarea></td>
+                                    </tr>
+                                    <tr class="spacer invis"><td colspan="5"></td></tr>
+                                @endforeach
+                            @else
+
+
+{!! Form::text('sender_email', null, array('class'=>'form-control', 'id' => 'sender_email', 'placeholder'=> trans('fully.email'), 'value'=>Input::old('sender_email'))) !!}
+
+
+                                    <tr class="alt">
+                                        <td>{!! Form::text('prices[0][title]', Input::old('prices.title'), ['class'=>'form-control text-center']) !!}</td>
+                                        <td>{!! Form::text('prices[0][model]', Input::old('prices.model'), ['class'=>'form-control text-center']) !!} </td>
+                                        <td>{!! Form::text('prices[0][price]', Input::old('prices.price'),
+                                                    [
+                                                    'class'=>'form-control text-center form-control currency',
+                                                    'data-affixes-stay' => 'false',
+                                                    'data-prefix' => '$',
+                                                    'data-thousands'=> ',',
+                                                    'data-decimal' => '.'
+                                                    ]) !!}
+
+                                        <td>{!! Form::text('prices[0][quantity]', Input::old('prices.quantity'), ['class'=>'form-control text-center', 'maxlength' => '4']) !!}</td>
+                                        <td>{!! Form::text('prices[0][sku]', Input::old('prices.sku'), ['class'=>'form-control text-center']) !!} </td>
+                                        <td>{!! Form::text('prices[0][upc]', Input::old('prices.upc'), ['class'=>'form-control text-center']) !!} </td>
+                                    </tr>
+                                    <tr class="alt">
+                                        <td colspan="1" class="labelTextarea"><label><strong>Product Variation Details:</strong></label></td>
+                                        <td colspan="5"> {!! Form::text('prices[0][alt_details]', Input::old('prices.alt_details'), ['class'=>'form-control text-center', 'rows'=> '3']) !!} </td>
+                                    </tr>
+                                    <tr class="spacer invis"><td colspan="5"></td></tr>
+                            @endif
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" id="addRow" class="btn default">
+                    Add New <i class="icon-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if(isset($product) && $product->prices->count()<0)
+      @foreach($product->prices as $price)
+        <tr class="alt">
+            <td><input type="text" class="form-control" name="prices[{{ $price->id }}][title]" value="{!! $price->title !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][model]" value="{!! $price->model !!}" /></td>
+            <td><input type="text" class="text-center form-control currency" name="prices[{{ $price->id }}][price]" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][quantity]" maxlength="4" value="{!! $price->quantity !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][sku]" value="{!! $price->sku !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][upc]" maxlength="12" value="{!! $price->upc !!}" /></td>
+        </tr>
+        <tr class="alt">
+            <td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>
+            <td colspan="5"> <textarea rows="3" class="form-control details-input" name="prices[{{ $price->id }}][alt_details]" value="{!! $price->alt_details !!}"></textarea></td>
+        </tr>
+        <tr class="spacer invis"><td colspan="5"></td></tr>
+    @endforeach
+@else
+        <tr class="alt">
+            <td><input type="text" class="form-control" name="prices[i]['title']" value="" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[i]['model']" value="" /></td>
+            <td><input type="text" class="text-center form-control currency" name="prices[i]['price']" placeholder="$0.00" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /></td>
+            <td><input type="text" class="text-center form-control" name="prices[i]['quantity']" maxlength="4" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[i]['sku']" value="" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[i]['upc']" maxlength="12" value="636343" /></td>
+
+        </tr>
+
+        <tr class="alt">
+            <td colspan="1" class="labelTextarea"><label><strong>Product Variation Details:</strong></label></td>
+            <td colspan="5"><textarea rows="3" class="form-control details-input" name="prices[$i]['alt_details']" placeholder="add the details or difference here:"></textarea></td>
+        </tr>
+        <tr class="spacer invis"><td colspan="5"></td></tr>
+@endif
+
+
+
+
+    public function index()
+    {
+        $products = Product::all();
+//      $products = Product::has('prices', 'id')->get();
+        //$items = Product::where('id', '=', 'product_id')->get();
+        //dd($items);
+//      $products = Product::with('prices')->get();
+//      dd($products);
+        $hasPrices = array_has($products, ['prices.price', 'prices.quantity']);
+        dd($hasPrices);
+        $new_products = Product::orderBy('created_at', 'desc')->take(12)->get();
+        //dd($new_products);
+        $get_best_sellers = OrderProduct::select('product_id', \DB::raw('COUNT(product_id) as count'))->groupBy('product_id')->orderBy('count', 'desc')->take(8)->get();
+        $best_sellers = [];
+        foreach($get_best_sellers as $product){
+            $best_sellers[] = $product->product;
+        }
+        //dd($get_best_sellers);
+        //helperFunctions::getPageInfo($sections,$cart,$total);
+        return view('frontend.shop.index', compact('new_products', 'best_sellers', 'sections', 'cart', 'total'));
+    }
+
+
+
+
+
+
+
+
+
+    public function show($id, $slug = null)
+    {
+        $product = Product::findBySlugOrIdOrFail($id);
+
+        //$product_categories = $product->categories()->lists('id')->toArray();
+
+        // dd($product, $product->features, $product->categories, $product->prices, $product->options, $product->variants);
+        $similair = Category::find($product_categories[array_rand($product_categories)])->products()->whereNotIn('id', [$id])->orderByRaw('RAND()')->take(6)->get();
+
+        return view('frontend.shop.product', compact('sections', 'product', 'similair', 'cart', 'total'));
+    }
+
+    public function store(Request $request, Price $price)
+    {
+        /**
+         * Validate the submitted Data
+         */
+        $this->validate($request, [
+        //  'name' => 'required',
+            //'manufacturer' => 'required',
+            //'price' => 'required',
+            //'details' => 'required',
+            //'quantity' => 'required',
+            //'categories' => 'required',
+            //'thumbnail' => 'required|image',
+        ]);
+
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo && strpos($photo->getMimeType(), 'image') === false) {
+                    return \Redirect()->back();
+                }
+            }
+        }
+
+        /**
+         * Upload a new thumbnail
+         */
+        $dest = "remove/";
+        $name  = str_random(11) . '_' . $request->file('thumbnail')->getClientOriginalName();
+        $request->file('thumbnail')->move($dest, $name);
+        $name2 = str_random(11) . '_' . $request->file('thumbnail2')->getClientOriginalName();
+        $request->file('thumbnail2')->move($dest, $name2);
+        //$name3  = str_random(11) . '_' . $request->file('thumbnail3')->getClientOriginalName();
+        //$request->file('thumbnail3')->move($dest, $name3);
+    $input = Input::all();
+    $product = $request->all();
+        $product['thumbnail'] = '/' . $dest . $name;
+        $product['thumbnail2'] = '/' . $dest . $name2;
+        //$product['thumbnail3'] = '/' . $dest . $name3;
+
+
+
+
+        $product = Product::create($product);
+
+        //dd($request->all());
+
+
+
+        /**
+         * Upload Album Photos
+         */
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo) {
+                    $name = str_random(11)."_".$photo->getClientOriginalName();
+                    $photo->move($dest, $name);
+                    AlbumPhoto::create([
+                        'product_id' => $product->id,
+                        'photo_src' => "/".$dest.$name,
+                        'alt' => 'alt text',
+                        'caption' => $name,
+                        'photoinfo' => 'information about photo',
+                        'linkto' => null,
+                        'use_main' => 1,
+                        'use_thumb' => 1,
+                        'use_gallery' => 1,
+
+                    ]);
+                }
+            }
+        }
+
+//      foreach ($request->prices as $productPrice)
+//      {
+//          $yeaprice =  new Price([
+//              'title' => $productPrice->title,
+//              'price' => $productPrice->price,
+//              'model' => $productPrice->model,
+//              'sku' => $productPrice->sku,
+//              'upc' => $productPrice->upc,
+//              'quantity' => $productPrice->quantity,
+//              'alt_details' => $productPrice->alt_details,
+//              'product_id' => $product->id
+//          ]);
+        //$product->prices()->save($yeaprice);
+//              //dd($price);
+//      }
+
+        /**
+         * Linking the categories to the product
+         */
+
+        foreach ($request->categories as $category_id) {
+            CategoryProduct::create(['category_id' => $category_id, 'product_id' => $product->id]);
+        }
+
+        /**
+         * Linking the options to the product
+         */
+
+        if ($request->has('options')){
+            foreach ($request->options as $option_details) {
+                if (!empty($option_details['name']) && !empty($option_details['values'][0]) ) {
+                    $option = Option::create([
+                        'name' => $option_details['name'],
+                        'product_id' => $product->id
+                    ]);
+                    foreach ($option_details['values'] as $value) {
+                        OptionValue::create([
+                            'value' => $value,
+                            'option_id' => $option->id
+                        ]);
+                    }
+                }
+            }
+        }
+
+        if(!empty($request->attribute_name)){
+            foreach($request->attribute_name as $key => $item){
+                $productVariant = new ProductVariant();
+                $productVariant->attribute_name = $item;
+                $productVariant->product_attribute_value = $request->product_attribute_value[$key];
+                $product->productVariants()->save($productVariant);
+            }
+        }
+
+        if(!empty($request->feature_name)){
+            foreach($request->feature_name as $feature){
+                $productFeature = new ProductFeature();
+                $productFeature->feature_name = $feature;
+                $product->productFeatures()->save($productFeature);
+
+            }
+        }
+
+
+        //FlashAlert()->success('Success!', 'The Product Was Successfully Added');
+
+        return \Redirect(getLang() . '/admin/products');
+    }
+
+    public function edit(Request $request, $id)
+    {
+        $product = Product::find($id);
+        /**
+         * Validate the submitted Data
+         */
+        $this->validate($request, [
+            //'name' => 'required',
+//          'manufacturer' => 'required',
+//          'price' => 'required',
+//          'details' => 'required',
+//          'quantity' => 'required',
+//          'categories' => 'required',
+//          'thumbnail' => 'image',
+        ]);
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo && strpos($photo->getMimeType(), 'image') === false) {
+                    return \Redirect()->back();
+                }
+            }
+        }
+
+        /**
+         * Remove the old categories from the pivot table and maintain the reused ones
+         */
+        $added_categories = [];
+        foreach ($product->categories as $category) {
+            if (!in_array($category->id, $request->categories)) {
+                CategoryProduct::whereProduct_id($product->id)->whereCategory_id($category->id)->delete();
+            } else {
+                $added_categories[] = $category->id;
+            }
+        }
+
+        /**
+         * Link the new categories to the pivot table
+         */
+        foreach ($request->categories as $category_id) {
+            if (!in_array($category_id, $added_categories)) {
+                CategoryProduct::create(['category_id' => $category_id, 'product_id' => $product->id]);
+            }
+        }
+
+        $info = $request->all();
+
+        /**
+         * Upload a new thumbnail and delete the old one
+         */
+        $dest = "content/images/";
+        if ($request->file('thumbnail')) {
+            File::delete(public_path().$product->thumbnail);
+            $name = str_random(11)."_".$request->file('thumbnail')->getClientOriginalName();
+            $request->file('thumbnail')->move($dest, $name);
+            $info['thumbnail'] = "/".$dest.$name;
+        }
+        /**
+         * Upload Album Photos
+         */
+        if ($request->hasFile('album')) {
+            foreach ($request->album as $photo) {
+                if ($photo) {
+                    $name = str_random(11)."_".$photo->getClientOriginalName();
+                    $photo->move($dest, $name);
+                    AlbumPhoto::create([
+                        'product_id' => $product->id,
+                        'photo_src' => "/".$dest.$name
+                    ]);
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul class="pagination" role="navigation" itemscope="" itemtype="https://schema.org/WebPageElement, https://schema.org/ItemList">
+     <li class="active" itemprop="additionalType" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement, https://schema.org/itemListElement">
+     <a class="more" href="index.php" itemprop="url">
+     <span itemprop="name">page 1</span>
+     </a>
+     </li>
+     <li itemprop="additionalType" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement, https://schema.org/itemListElement">
+     <a rel="next" class="more" href="page2.php" itemprop="url">
+     <span itemprop="name">page 2</span>
+     </a>
+     </li>
+     <li itemprop="additionalType" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement, https://schema.org/itemListElement">
+     <a  class="more" href="page3.php" itemprop="url">
+     <span itemprop="name">page 3</span>
+     </a>
+     </li>
+     <li itemprop="additionalType" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement, https://schema.org/itemListElement">
+     <a class="more next" href="page2.php" itemprop="url">
+     <span itemprop="name">page 4</span>
+     </a>
+     </li>
+ </ul>
+
+
+
+{{-- Validations --}}
+'accepted',
+'active_url',
+'after:',
+'alpha',
+'alpha_dash',
+'alpha_num',
+'array',
+'before:',
+'between:',
+'boolean',
+'confirmed',
+'date',
+'date_format',
+'different',
+'digits',
+'digits_between:',
+'email',
+'exists:',
+'image',
+'in:',
+'integer',
+'ip',
+'json',
+'max:',
+'mimes:',
+'min:',
+'not_in:',
+'numeric',
+'regex:',
+'required',
+'required_if:',
+'required_with',
+'required_with_all:',
+'required_without:',
+'same:',
+'size:',
+'string',
+'timezone',
+'unique:',
+'url',
+'alpha_dash',
+
+
+
+
+
+{{-- Database types --}}
+'bigInteger',
+'binary',
+'boolean',
+'char',
+'date',
+'dateTime',
+'decimal',
+'double',
+'enum',
+'float',
+'integer',
+'json',
+'jsonb',
+'longText',
+'mediumInteger',
+'mediumText',
+'morphs',
+'nullableTimestamps',
+'rememberToken',
+'smallInteger',
+'string',
+'text',
+'time',
+'tinyInteger',
+'timestamp',
+
+
+bFile
+
+
+{{-- UI types --}}
+'text',
+'textarea',
+'dropDownList',
+'checkBox',
+'radioButton',
+'number',
+'date',
+
+
+models[{{ $modelId }}][fields][{{ $fieldId }}][name]
+
+models[{{ $modelId }}][fields][{{ $fieldId }}][type][ui]
+
+product[{{ $product->id }}][prices][{{ $product->id }}][type][]
+
+product[][prices][][price]
+
+
+copy text in class field, and desplays it on page
+
+copy link to js object
+
+dot notation
+
+<input id="repositoriesNamespace" name="namespaces[repositories]" type="text" class="validate valid" value="App\Libraries\Repositories">
+
+
+
+
+(?<!first|last|product)name
+
+products[{{ $Product_id }}][prices][{{ $price_id }}][price]
+
+
+
+
+
+
+ if(!empty($request->price)){
+            foreach($request->price as $productPrice){
+
+                $price = new Price();
+                $price->product_id = $product->id;
+                $price->price =  $productPrice;
+                $price->upc =  $productPrice;
+                $price->model =  $productPrice;
+                $price->quantity =  $productPrice;
+                $price->sku =  $productPrice;
+                $price->alt_details =  $productPrice;
+                $product->prices()->save($price);
+                //dd($price);
+            }
+        }
+
+ @foreach($product->prices as $price)
+ <tr class="alt">
+     <td><input type="text" class="form-control" name="price[i]['title']" value="{!! $price->model !!}" /></td>
+     <td><input type="text" class="text-center form-control" name="price[i]['model']" value="{!! $price->model !!}" /></td>
+     <td><input type="text" class="text-center form-control currency" name="price[i]['price']" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+     <td><input type="text" class="text-center form-control" name="price[i]['quantity']" maxlength="4" value="{!! $price->quantity !!}" /></td>
+     <td><input type="text" class="text-center form-control" name="prices[sku]" value="{!! $price->sku !!}" /></td>
+     <td><input type="text" class="text-center form-control" name="price[i]['upc']" maxlength="12" value="{!! $price->upc !!}" /></td>
+
+ </tr>
+ <tr class="alt">
+     <td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>
+     <td colspan="5"> <textarea rows="3" class="form-control details-input" name="price[i]['alt_details']" value="{!! $price->alt_details !!}"></textarea></td>
+ </tr>
+ <tr class="spacer invis"><td colspan="5"></td></tr>
+@endforeach
+
+
+
+
+    @foreach($product->prices as $price)
+        <tr class="alt">
+            <td><input type="text" class="form-control" name="prices[{{ $price->id }}][title]" value="{!! $price->model !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][model]" value="{!! $price->model !!}" /></td>
+            <td><input type="text" class="text-center form-control currency" name="prices[{{ $price->id }}][price]" value="{!! $price->price !!}" data-affixes-stay="false" data-prefix="$ " data-thousands="," data-decimal="." /> </td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][quantity]" maxlength="4" value="{!! $price->quantity !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][sku]" value="{!! $price->sku !!}" /></td>
+            <td><input type="text" class="text-center form-control" name="prices[{{ $price->id }}][upc]" maxlength="12" value="{!! $price->upc !!}" /></td>
+        </tr>
+        <tr class="alt">
+            <td colspan="1" class="labelTextarea"><label>  <strong>Product Variation Details:</strong></label></td>
+            <td colspan="5"> <textarea rows="3" class="form-control details-input" name="prices[{{ $price->id }}][alt_details]" value="{!! $price->alt_details !!}"></textarea></td>
+        </tr>
+        <tr class="spacer invis"><td colspan="5"></td></tr>
+    @endforeach
+
+
+
+
+
+
+
+
+
+
+name="fruit" class="selectpicker"
+Fruit:    This will be hidden by Bootstrap-select → Pick one...
+Checkbox/Radio: checkboxes (<input>)    id="r" name="red" onclick="console.log('Red toggled.')"
+id="g" name="green" onclick="console.log('Green toggled.')"
+id="b" name="blue" onclick="console.log('Blue toggled.')"
+Colors:   Red
+Green
+Blue
+Checkbox/Radio: radio buttons (<input>) id="m" name="gender" onclick="console.log('Male selected.')"
+id="f" name="gender" onclick="console.log('Female selected.')"
+Gender:   Male
+Female
+JavaScript: click generic button (<input>)   type="button" name="somebutton" value="Test 1" onclick="console.log('\'Test 1\' button clicked.')"
+
+Enter the code below in the Value column to auto-click this button:
+document.querySelector('input[name=somebutton]').click();
+Test 1
+JavaScript: click generic button (<button>)  type="button" onclick="console.log('\'Test 2\' button clicked.')"
+
+Enter the code below in the Value column to auto-click this button:
+document.querySelectorAll('button')[1].click();
+Test 2
+JavaScript: click submit button (<input>)    type="submit"
+
+Enter the code below in the Value column to auto-click this button:
+document.querySelector('input[type=submit]').click();
+Submit

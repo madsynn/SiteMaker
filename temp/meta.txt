@@ -1,0 +1,13 @@
+<meta name="title" content="Qnique Quilter &#8211; Quilting Machine by The Grace Company">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author"content="The Grace Company"/>
+        <a itemprop="sameAs" href="//www.facebook.com/QniqueQuilter"></a>
+        <a itemprop="sameAs" href="//twitter.com/QniqueQuilter"></a>
+        <a itemprop="sameAs" href="//www.pinterest.com/qniquequilter/"></a>
+        <a itemprop="sameAs" href="//plus.google.com/+QniqueQuilter14"></a>
+        <a itemprop="sameAs" href="//www.google.com/+QniqueQuilterContact"></a>
+        <a itemprop="sameAs" href="//www.youtube.com/playlist?list=PLCmfLRhaBv-e5i6T0aPw1rjBWFLZYX5cl"></a>
+
+        <link rel="author" href="https://plus.google.com/106294285037149940748/" />
+        <link rel="canonical" href="{!! url() !!}" />

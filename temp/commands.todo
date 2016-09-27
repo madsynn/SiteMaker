@@ -1,0 +1,138 @@
+
+
+SERVER COMMANDS TO KNOW:
+
+- USE GIT BASH IF ON WINDOWS MACHINE INSTALL GIT FOR WINDOWS AND IT WILL INSTALL THE COMMAND LINE
+
+RACKSPACE LOGIN:
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+cd ../var/www/vhosts/
+
+- COPY ALL THREE LINES AND PAST AS COPIED INTO BASH
+LINODE LOGIN:
+ssh root@arkgraceframe.com
+**Im@Tuff12_CracK**
+cd ../var/www/clients/client2/web4/
+
+- COPY ALL THREE LINES AND PAST AS COPIED INTO BASH
+
+RESTART EVERYTHING:
+  ☐ restartall
+
+RESTART APACHE:
+  ☐ restarta
+
+RESTART VARNISH:
+  ☐ restartv
+
+MOVE INTO A DIRECTORY:
+  ☐ cd (directory)
+  ☐ cd gracecompany/stage.grace
+  ☐ cd qniquequilter.com
+  ☐ cd fungamesandtoys.com
+
+MOVE OUT OF DIRECTORY:
+  ☐ ..
+
+LIST EVERYTHING IN A DIRECTORY:
+  ☐ ls
+
+OPEN FILE WITH SUBLIMETEXT:
+  ☐ subl (filename)  or
+  ☐ subl -f (filename)
+  ☐ subl index.php
+
+MAKE MANUAL BACKUP:
+  ☐ tar -zcvf [SITE]-[DATE].tar.gz /var/www/vhosts/[SITE DIRECTORY NAME] /var/www/vhosts/[SAVETO]
+  ☐ tar -zcvf qniquequilter-Sept-27-2016.tar.gz /var/www/vhosts/qniquequilter.com /var/www/vhosts/.backups
+
+  ☐ tar -zcvf qniquequilter-Sept-27-2016.tar.gz /var/www/vhosts/qniquequilter.com /var/www/vhosts/downloads
+
+Logins:
+
+  BING WEBMASTER TOOLS:
+  ☐ quilting@admin
+  ☐ management@qniquequilter.com
+
+  TWITTER LOGIN:
+  ☐ qniquequilter
+  ☐ contactgrace
+
+   GOOOGLE APPS FOR QNIQUE:
+  ☐ management@qniquequilter.com
+  ☐ admin@grace14
+
+  HANDQUILTINGFRAMES.COM GOOGLE APPS:
+  ☐ login to http://www.google.com/a/handquiltingframe.com
+  ☐ contact@handquiltingframe.com
+  ☐ admin@grace
+
+  ☐ gmail contact@qniquequilter.com contactgrace
+  ☐ googleApps Management contact@handquiltingframe.com admin@grace
+  ☐ googleApps Management management@qniquequilter.com admin@grace14
+  ☐ googleApps Management contact@qniquequilter.co.za zacontact@grace
+  ☐ googleApps Management contact@buildingsets.toys grace@admin
+  ☐ twitter graceframe graceframe0644@gmail.com GraceWebz1
+  ☐ twitter @QuiltIndustry quiltingindustry@gmail.com quilting@grace
+  ☐ twitter @QniqueQuilter contact@qniquequilter.com contactgrace
+  ☐ twitter @QuiltingFrame quiltingframe admin@grace
+  ☐ twitter @NathanErznozni nathan@qniquequilter.com contactnathan
+  ☐ twitter @QniqueQuilterCA contact@qniquequilter.ca grace@ca
+  ☐ twitter @BuildingSetToys contact@buildingsets.toys grace@admin
+  ☐ googleplus https://plus.google.com/u/3/111109439712239309273 nathan.erznoznik@gmail.com contactnathan
+
+FUN GAMES AND TOYS EMAILS:
+
+-LOGIN TO login to http://www.google.com/a/handquiltingframe.com
+-password = grace2016contact
+-Jaren Toys
+-phillip@fungamesandtoys.com
+
+ ☐ username = nathan@ nathan@fungamesandtoys.com
+ ☐ username = returns@fungamesandtoys.com
+ ☐ username = warranty@fungamesandtoys.com
+ ☐ username = refunds@fungamesandtoys.com
+ ☐ username = phillip@fungamesandtoys.com
+ ☐ username = brien@fungamesandtoys.com
+ ☐ username = mark@fungamesandtoys.com
+ ☐ username = info@fungamesandtoys.com
+ ☐ username = chris@fungamesandtoys.com
+
+SOCIAL MEDIA:
+
+ ☐ https://plus.google.com/+QniqueQuilterContact/
+ ☐ https://www.google.com/+QniqueQuilter14
+ ☐ https://www.facebook.com/TheGraceCompany
+ ☐ https://instagram.com/qniquequilter/
+ ☐ https://www.facebook.com/QniqueQuilter 
+ ☐ https://twitter.com/QniqueQuilter
+ ☐ https://www.pinterest.com/QniqueQuilter 
+
+DOMAIN LIST:
+
+  GODADDY REGISTRAR:
+     ☐ KNUCKLESTRUTZ.COM
+     ☐ FUNNELZ.COM
+     ☐ GRACEFRAME.US  
+     ☐ MYCOMFORTCUTTER.COM  
+     ☐ TRUECUTSTORE.COM  
+     ☐ OCHOTOYS.CO
+     ☐ NANOSTRUTZ.CO
+     ☐ GRACEFRAME.NE
+     ☐ GRACEFRAME.COM
+     ☐ QUILTCAD.CO
+     ☐ QUILTMOTION.CO
+     ☐ GRACEWOODGLOBAL.COM  
+     ☐ PAD-POCKET.COM  
+     ☐ CABINLOGIC.COM
+     ☐ FUNGAMESANDTOYS.COM
+
+  MARCARIA REGISTRAR:
+     ☐ HANDQUILTINGFRAME.COM
+     ☐ GRACEFRAME.COM
+     ☐ BUILDINGSETS.TOYS
+     ☐ QNIQUEQUILTER.UK.COM
+     ☐ QNIQUEQUILTER.CA
+     ☐ QNIQUEQUILTER.COM
+     ☐ QUILTINGINDUSTRY.COM

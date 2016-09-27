@@ -1,4 +1,13 @@
 
+
+<textarea name="google_analytics" class="form-control">{{old('google_analytics',!empty($seo)?$seo->google_analytics:'')}}</textarea>
+
+alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
+alias shop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
+
+
+
 addon to let me toggle styles and scripts for debugging purposes
 Remote toggle enable disable control the browser   Javascript stylesheets
 jquery or javascript generate a random number for form input that has class
@@ -65,7 +74,7 @@ composer create-project laravel/laravel=5.2 ./ --prefer-dist
 
 egrep -ir --include=*.{php,html,js} "Sentinel" .
 
-
+{!! Form::text('icon', 'icon-caret-right', ['class' => 'form-control']) !!}old
 /etc/php/7.0/mods-available
 
 
