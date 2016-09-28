@@ -11,7 +11,7 @@ alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend
 
 alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
 
-
+https://streamacon.com/video/laracon-us/colin-decarlo-keeping-eloquent-eloquent
 
 if ($validator->fails()) {
             return redirect('/administrator/create_product')
