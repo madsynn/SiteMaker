@@ -1,0 +1,968 @@
+[2016-08-18 17:53:38] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:53:38] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:53:39] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:53:39] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:53:41] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:53:41] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:53:42] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:53:42] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:53:42] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:53:42] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:54:25] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:54:25] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:54:38] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:54:38] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:54:41] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:54:41] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:54:42] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:54:42] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 17:54:42] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Middleware\VerifyCsrfToken does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Middle...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2016-08-18 17:54:42] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class Fully\Http\Middleware\VerifyCsrfToken' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php:31
+Stack trace:
+#0 {main}  
+[2016-08-18 18:05:04] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\OrderProduct' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php:40
+Stack trace:
+#0 {main}  
+[2016-08-18 18:10:20] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 18:10:37] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\OrderProduct' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php:40
+Stack trace:
+#0 {main}  
+[2016-08-18 18:10:43] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\OrderProduct' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php:40
+Stack trace:
+#0 {main}  
+[2016-08-18 18:15:40] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\OrderProduct' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php:40
+Stack trace:
+#0 {main}  
+[2016-08-18 18:25:53] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 18:26:11] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 18:26:40] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ArticleController.php:63
+Stack trace:
+#0 {main}  
+[2016-08-18 18:31:22] stage.ERROR: exception 'ErrorException' with message 'Undefined index: category' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php:274
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php(274): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/var/www/vhosts...', 274, Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ArticleController.php(125): App\Repositories\Article\ArticleRepository->update('1', Array)
+#2 [internal function]: App\Http\Controllers\Admin\ArticleController->update('1')
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(256): call_user_func_array(Array, Array)
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(164): Illuminate\Routing\Controller->callAction('update', Array)
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(112): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), 'update')
+#6 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'update')
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'update')
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#64 {main}  
+[2016-08-18 18:32:57] stage.ERROR: exception 'ErrorException' with message 'Undefined index: category' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php:274
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php(274): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/var/www/vhosts...', 274, Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ArticleController.php(125): App\Repositories\Article\ArticleRepository->update('2', Array)
+#2 [internal function]: App\Http\Controllers\Admin\ArticleController->update('2')
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(256): call_user_func_array(Array, Array)
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(164): Illuminate\Routing\Controller->callAction('update', Array)
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(112): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), 'update')
+#6 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'update')
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'update')
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#64 {main}  
+[2016-08-18 18:33:23] stage.ERROR: exception 'ErrorException' with message 'Undefined index: category' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php:274
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php(274): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/var/www/vhosts...', 274, Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ArticleController.php(125): App\Repositories\Article\ArticleRepository->update('3', Array)
+#2 [internal function]: App\Http\Controllers\Admin\ArticleController->update('3')
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(256): call_user_func_array(Array, Array)
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(164): Illuminate\Routing\Controller->callAction('update', Array)
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(112): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), 'update')
+#6 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'update')
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'update')
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#64 {main}  
+[2016-08-18 18:33:58] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 18:38:27] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 18:47:18] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 19:08:47] stage.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\MessageController does not exist' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(85): Illuminate\Foundation\Application->make('App\\Http\\Contro...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(57): Illuminate\Routing\ControllerDispatcher->makeController('App\\Http\\Contro...')
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'show')
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#21 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#22 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#23 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#24 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#26 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#29 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#43 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#45 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#47 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#48 {main}  
+[2016-08-18 19:08:48] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 19:11:55] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 19:22:52] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 19:23:01] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Category/CategoryRepository.php:103
+Stack trace:
+#0 {main}  
+[2016-08-18 19:34:34] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 19:43:40] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 19:47:17] stage.ERROR: exception 'ErrorException' with message 'Undefined index: tag' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php:278
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php(278): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/var/www/vhosts...', 278, Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ArticleController.php(125): App\Repositories\Article\ArticleRepository->update('1', Array)
+#2 [internal function]: App\Http\Controllers\Admin\ArticleController->update('1')
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(256): call_user_func_array(Array, Array)
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(164): Illuminate\Routing\Controller->callAction('update', Array)
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(112): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), 'update')
+#6 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'update')
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'update')
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#64 {main}  
+[2016-08-18 19:50:56] stage.ERROR: exception 'ErrorException' with message 'Undefined index: tag' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php:278
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Article/ArticleRepository.php(278): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/var/www/vhosts...', 278, Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ArticleController.php(125): App\Repositories\Article\ArticleRepository->update('1', Array)
+#2 [internal function]: App\Http\Controllers\Admin\ArticleController->update('1')
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(256): call_user_func_array(Array, Array)
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(164): Illuminate\Routing\Controller->callAction('update', Array)
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(112): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), 'update')
+#6 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\ArticleController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'update')
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'update')
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#37 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#64 {main}  
+[2016-08-18 19:51:02] stage.ERROR: exception 'InvalidArgumentException' with message 'Route [en.admin.page.create] not defined.' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:306
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(217): Illuminate\Routing\UrlGenerator->route('en.admin.page.c...', Array)
+#1 /var/www/vhosts/gracecompany/stage.grace/app/Helper/helpers.php(70): Illuminate\Support\Facades\Facade::__callStatic('route', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/app/Helper/helpers.php(70): Illuminate\Support\Facades\URL::route('en.admin.page.c...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/storage/framework/views/6160d99729530dad967862afb1f79c45(77): langRoute('admin.page.crea...')
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(42): include('/var/www/vhosts...')
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/var/www/vhosts...', Array)
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(147): Illuminate\View\Engines\CompilerEngine->get('/var/www/vhosts...', Array)
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(118): Illuminate\View\View->getContents()
+#8 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(83): Illuminate\View\View->renderContents()
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Http/Response.php(51): Illuminate\View\View->render()
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/symfony/http-foundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1229): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(113): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#13 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\PageController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'index')
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'index')
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#23 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#24 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#26 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#27 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#28 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#30 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#31 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#32 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#33 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#35 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#37 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#38 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#39 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#40 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#41 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#44 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#51 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#52 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#54 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#55 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#57 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#58 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#59 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#60 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#61 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#62 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#63 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#64 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#65 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#66 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#67 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#68 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#69 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#70 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#71 {main}
+
+Next exception 'ErrorException' with message 'Route [en.admin.page.create] not defined. (View: /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/page/index.blade.php)' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:306
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(44): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(InvalidArgumentException), 1)
+#1 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/var/www/vhosts...', Array)
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(147): Illuminate\View\Engines\CompilerEngine->get('/var/www/vhosts...', Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(118): Illuminate\View\View->getContents()
+#4 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/View.php(83): Illuminate\View\View->renderContents()
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Http/Response.php(51): Illuminate\View\View->render()
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/symfony/http-foundation/Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1229): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(113): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#9 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#10 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#11 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#13 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(114): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(69): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\Admin\PageController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'index')
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(203): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'index')
+#16 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Route.php(134): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#17 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(708): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelPermission.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 [internal function]: App\Http\Middleware\SentinelPermission->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#23 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/SentinelAuth.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 [internal function]: App\Http\Middleware\SentinelAuth->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#26 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/BeforeMiddleware.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 [internal function]: App\Http\Middleware\BeforeMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#29 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#31 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(710): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#32 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#33 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#34 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(236): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#35 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#36 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(139): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#37 /var/www/vhosts/gracecompany/stage.grace/vendor/barryvdh/laravel-debugbar/src/Middleware/Debugbar.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 [internal function]: Barryvdh\Debugbar\Middleware\Debugbar->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#40 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/MenuMiddleware.php(208): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#41 [internal function]: App\Http\Middleware\MenuMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#43 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#47 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#50 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#53 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#56 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#57 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#58 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#59 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#61 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#62 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#63 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#64 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#65 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#66 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#67 {main}  
+[2016-08-18 20:02:04] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 20:02:09] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 20:17:55] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 20:20:06] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Category/CategoryRepository.php:103
+Stack trace:
+#0 {main}  
+[2016-08-18 20:46:10] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Tag/TagRepository.php:88
+Stack trace:
+#0 {main}  
+[2016-08-18 20:48:18] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 20:48:53] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getUserId() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/CartController.php:27
+Stack trace:
+#0 {main}  
+[2016-08-18 20:57:01] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Category/CategoryRepository.php:103
+Stack trace:
+#0 {main}  
+[2016-08-18 20:57:08] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Category/CategoryRepository.php:103
+Stack trace:
+#0 {main}  
+[2016-08-18 20:57:10] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Tag/TagRepository.php:88
+Stack trace:
+#0 {main}  
+[2016-08-18 22:31:46] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 22:31:51] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getUserId() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/CartController.php:27
+Stack trace:
+#0 {main}  
+[2016-08-18 22:36:00] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 22:51:13] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 22:53:36] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Ecommerce\Sentinel' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Ecommerce/helperFunctions.php:14
+Stack trace:
+#0 {main}  
+[2016-08-18 22:55:24] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 22:56:25] stage.ERROR: exception 'Illuminate\Session\TokenMismatchException' in /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:53
+Stack trace:
+#0 /var/www/vhosts/gracecompany/stage.grace/app/Http/Middleware/VerifyCsrfToken.php(20): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#1 [internal function]: App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#2 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#3 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#4 [internal function]: Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#5 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#6 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#7 [internal function]: Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#8 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#9 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 [internal function]: Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#12 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#13 [internal function]: Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#14 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#15 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(44): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): call_user_func_array(Array, Array)
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#21 /var/www/vhosts/gracecompany/stage.grace/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#22 /var/www/vhosts/gracecompany/stage.grace/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#23 {main}  
+[2016-08-18 23:07:22] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Category/CategoryRepository.php:103
+Stack trace:
+#0 {main}  
+[2016-08-18 23:11:09] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function articles() on null' in /var/www/vhosts/gracecompany/stage.grace/app/Repositories/Tag/TagRepository.php:88
+Stack trace:
+#0 {main}  
+[2016-08-18 23:18:20] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
+[2016-08-18 23:23:34] stage.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Response' not found' in /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/PageController.php:34
+Stack trace:
+#0 {main}  
