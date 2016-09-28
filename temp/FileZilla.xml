@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.21.0" platform="windows">
+	<Servers>
+		<Server>
+			<Host>104.130.13.157</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">MmZ2MEJJdGdNSG5H</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>8GB Web01</Name>
+			<Comments>2fv0BItgMHnG
+
+web01-8gb
+Host/IP: 104.130.13.157
+User:  root
+Password: 6hQBN6eCNACH
+
+
+
+web02-8gb
+Host/IP: 23.253.159.39
+User: root
+Password: v9RMYycS85B8</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 var 3 www 6 vhosts</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>8GB Web01</Server>
+		<Server>
+			<Host>23.253.159.39</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">djlSTVl5Y1M4NUI4</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>8GB Web02</Name>
+			<Comments>v9RMYycS85B8</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 var 3 www 6 vhosts</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>8GB Web02</Server>
+		<Server>
+			<Host>104.130.169.19</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">MmZ2MEJJdGdNSG5H</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>A new 8GB WEB01</Name>
+			<Comments>web01
+// 2fv0BItgMHnG //
+
+web01-recovery
+Host/IP: 23.253.159.154
+104.130.169.19
+new root password after hack
+4-16-2015   FrQHeEMsR4ur
+
+web01-8gb
+Host/IP: 104.130.13.157
+User:  root
+Password: 6hQBN6eCNACH
+
+
+
+web02-8gb
+Host/IP: 23.253.159.39
+User: root
+Password: v9RMYycS85B8</Comments>
+			<Colour>7</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 var 3 www 6 vhosts</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>A new 8GB WEB01</Server>
+		<Server>
+			<Host>ftp.affordableprogrammer.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>a5621536</User>
+			<Pass encoding="base64">T3BtQDE1Njk2</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>AFFORDABLE</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>AFFORDABLE</Server>
+		<Server>
+			<Host>173.255.205.68</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>jarenchris</User>
+			<Pass encoding="base64">ZmlmVF9DZW50JDUw</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>Copy (3) of GRACE</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>Copy (3) of GRACE</Server>
+		<Server>
+			<Host>50.116.30.173</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>jarenchris</User>
+			<Pass encoding="base64">ZmlmVF9DZW50JDUw</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>Copy of Copy (3) of GRACE</Name>
+			<Comments>SSH Access	ssh root@173.255.203.73	Getting Started Guide
+Public IPs	173.255.203.73 / 24 ( li213-73.members.linode.com )
+173.255.205.68 / 24 ( ark.graceframe.com )
+50.116.30.173 / 24 ( li495-173.members.linode.com )
+2600:3c00::f03c:91ff:fedf:5202 / 64 
+IP Add | IP Remove | IP Failover | IP Swap | Reverse DNS	Static Networking Guide 
+IPv6 Networking Guide
+Default Gateways	50.116.30.1
+173.255.205.1
+173.255.203.1
+fe80::1
+DNS Resolvers	72.14.179.5
+72.14.188.5
+2600:3c00::2
+2600:3c00::3</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>Copy of Copy (3) of GRACE</Server>
+		<Server>
+			<Host>173.255.203.73</Host>
+			<Port>22</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">KipJbUBUdWZmMTJfQ3JhY0sqKg==</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>Copy of GRACE</Name>
+			<Comments>jarenchris
+ark.graceframe.com
+root
+</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>Copy of GRACE</Server>
+		<Server>
+			<Host>162.242.218.155</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>phillip</User>
+			<Pass encoding="base64">Z3JhY2VAZmlsZXM=</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>db</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>db</Server>
+		<Server>
+			<Host>ftp.toplocalbridal.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>affordprogrammer</User>
+			<Logontype>2</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>ftp.toplocalbridal.com</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>ftp.toplocalbridal.com</Server>
+		<Server>
+			<Host>ark.graceframe.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>jarenchris</User>
+			<Pass encoding="base64">ZmlmVF9DZW50JDUw</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>GRACE</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>GRACE</Server>
+		<Server>
+			<Host>ark.graceframe.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>jarenglobal</User>
+			<Pass encoding="base64">R2wwYkBs</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>gracewood global old.server</Name>
+			<Comments>
+
+user = jarenglobal
+pass = Gl0b@l</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>gracewood global old.server</Server>
+		<Server>
+			<Host>104.130.13.157</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">djhmeUtMS0pkSG5i</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>logs</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 var 3 log 5 httpd</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>logs</Server>
+		<Server>
+			<Host>104.130.169.19</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">RnJRSGVFTXNSNHVy</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>logs 8GB Web01</Name>
+			<Comments>web01-recovery
+Host/IP: 23.253.159.154
+104.130.169.19
+new root password after hack
+4-16-2015   FrQHeEMsR4ur
+
+web01-8gb
+Host/IP: 104.130.13.157
+User:  root
+Password: 6hQBN6eCNACH
+
+
+
+web02-8gb
+Host/IP: 23.253.159.39
+User: root
+Password: v9RMYycS85B8</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 var 3 log 5 httpd</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>logs 8GB Web01</Server>
+		<Server>
+			<Host>104.130.16.178</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">djhmeUtMS0pkSG5i</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>php.ini</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir>1 0 3 etc</RemoteDir>
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>php.ini</Server>
+		<Server>
+			<Host>ftp.toplocalbridal.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>phillipmadsen</User>
+			<Pass encoding="base64">T3BtQDE1Njk2</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>toplocalbridal.com</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>toplocalbridal.com</Server>
+		<Server>
+			<Host>ftp.coisms.com</Host>
+			<Port>21</Port>
+			<Protocol>ftp</Protocol>
+			<Type>0</Type>
+			<User>madsynnadmin@coisms.com</User>
+			<Logontype>2</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Comments />
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>ftp.coisms.com<Name>ftp.coisms.com</Name>
+		</Server>
+	</Servers>
+	<Settings>
+		<Setting name="Use Pasv mode">1</Setting>
+		<Setting name="Limit local ports">0</Setting>
+		<Setting name="Limit ports low">6000</Setting>
+		<Setting name="Limit ports high">7000</Setting>
+		<Setting name="Limit ports offset">0</Setting>
+		<Setting name="External IP mode">0</Setting>
+		<Setting name="External IP" />
+		<Setting name="External address resolver">http://ip.filezilla-project.org/ip.php</Setting>
+		<Setting name="Last resolved IP" />
+		<Setting name="No external ip on local conn">1</Setting>
+		<Setting name="Pasv reply fallback mode">0</Setting>
+		<Setting name="Timeout">20</Setting>
+		<Setting name="Logging Debug Level">0</Setting>
+		<Setting name="Logging Raw Listing">0</Setting>
+		<Setting name="fzsftp executable" />
+		<Setting name="Allow transfermode fallback">1</Setting>
+		<Setting name="Reconnect count">2</Setting>
+		<Setting name="Reconnect delay">5</Setting>
+		<Setting name="Enable speed limits">0</Setting>
+		<Setting name="Speedlimit inbound">100</Setting>
+		<Setting name="Speedlimit outbound">20</Setting>
+		<Setting name="Speedlimit burst tolerance">0</Setting>
+		<Setting name="Preallocate space">0</Setting>
+		<Setting name="View hidden files">1</Setting>
+		<Setting name="Preserve timestamps">0</Setting>
+		<Setting name="Socket recv buffer size (v2)">4194304</Setting>
+		<Setting name="Socket send buffer size (v2)">262144</Setting>
+		<Setting name="FTP Keep-alive commands">0</Setting>
+		<Setting name="FTP Proxy type">0</Setting>
+		<Setting name="FTP Proxy host" />
+		<Setting name="FTP Proxy user" />
+		<Setting name="FTP Proxy password" />
+		<Setting name="FTP Proxy login sequence" />
+		<Setting name="SFTP keyfiles">C:\Users\Phillip\.ssh\rsync\rsync-key
+C:\Users\Phillip\.ssh\web01.id_rsa
+C:\Users\Phillip\.ssh\id_rsa_forBackup</Setting>
+		<Setting name="SFTP compression">1</Setting>
+		<Setting name="Proxy type">0</Setting>
+		<Setting name="Proxy host" />
+		<Setting name="Proxy port">0</Setting>
+		<Setting name="Proxy user" />
+		<Setting name="Proxy password" />
+		<Setting name="Logging file">D:\filezilla.log</Setting>
+		<Setting name="Logging filesize limit">100</Setting>
+		<Setting name="Logging show detailed logs">0</Setting>
+		<Setting name="Size format">0</Setting>
+		<Setting name="Size thousands separator">1</Setting>
+		<Setting name="Size decimal places">1</Setting>
+		<Setting name="Number of Transfers">3</Setting>
+		<Setting name="Ascii Binary mode">0</Setting>
+		<Setting name="Auto Ascii files">am|asp|bat|c|cfm|cgi|conf|cpp|css|dhtml|diz|h|hpp|htm|html|in|inc|java|js|jsp|lua|m4|mak|md5|nfo|nsi|pas|patch|php|phtml|pl|po|py|qmail|sh|sha1|sha256|sha512|shtml|sql|svg|tcl|tpl|txt|vbs|xhtml|xml|xrc</Setting>
+		<Setting name="Auto Ascii no extension">1</Setting>
+		<Setting name="Auto Ascii dotfiles">1</Setting>
+		<Setting name="Theme">opencrystal/</Setting>
+		<Setting name="Language Code" />
+		<Setting name="Last Server Path">1 0 3 var 3 www 6 vhosts 12 gracecompany 5 .work</Setting>
+		<Setting name="Concurrent download limit">0</Setting>
+		<Setting name="Concurrent upload limit">0</Setting>
+		<Setting name="Update Check">1</Setting>
+		<Setting name="Update Check Interval">7</Setting>
+		<Setting name="Last automatic update check">2016-09-26 17:55:48</Setting>
+		<Setting name="Last automatic update version">3.21.0</Setting>
+		<Setting name="Update Check New Version">nightly 2016-09-26 http://filezilla-project.org/nightlies/2016-09-26/x86_64-w64-mingw32/FileZilla_3_setup.exe 7207184 sha512 8b3743409a62b58b912062b6450303c2d31c92c3b091fc1e5999c89982b93029998a1d7cab2c9b40a20b3e39109abc74fc72ee33a28f524fa3dcbcf534664098 
+release 3.21.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.21.0_win64-setup.exe 6662856 sha512 b962c58121e948b4d8a0dd8fda7ea336846dce8192053984242d93b724f02a22d619d3fa7167d97f2d8af1091c0c3c60d0e17ddcad33ebc932b7de24a0414b0e
+beta 3.22.0-rc1 http://downloads.sourceforge.net/filezilla/FileZilla_3.22.0-rc1_win64-setup.exe 6646888 sha512 da43d8b033fe84e92fff8d6d61f22868df20e3dabce10af6a83ebdd3a5a9b4e130df3d122ed2fd0a5fd84837f1c7c774a918840518429e6579c11b925e907155
+
+3.22.0-rc1 (2016-09-24)
+
++ Directory listing filters can now be exported and imported
++ Added the "not all" filter match type to filter out all items not matching all conditions
++ Added the "not all" search match type to search for all items not matching all conditions
++ Building and running FileZilla now depends on libfilezilla &gt;= 0.7.0 (https://lib.filezilla-project.org/).
++ Building and running FileZilla now depends on GnuTLS &gt;= 3.4.15
+- Speed up creation of socket and file i/o threads through the use of a thread pool
+- Replace invalid characters in filenames when calculating the local filename for editing remote files
+- The updater can now handle HTTPS servers that redirect to other HTTPS servers
+- SFTP: Try password based login if a password-protected keyfile is rejected by the server instead of failing the login
+- MSW: Tee shell extension now supports long paths on Windows 10
+</Setting>
+		<Setting name="Update Check Check Beta">0</Setting>
+		<Setting name="Show debug menu">0</Setting>
+		<Setting name="File exists action download">0</Setting>
+		<Setting name="File exists action upload">0</Setting>
+		<Setting name="Allow ascii resume">0</Setting>
+		<Setting name="Greeting version">3.21.0</Setting>
+		<Setting name="Greeting resources" />
+		<Setting name="Onetime Dialogs">0101</Setting>
+		<Setting name="Show Tree Local">1</Setting>
+		<Setting name="Show Tree Remote">1</Setting>
+		<Setting name="File Pane Layout">2</Setting>
+		<Setting name="File Pane Swap">0</Setting>
+		<Setting name="Last local directory">E:\GraceRepos\keep\</Setting>
+		<Setting name="Filelist directory sort">0</Setting>
+		<Setting name="Filelist name sort">0</Setting>
+		<Setting name="Queue successful autoclear">0</Setting>
+		<Setting name="Queue column widths">498 60 759 80 60 150</Setting>
+		<Setting name="Local filelist colwidths">297 80 100 204</Setting>
+		<Setting name="Remote filelist colwidths">315 75 80 100 80 80</Setting>
+		<Setting name="Window position and size">1 -1387 40 1184 753 </Setting>
+		<Setting name="Splitter positions (v2)">116 -314 414062500 307 235 500000000</Setting>
+		<Setting name="Local filelist sortorder">0 2</Setting>
+		<Setting name="Remote filelist sortorder">0 0</Setting>
+		<Setting name="Time Format">0</Setting>
+		<Setting name="Date Format">0</Setting>
+		<Setting name="Show message log">1</Setting>
+		<Setting name="Show queue">1</Setting>
+		<Setting name="Default editor">2"D:\Program Files\Sublime Text 3\sublime_text.exe"</Setting>
+		<Setting name="Always use default editor">1</Setting>
+		<Setting name="Inherit system associations">1</Setting>
+		<Setting name="Custom file associations">. "D:\Program Files\Sublime Text 3\sublime_text.exe"
+/ "D:\Program Files\Sublime Text 3\sublime_text.exe"</Setting>
+		<Setting name="Comparison mode">1</Setting>
+		<Setting name="Comparison threshold">1</Setting>
+		<Setting name="Site Manager position">0 -1283 327 629 473 </Setting>
+		<Setting name="Theme icon size">32x32</Setting>
+		<Setting name="Timestamp in message log">1</Setting>
+		<Setting name="Sitemanager last selected">0/AFFORDABLE</Setting>
+		<Setting name="Local filelist shown columns">1111</Setting>
+		<Setting name="Remote filelist shown columns">111111</Setting>
+		<Setting name="Local filelist column order">0,1,2,3</Setting>
+		<Setting name="Remote filelist column order">0,1,2,3,4,5</Setting>
+		<Setting name="Filelist status bar">1</Setting>
+		<Setting name="Filter toggle state">0</Setting>
+		<Setting name="Show quickconnect bar">1</Setting>
+		<Setting name="Messagelog position">0</Setting>
+		<Setting name="Last connected site">0/A new 8GB WEB01</Setting>
+		<Setting name="File doubleclock action">0</Setting>
+		<Setting name="Dir doubleclock action">0</Setting>
+		<Setting name="Minimize to tray">0</Setting>
+		<Setting name="Search column widths" />
+		<Setting name="Search column shown" />
+		<Setting name="Search column order" />
+		<Setting name="Search window size" />
+		<Setting name="Comparison hide identical">0</Setting>
+		<Setting name="Search sort order" />
+		<Setting name="Edit track local">1</Setting>
+		<Setting name="Prevent idle sleep">1</Setting>
+		<Setting name="Filteredit window size">0 -1343 313 750 500 </Setting>
+		<Setting name="Enable invalid char filter">0</Setting>
+		<Setting name="Invalid char replace">_</Setting>
+		<Setting name="Already connected choice">0</Setting>
+		<Setting name="Edit status dialog size" />
+		<Setting name="Display current speed">0</Setting>
+		<Setting name="Toolbar hidden">0</Setting>
+		<Setting name="Strip VMS revisions">0</Setting>
+		<Setting name="Show Site Manager on startup">0</Setting>
+		<Setting name="Prompt password change">0</Setting>
+		<Setting name="Persistent Choices">1</Setting>
+		<Setting name="Queue completion action">1</Setting>
+		<Setting name="Queue completion command" />
+		<Setting name="Drag and Drop disabled">0</Setting>
+		<Setting name="Disable update footer">0</Setting>
+		<Setting name="Config Location">C:\Users\Phillip\AppData\Roaming\FileZilla\</Setting>
+		<Setting name="Kiosk mode">0</Setting>
+		<Setting name="Disable update check">0</Setting>
+		<LastServer>
+			<Host>104.130.169.19</Host>
+			<Port>22</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>root</User>
+			<Pass encoding="base64">MmZ2MEJJdGdNSG5H</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>A new 8GB WEB01</Name>
+		</LastServer>
+	</Settings>
+	<Queue />
+</FileZilla3>

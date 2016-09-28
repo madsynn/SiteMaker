@@ -110,6 +110,26 @@ i or o (insert or new line edit)
 
 
 
+
+
+
+$content = Content::with('category')->lists('category.name', 'id');
+
+// in the view
+<ul>
+    @foreach ($AllContent as $id => $category)
+        <li>
+            {{ $id }} - {{ $category }}
+        </li>
+    @endforeach
+</ul>
+
+
+
+https://github.com/etrepat/baum
+
+
+
 ssh root@162.242.218.155
 phillipspassword
 
@@ -117,7 +137,7 @@ service httpd restart
 service httpd reload
 service varnish restart
 service varnish reload
-mysql -h 10.176.138.198 -u local_dev -p^C
+mysql -h 10.176.138.198 -u local_dev -p
 mysql -h 10.176.138.198 -u graceuser -p
 
 git@github.com:phillipmadsen/stage.grace.git
@@ -218,3 +238,165 @@ Host github.com
          Staging          - New staging server, will install Trac too
          ↗↙ ↖↘
   Developer1  Developer2  - Local development
+
+
+
+
+As requested, you will need to return a view with the categories variable
+
+ return view('view.name',compact('categories');
+then
+
+  {{dd($categories)}}
+or
+
+ <? print_r($categories); ?>
+in your view and it will output the data. You can access a specific value by
+
+ @foreach($categories as $category)
+    {{$category->name}}
+ @endforeach
+assuming you are using blade and you have a name value in your categories collection.
+
+
+
+$categories = Category::with('subcategories')->where('category_name', '=', 'Construction Machines')->get(); return $categories;
+
+
+
+
+
+
+
+  //Method add post. Called in the controller
+    public static function add($data)
+    {
+        try {
+            $post = new Post;
+            $post->title = $data['title'];
+            $post->text = $data['text'];
+
+            $category = Category::find(1);
+            $category->posts()->save($post);
+        }catch (Exception $e){
+            return $e;
+        }
+
+        return $category;
+    }
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+
+
+I have no idea why you don't want to use an SQL JOIN, as it is almost certainly the most efficient thing to do when you have one table relating to another by its primary key. But hey, who am I to judge?
+
+A way you can do this is by using a subquery. In plain old SQL:
+
+SELECT
+    `content`.`id`,
+    (
+        SELECT `name`
+        FROM `category`
+        WHERE `id` = `content`.`category_id`
+    ) AS `name`
+FROM `content`
+So, to do this using Laravel's query builder:
+
+DB::table('content')
+    ->select(['id'])
+    ->selectSub(function ($query) {
+        return $query->from('category')
+                     ->where('id', '=', DB::raw('content.category_id'))
+                     ->select('name')
+    }, 'name')
+    ->get();
+I think that'll do what you want, anyway. But really, just use a JOIN.
+
+If you do want to use a JOIN then you're somewhat better off. Again I'll give you the raw SQL first:
+
+SELECT
+    `content`.`id`,
+    `category`.`name`
+FROM `content`
+LEFT JOIN `category`
+    ON `content`.`category_id` = `category`.`id`
+And now in Laravel's query builder:
+
+DB::table('content')
+    ->join('category', 'content.category_id', '=', 'category.id')
+    ->select(['content.id', 'category.name'])
+    ->get();
+And now using Eloquent models:
+
+// app/Models/Content.php
+namespace App\Models;
+
+class Content
+{
+    protected $table = 'content';
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\Category', 'category_id');
+    }
+}
+
+
+// app/Models/category.php
+namespace App\Models;
+
+class Category
+{
+    protected $table = 'category';
+
+    public function content()
+    {
+        return $this->hasMany('App\Models\Content', 'category_id');
+    }
+}
+Now you can use this model to do all sorts. For example, to do what you were originally trying:
+
+// some controller somewhere
+use App\Models\Content;
+
+class SomeController
+{
+    public function index()
+    {
+        $content = Content::with('category')->get();
+
+        return View::make('ALL/Contents')->with('AllContent', $content);
+    }
+}
+
+// views/ALL/Contents.blade.php
+<ul>
+    @foreach ($AllContent as $content)
+        <li>
+            {{ $content->id }} - {{ $content->category->name }}
+        </li>
+    @endforeach
+</ul>
+But alternatively you can return the content id/category name as a key=>value array:
+
+// in the controller
+$content = Content::with('category')->lists('category.name', 'id');
+
+// in the view
+<ul>
+    @foreach ($AllContent as $id => $category)
+        <li>
+            {{ $id }} - {{ $category }}
+        </li>
+    @endforeach
+</ul>
+This is all untested, but should work. If it doesn't, it should at least give you an idea of how it all goes together.
