@@ -6,7 +6,7 @@ cd ../var/www/vhosts/gracecompany/stage.grace
 
 cd && cd ../var/www/vhosts/gracecompany/stage.grace/storage/logs && tail -f laravel.log
 
-tar -zcvf stage-grace-mar-7-2016.tar.gz /var/www/vhosts/gracecompany/stage.grace
+tar -zcvf stage-grace-SEPT-28-2016.tar.gz /var/www/vhosts/gracecompany/stage.grace/
 
 
 cd && cd ../var/www/vhosts/gracecompany/stage.grace/storage/logs && tail -f --path=/laravel.log

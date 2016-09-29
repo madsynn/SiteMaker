@@ -1,16 +1,23 @@
 
+AffordableProgr
+
+ composer require ghanem/rating
+
 ssh root@104.130.169.19
 FrQHeEMsR4ur
 cd ../var/www/vhosts/gracecompany/
 
 alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
-alias shop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias shop='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/'
+alias openshop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
 alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
 alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
 alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
 alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
 
+alias openapp='subl /var/www/vhosts/gracecompany/stage.grace/config/app.php'
 
+Ghanem\Rating\RatingServiceProvider::class
 
 {{old('description',!empty($seo)?$seo->description:'')}}
 <textarea name="google_analytics" class="form-control">{{old('google_analytics',!empty($seo)?$seo->google_analytics:'')}}</textarea>
@@ -23,6 +30,9 @@ alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
 alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
 
 alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
+
+
+alias lsync='service lsyncd status'
 
 https://streamacon.com/video/laracon-us/colin-decarlo-keeping-eloquent-eloquent
 https://www.youtube.com/watch?v=XPqrY7YEs0A&feature=youtu.be
@@ -38,6 +48,35 @@ if ($validator->fails()) {
 {{ old('description',!empty($product)?$product->description:'') }}
 
 
+subl /var/www/vhosts/qniquequilter.com/wp-content/themes/qnique/footer.php
+
+
+
+<?php if (is_page('6')): ?>
+if (document.location.protocol != "https:") {
+ document.location = document.URL.replace(/^http:/i, "https:");
+}
+<?php endif;?>
+
+  @foreach($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->title }}</option>
+                @endforeach
+
+<!-- HitTail Code -->
+<script type="text/javascript">
+    (function () {
+        var ht = document.createElement('script');
+        ht.async = true;
+        ht.type = 'text/javascript';
+        ht.src = '//119102.hittail.com/mlt.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ht, s);
+    })();
+</script>
+
+<script>
+    (function(){var ht = document.createElement('script'); ht.async = true; ht.type='text/javascript'; ht.src = '//119102.hittail.com/mlt.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ht, s); })();
+</script>
 
 addon to let me toggle styles and scripts for debugging purposes
 Remote toggle enable disable control the browser   Javascript stylesheets

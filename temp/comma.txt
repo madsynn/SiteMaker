@@ -1,9 +1,15 @@
 ssh root@104.130.169.19
 FrQHeEMsR4ur
-cd ../var/www/vhosts/gracecompany/
+cd ../var/www/vhosts/gracecompany/stage.grace
 
 alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
-alias shop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias openshop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias shop='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/'
+alias ecom='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/'
+alias grace='cd /var/www/vhosts/gracecompany/stage.grace/'
+alias db='cd /var/www/vhosts/gracecompany/stage.grace/database/'
+alias logs='cd /var/www/vhosts/gracecompany/stage.grace/storege/logs/'
+alias psections='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/products/create-sections'
 alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
 alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
 alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
@@ -12,9 +18,55 @@ alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend
 alias restarta='service httpd restart && service httpd reload'
 alias restartall='service httpd restart && service httpd reload && service varnish restart && service varnish reload'
 alias restartv='service varnish restart && service varnish reload'
+alias restartl='service lsyncd restart'
+
+alias blay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/layout'
+alias flay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/layout'
+
+
+DIMENSIONS:
+800 x 800 pixels
+DISPLAYED:
+270 x 270 pixels
+FILE SIZE:
+
+
+DIMENSIONS:
+440 x 586 pixels
+DISPLAYED:
+270 x 360 pixels
+FILE SIZE:
+
+
+
+
+<snippet>
+  <content><![CDATA[
+ (function(\$) { ${1:this} })(jQuery);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jtag</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
+
+
+{!! asset('/clip/bower_components/jquery/dist/jquery.min.js') !!}
+bower_components/jquery/dist/jquery.min.js
+
+/backend/plugins/jQuery/jQuery-2.1.3.min.js
 
 git clone phillipmadsen@gmail.com:~/hidden/test.git test
 exit
+
+alias becom='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/'
+alias shop='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/'
+/var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop
+
+@foreach($product->categories as $category)
+{!! $category->title !!}
+@endforeach
+
 
 git clone username@domain.com:~/repos/mywebsite.git mywebsite
 git clone test@104.130.13.157:~/repos/test.git test.devto
@@ -292,7 +344,7 @@ $categories = Category::with('subcategories')->where('category_name', '=', 'Cons
 
 
 
-
+/var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/products
 
 ------------------------------------------------------------------
 
