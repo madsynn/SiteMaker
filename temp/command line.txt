@@ -6,7 +6,26 @@ cd ../var/www/vhosts/gracecompany/stage.grace
 
 cd && cd ../var/www/vhosts/gracecompany/stage.grace/storage/logs && tail -f laravel.log
 
-tar -zcvf stage-grace-SEPT-28-2016.tar.gz /var/www/vhosts/gracecompany/stage.grace/
+
+
+
+"peej/phpdoctor": "^2.0"
+
+
+
+
+
+
+tar -zcv --exclude='.git' --exclude='.gitignore' -f $NAME-$VERSION.tar.gz $NAME-$VERSION
+
+
+
+tar czvf $NAME-$VERSION.tar.gz $NAME-$VERSION --wildcards --exclude=.git --exclude=.gitignore
+tar -zcvf $NAME-$VERSION.tar.gz $NAME-$VERSION --exclude-vsc
+
+
+
+tar -zcvf stage-grace-SEPT-29-2016.tar.gz /var/www/vhosts/gracecompany/stage.grace/  --exclude-vsc --exclude=.git
 
 
 cd && cd ../var/www/vhosts/gracecompany/stage.grace/storage/logs && tail -f --path=/laravel.log

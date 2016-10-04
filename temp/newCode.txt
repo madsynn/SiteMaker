@@ -1,0 +1,426 @@
+
+
+
+ssh root@104.130.169.19
+FrQHeEMsR4ur
+cd ../var/www/vhosts/gracecompany/
+
+alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
+alias shop='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/'
+alias openshop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
+alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
+alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
+alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
+
+alias productcontroller='subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/ProductController.php'
+alias openshop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/index.blade.php'
+alias shop='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/'
+alias ecom='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/'
+alias grace='cd /var/www/vhosts/gracecompany/stage.grace/'
+alias db='cd /var/www/vhosts/gracecompany/stage.grace/database/'
+alias logs='cd /var/www/vhosts/gracecompany/stage.grace/storege/logs/'
+alias psections='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/ecom/products/create-sections'
+alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/product.blade.php'
+alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
+alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
+alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
+alias openshoptop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/partials/layout/shoptop.blade.php'
+alias restarta='service httpd restart && service httpd reload'
+alias restartall='service httpd restart && service httpd reload && service varnish restart && service varnish reload'
+alias restartv='service varnish restart && service varnish reload'
+alias restartl='service lsyncd restart'
+
+alias blay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/layout'
+alias flay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/layout'
+
+
+"cartalyst/cart": "2.0.*@dev"
+composer create-project --prefer-dist laravel/laravel ./ "5.1.*"
+
+
+Auth::getUser() or Sentinel::getUser().
+
+$full_path1 = $full_size_dir        . $sessionImage->filename;
+
+
+
+
+
+
+
+
+ if (File::exists($full_path1)) {File::delete($full_path1);}
+
+
+
+
+private function getProductVariants($variants = [])
+{
+    if (isset($variants)) {
+        $variants = array_map(
+                function ($v) {
+                    return explode(':', $v);
+                },
+                explode(',', $variants)
+        );
+    }
+
+    return $variants;
+}
+
+
+private function getListitem($listitems = [])
+{
+    if (isset($listitems)) {
+        $listitems = array_map(
+                function ($v) {
+                    return explode(':', $v);
+                },
+                explode(',', $listitems)
+        );
+    }
+
+    return $listitems;
+}
+
+ try
+        {
+            return Bakery::process_form('delete', $request, $model_slug, $identifier);
+        }
+        catch( Exception $e )
+        {
+            return redirect()->back()->withErrors(['errors' => $e->getMessage()]);
+        }
+
+    public function uploadProductImage(UploadedFile $file)
+    {
+       $extension = $file->getClientOriginalExtension();
+       $filename = $file->getClientOriginalName();
+       //$slug = str_replace('.', '', $slug);
+       //$slug = str_replace(' ','_', $slug);
+       //$slug = str_replace('-','_', $slug);
+       $slug = pathinfo($filename, PATHINFO_FILENAME);
+       $destinationPath = public_path() . '/uploads/products/'. $slug;
+
+       if(!file_exists($destinationPath)) File::makeDirectory($destinationPath);
+       //$productDestinationPath = public_path() . '/uploads/products/main/'. $slug;
+       //if(!file_exists($productDestinationPath)) File::makeDirectory($productDestinationPath);
+       $catDestinationPath = public_path() . '/uploads/products/catalog_size/'. $slug;
+       if(!file_exists($catDestinationPath)) File::makeDirectory($catDestinationPath);
+       $gridDestinationPath = public_path() . '/uploads/products/grid_size/'. $slug;
+       if(!file_exists($gridDestinationPath)) File::makeDirectory($gridDestinationPath);
+       $thumbDestinationPath = public_path() . '/uploads/products/thumb/'. $slug;
+       if(!file_exists($thumbDestinationPath)) File::makeDirectory($thumbDestinationPath);
+
+       //$picture = Str::slug(substr($filename, 0, strrpos($filename, "."))) . '_' . time() . '.' . $extension;
+       //$picture = Str::slug(substr($filename, 0, strrpos($filename, "."))) . $extension;
+       $picture = $slug . "." . $extension;
+       $file->move($destinationPath, $picture);
+       //$file->move($productDestinationPath, $picture);
+       $file->move($thumbDestinationPath, $picture);
+       $file->move($catDestinationPath, $picture);
+       $file->move($gridDestinationPath, $picture);
+       return $file;
+
+
+
+ ->setUpdatedAt(\Carbon::now());
+
+$product->published_at = \Carbon::now();;
+
+
+
+
+
+
+public function postimage($photo, $filename)
+    {
+        $manager = new ImageManager();
+        $image   = $manager->make($photo)->resize(860, 570, function ($constraint)
+        {
+            $constraint->aspectRatio();
+        })->save(Config::get('images.post_size') . $filename);
+
+        return $image;
+    }
+
+
+
+
+
+$('.slug').slugify('#title');
+
+
+"orangehill/iseed": "dev-master",
+
+
+
+
+        'Carbon' => Carbon\Carbon::class,
+
+        'Route' => Illuminate\Support\Facades\Route::class,
+        'Schema' => Illuminate\Support\Facades\Schema::class,
+        'Session' => Illuminate\Support\Facades\Session::class,
+        'Storage' => Illuminate\Support\Facades\Storage::class,
+        'URL' => Illuminate\Support\Facades\URL::class,
+        'Validator' => Illuminate\Support\Facades\Validator::class,
+        'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Carbon' => Carbon\Carbon::class,
+
+ return redirect('admin/pages')->with('success', $page->title . ' has been Updated Successfully');
+
+
+
+
+
+
+$page->title = $request->input('title');
+$page->content = $request->input('content');
+$page->icon = $request->input('icon');
+if ($page->published == 0 && $request->input('published')) {
+$page->published_at = \Carbon::now();;
+}
+$page->published = $request->input('published');
+$page->blog_post = $request->input('blog_post');
+$page->slug = $request->input('slug');
+$page->meta_keywords = $request->input('meta_keywords');
+$page->meta_desc = $request->input('meta_desc');
+$page->updated_at = \Carbon::now();
+$page->save();
+
+
+
+
+
+
+public function statusText()
+    {
+        $text = '';
+        switch($this->status)
+        {
+            case 0:
+                $text = '<p class="text-muted">Pending</p>';
+                break;
+            case 1:
+                $text = '<p class="text-green">Active</p>';
+                break;
+            case 2:
+                $text = '<p class="text-red">Blocked</p>';
+                break;
+            case 3:
+                $text = '<p class="text-yellow">Suspend</p>';
+                break;
+        }
+        return $text;
+    }
+
+
+
+
+ public function indexData()
+    {
+        $products = Product::orderBy('id', 'desc')->select('id', 'product_name', 'product_model', 'brand_id','category_id', 'unite_price', 'created_at')->with('category', 'brand');
+        return Datatables::of($products)
+            ->editColumn('brand_id', function($product){
+                return $product->brand->brand_name;
+            })
+            ->editColumn('category_id', function($product){
+                return $product->category->category_name;
+            })
+            ->editColumn('created_at', function($product){
+                return '<span title="'.$product->created_at->format('F d, Y').'" data-toggle="tooltip" data-placement="top"> '.$product->created_at->diffForHumans().' </span>';
+            })
+            ->addColumn('stock', function($product){
+                return $product->stock_available();
+            })
+            ->addColumn('actions', function($product){
+                $button = '<a href="'.route('view_product', $product->id).'" class="btn btn-success" title="View" data-toggle="tooltip" data-placement="top"><i class="fa fa-eye"></i> </a>';
+                $button .= '<a href="'.route('edit_product', $product->id).'" class="btn btn-info" title="Edit" data-toggle="tooltip" data-placement="top"><i class="fa fa-pencil"></i> </a>';
+                $button .= '<a href="javascript:;" class="btn btn-danger deleteBrands" title="Delete" data-toggle="tooltip" data-placement="top" data-id="'.$product->id.'"><i class="fa fa-trash-o"></i> </a>';
+                return $button;
+            })
+            ->removeColumn('id')
+            ->removeColumn('brand')
+            ->removeColumn('category')
+            ->make();
+    }
+
+
+
+
+
+  //Save new attributes
+if($count_attribute_names > 0){
+    $product_attributes = [];
+    for($i = 0; $i < $count_attribute_names; $i++)
+    {
+        $attribute_name = trim($attribute_names[$i]);
+        if($attribute_name != '')
+        {
+            $attributeData = [
+                'product_id'    => $id,
+                'attribute_name'=> $attribute_name,
+                'attribute_value'=> $attribute_values[$i]
+            ];
+            $createAttribute = Product_attribute::create($attributeData);
+            if($createAttribute)
+            {
+                $createAttribute -> c_order = $createAttribute->id;
+                $createAttribute->save();
+            }
+        }
+    }
+    $request->session()->forget('old_product_attribute');
+}
+
+  //Add Activity
+            Activity::create(['user_id' => $user->id, 'activity' => 'You have updated '.$product_name. '  product']);
+
+   return redirect()->back()->with('success', 'Product update success');
+
+
+ //First update previous attributes belongs with this product
+            if(count($attribute_name_edit) > 0)
+            {
+                for($i = 0; $i < count($attribute_name_edit); $i++)
+                {
+                    $attributeData = [
+                        'attribute_name'    => $attribute_name_edit[$i],
+                        'attribute_value'   => $attribute_values_edit[$i],
+                        'c_order'           => $attr_ids[$i]
+                    ];
+                    Product_attribute::where('id', $attr_ids[$i])->update($attributeData);
+                }
+            }
+
+
+
+       <td><a href="{{ route('admin.esc.images.edit', ['image_id' => $image->id ]) }}">Edit</a></td>
+
+
+
+E:\GraceRepos\grace.reset\resources\views\frontend\layout\partials\header\
+
+
+
+public function uploadProductImage(UploadedFile $file)
+{
+    $extension = $file->getClientOriginalExtension();
+    $filename = $file->getClientOriginalName();
+    $slug = pathinfo($filename, 0, strrpos($filename, PATHINFO_FILENAME));
+    $destinationPath = public_path() . '/uploads/products/'. $slug;
+    if(!file_exists($destinationPath)) File::makeDirectory($destinationPath);
+    $picture = Str::slug(substr($filename, 0, strrpos($filename, "."))) . '_' . time() . '.' . $extension;
+    //$picture = $slug . "." . $extension;
+    return $file->move($destinationPath, $picture);
+}
+
+<td>
+                {!! Form::open(['route' => ['admin.products.destroy', $product->id], 'method' => 'delete']) !!}
+                <div class='btn-group'>
+                    <a href="{!! route('admin.products.show', [$product->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="{!! route('admin.products.edit', [$product->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                </div>
+                {!! Form::close() !!}
+            </td>
+
+
+
+Route::get('/r', function ()
+{
+
+    /**
+     * undocumented function
+     *
+     * @return void //ouputs a list of routes and easy ways to use them.
+     * @author Phillip Madsen <contact@affordableprogrammer.com>
+     **/
+    function philsroutes()
+    {
+        $i=0;
+        $routeCollection = Route::getRoutes();
+        echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">';
+        echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/css/bootstrap-toggle.css">';
+        echo '<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>';
+        echo "<div style='margin-top:50px'></div><div class='container'><div class='col-md-12 table-responsive'>";
+        echo "<table id='table' data-toggle='table' class='table table-condensed' style='width:100%'>";
+        echo '<thead>';
+        echo '<tr>';
+        echo "<th width='5%'> </th>";
+        echo "<th width='10%'><h4>Method</h4></th>";
+        echo "<th width='25%'><h4>URL</h4></th>";
+        echo "<th width='25%'><h4>Route Name</h4></th>";
+        echo "<th width='30%'><h4>Corresponding Action</h4></th>";
+        echo '</tr>';
+        echo '<thead>';
+
+        foreach ($routeCollection as $value)
+        {
+            $number = $i++;
+            $secretrow = "secretrow";
+            echo '<tr data-toggle="collapse" data-target="#'.$secretrow.$number.'" class="accordion-toggle">';
+            echo '<td><button type="button" class="btn btn-info btn-md"><i class="glyphicon glyphicon-plus"></i></button></td>';
+            echo '<td>' . $value->getMethods()[0] . '</td>';
+            echo "<td  style='font-family:Inconsolata;font-size: 1.25em;''><a href='" . $value->getPath() . "' target='_blank'>" . $value->getPath() . '</a> </td>';
+            echo '<td>' . $value->getName() . '</td>';
+            echo '<td>' . $value->getActionName() . '</td>';
+            echo '</tr>';
+            echo '<tr>';
+            echo '<td colspan="12" class=""> <div class="accordian-body collapse table-responsive" id="'.$secretrow.$number.'"><div style="clear:both"></div>';
+            echo '<table class="table table-bordered"><thead><tr><td><a href="' . $value->getPath() . '"><strong>Visit This Link</strong></a></td></tr><tr><th>Copy Url</th></tr></thead>';
+            echo '<tbody>';
+            echo '<tr><td align="left"><pre style="font-family: Inconsolata;font-size: 1.25em;">{!! url(\'' . $value->getPath() . '\') !!}</pre></td></tr>';
+            echo '<tr><td><strong>Copy Form Url</strong></td></tr>';
+            echo '<tr><td align="left"><pre style="font-family:Inconsolata;font-size: 1.25em;">{!! Form::open([\'url\' => \'' . $value->getPath() . '\', \'method\' => \'post\', \'files\' => true]) !!}</pre></td></tr>';
+            echo '<tr><td align="left"><strong>Copy Url Route</strong> </td></tr>';
+            echo '<tr><td align="left"><pre style="font-family: Inconsolata;font-size: 1.25em;">{!! route(\'' . $value->getName() . '\') !!}</pre></td></tr>';
+            echo '<tr><td align="left"><strong>Copy Form:: Route</strong> </td></tr>';
+            echo '<tr><td align="left"><pre style="font-family:Inconsolata;font-size: 1.25em;">{!! Form::open([\'route\' => \''. $value->getName() .'\', \'method\' => \'post\', \'files\' => true]) !!}</pre></td></tr>';
+            echo '<tr><td align="left"><strong>Copy Url Action</strong> </td></tr>';
+            echo '<tr><td align="left"><pre style="font-family:Inconsolata;font-size: 1.25em;">{!! action(\'' . $value->getActionName() . '\']) !!}</pre></td></tr></tr>';
+            echo '<tr><td align="left"><strong>Copy Form:: Action</strong> </td></tr>';
+            echo '<tr><td align="left"><pre style="font-family:Inconsolata;font-size: 1.25em;"> {!! Form::open([\'action\' => \'' . $value->getActionName() . '\', \'method\' => \'post\', \'files\' => true]) !!}</pre></td></tr>';
+            echo '</tbody></table></div>';
+            echo '</td>';
+            echo '</tr>';
+        }
+        echo '</table></div></div>';
+        echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>';
+
+    }
+    return philsroutes();
+});
+
+
+Route::get('/rr', function ()
+{
+    function philsroutes()
+    {
+        $routeCollection = Route::getRoutes();
+        echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">';
+        echo "<div class='container'><div class='col-md-12'><table class='table table-striped' style='width:100%'>";
+        echo '<tr>';
+        echo "<td width='10%'><h4>HTTP Method</h4></td>";
+          echo "<th width='25%'><h4>URL</h4></th>";
+        echo "<td width='45%'><h4>Route</h4></td>";
+        echo "<td width='45%'><h4>Corresponding Action</h4></td>";
+        echo '</tr>';
+        foreach ($routeCollection as $value)
+        {
+            echo '<tr>';
+            echo '<td>' . $value->getMethods()[0] . '</td>';
+                        echo "<td><a href='" . $value->getPath() . "' target='_blank'>" . $value->getPath() . '</a> </td>';
+            echo "<td><a href='" . $value->getPath() . "' target='_blank'>" . $value->getPath() . '</a> </td>';
+            echo '<td>' . $value->getActionName() . '</td>';
+            echo '</tr>';
+        }
+        echo '</table></div></div>';
+        echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>';
+    }
+    return philsroutes();
+});

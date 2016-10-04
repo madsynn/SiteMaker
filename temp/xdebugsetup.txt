@@ -15,6 +15,18 @@ alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
 alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
 alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
 
+
+alias gitlfs1='sudo apt-get install python-software-properties'
+alias gitlfs2='sudo add-apt-repository ppa:git-core/ppa'
+alias gitlfs3='sudo apt-get update'
+alias gitlfs4='sudo apt-get update'
+alias gitlfs5='curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash'
+alias gitlfs6='sudo apt-get install git-lfs'
+alias gitlfs7='sudo git lfs install'
+alias gitlfs8=''
+
+git lfs uninstall
+
 alias openapp='subl /var/www/vhosts/gracecompany/stage.grace/config/app.php'
 
 Ghanem\Rating\RatingServiceProvider::class
@@ -43,6 +55,66 @@ if ($validator->fails()) {
                 ->withErrors($validator)
                 ->withInput();
         }
+
+
+
+phpdoc -d /home/vagrant/cruds/scaffolder -f /home/vagrant/cruds/scaffolder/public/docs
+
+  "php artisan ide-helper:generate",
+        "php artisan ide-helper:meta",
+
+req codex/composer-plugin codex/addon-phpdoc  codex/addon-auth  codex/addon-git  radic/blade-extensions matthiasmullie/minify erusev/parsedown  raveren/kint
+
+
+
+lity.js http://sorgalla.com/lity/
+FitVids
+clipboard.js
+jquery.matchHeight-min.js  http://brm.io/jquery-match-height/
+
+
+npm install apidoc -g
+
+ $('[data-toggle="offcanvas"]').on('click', function () {
+    //$('.main-content').css('height', $('.sidenav').height()+100 + 'px');
+    $('body').toggleClass('open-sidebar');
+    if ($('body').hasClass('open-sidebar')) {
+      $('html').css('overflow', 'hidden');
+      //$('.main-content').css('height', $('.sidenav').height()+100 + 'px');
+      $('.site-header .jumbotron').slideUp(50);
+    }
+    else {
+      $('html').css('overflow', 'visible');
+      //$('.main-content').css('height', 'auto');
+      $('.site-header .jumbotron').slideDown(900);
+    }
+  });
+
+
+Privacy Policy
+Earnings Disclaimer
+Disclaimer
+Testimonials Disclosure
+Linking Policy
+Refund-Policy
+Affiliate Agreement
+Antispam
+FTC Statement
+Amazon Affiliate
+Double Dart Cookie
+External Links Policy
+Affiliate Disclosure
+FB Policy
+
+
+
+
+
+        factory(App\Models\Product::class, 50)->create();
+        factory(App\Models\CategoryProduct::class, 50)->create();
+        factory(App\Models\Price::class, 50)->create();
+
+.sublime-macro
 
 
 {{ old('description',!empty($product)?$product->description:'') }}
@@ -89,6 +161,9 @@ jquery or javascript generate a random number for form input that has class
                             </a>
                         </div>
 
+<li><i class="icon-calendar3"></i> <span datetime="{!! date('F d, Y', strtotime($article->created_at)) !!}" class="time"></span> </li>
+
+
 {
     "folders":
     [
@@ -102,6 +177,100 @@ jquery or javascript generate a random number for form input that has class
         "pb_load_bundle": "YourBundle"
     }
 }
+ "url":"{!! url() !!}{!! $uri = Request::path() !!}"
+{!! $article->category[0]->title !!}
+
+{!! $product->category[0]->title !!}
+
+
+<script type="text/javascript" src="{!! asset('assets/js/moment-with-langs.min.js') !!}"></script>
+<script type="text/javascript">
+    moment().format();
+    moment.lang('en');
+    jQuery(document).ready(function($) {
+        var now = moment();
+        $('.time').each(function (i, e) {
+        var time = moment($(e).attr('datetime'));
+        $(e).html('<i class="icon-calendar"> ' + time.from(now) + '</i>');
+        });
+    });
+</script>
+
+{{{ isset($article->meta_title) ? $article->meta_title : $article->title }}}
+
+
+    <script type="application/ld+json">
+    {
+       "@context":"http:\/\/schema.org\/",
+       "name":"{{{ isset($article->meta_title) ? $article->meta_title : $article->title }}}",
+       "@type":"Article",
+       "author":"The Grace Company",
+       "ArticleSection":"{!! $article->category[0]->title !!}",
+       "datePublished":"{!! $article->created_at !!}",
+       "Publisher":"The Grace Company",
+       "url":"{!! url() !!}{!! $uri = Request::path() !!}"
+    }
+    </script>
+
+
+
+
+
+command:
+Unable to parse command:
+command: context_menu {"event": {"button": 2, "x": 1108.5, "y": 728.5}}
+command: expand_tabs {"set_translate_tabs": true}
+command: drag_select {"event": {"button": 1, "x": 406.5, "
+
+
+
+
+
+<a href="http://www.facebook.com/sharer.php?u={!! $url = Request::url(); !!}" target="_blank" class="social-icon si-borderless si-facebook">
+<i class="icon-facebook"></i>
+<i class="icon-facebook"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?url={!! $url = Request::url(); !!}" class="social-icon si-borderless si-twitter" target="_blank">
+<i class="icon-twitter"></i>
+<i class="icon-twitter"></i>
+</a>
+<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" class="social-icon si-borderless si-pinterest" target="_blank">
+<i class="icon-pinterest"></i>
+<i class="icon-pinterest"></i>
+</a>
+
+<a href="https://plus.google.com/share?url={!! $url = Request::url(); !!}" class="social-icon si-borderless si-gplus" target="_blank">
+<i class="icon-gplus"></i>
+<i class="icon-gplus"></i>
+</a>
+
+
+    <div class="form-group col-sm-2">
+            {!! Form::label('is_published', 'Is Published:') !!}
+            <label class="checkbox ">
+            {!! Form::checkbox('is_published', 1, null,['data-toggle' => 'toggle', 'data-on' => 'Published', 'data-off'=>'NotPublished','data-onstyle' => 'success', 'data-offstyle' => 'danger', 'value'=>Input::old('is_published') ]) !!}
+            </label>
+        </div>
+
+
+
+ "build_systems": [{
+        // "name": " ",
+        "windows": {
+            "cmd": ["powershell", "-command", ".\\build-master.ps1"],
+            "shell": true,
+            "working_dir": "${project_path}"
+        }
+    }, {
+        "name": "",
+        "windows": {
+            "cmd": ["powershell", "-command", ".\\build-dev.ps1"],
+            "shell": true,
+            "working_dir": "${project_path}"
+        }
+    }],
+
+
 
 
 @foreach ($products->chunk(3) as $chunk)

@@ -14,7 +14,7 @@ alias product='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/fro
 alias res='cd /var/www/vhosts/gracecompany/stage.grace/resources/'
 alias resb='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend'
 alias resf='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend'
-
+alias openshoptop='subl /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/shop/partials/layout/shoptop.blade.php'
 alias restarta='service httpd restart && service httpd reload'
 alias restartall='service httpd restart && service httpd reload && service varnish restart && service varnish reload'
 alias restartv='service varnish restart && service varnish reload'
@@ -36,6 +36,22 @@ DIMENSIONS:
 DISPLAYED:
 270 x 360 pixels
 FILE SIZE:
+
+
+sublime.log_commands(True)
+
+Hello, gary this is a snippet.
+=================================
+USER NAME:
+FILE NAME:          comma.txt
+ TAB SIZE:          4
+SOFT TABS:          YES
+=================================
+
+
+
+
+command: unexpand_tabs {"set_translate_tabs": true}
 
 
 
