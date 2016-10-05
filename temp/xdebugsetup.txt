@@ -1411,6 +1411,10 @@ alias pear="cmd //c /c/Users/sandbox/pear.bat"
 
 zip recruiter
 
+ sed -i 's/config.fully/config.grace/g' *.php *.md *.txt *.css *.json *.js
+
+find . -name '*.php' -exec sed -ie 's#config.fully#config.grace#' {} \;
+
 
 sed -i 's/Sefa/Phillip/g' *.php *.md *.txt *.css *.json *.js
 sed -i 's/Karagöz/Madsen/g' *.php *.md *.txt *.css *.json *.js
@@ -1421,7 +1425,22 @@ sed -i 's/github.com:sseffa\/fullycms.git/github.com:phillipmadsen/g' *.php *.md
 sed -i 's/sseffa/grace/g' *.php *.md *.txt *.css *.json *.js
 sed -i 's/fullycms/graceadmin/g' *.php *.md *.txt *.css *.json *.js
 
+ALL PHP FILES
+ sed -i 's/Fully/App/g' *.php
 
+IN THIS DIRECTORY AND SUBDIRECTORIES ONLY
+ find ((DELETE_THIS(PATH_TO_SEARCH)))/g/[grace]/pages/GraceResources/hand-quilting -type f -exec sed -i 's/Fully/App/g' {} \;
+
+
+ sed -i 's/Sefa/Phillip/g' *.php
+sed -i 's/Karagöz/Madsen/g' *.php
+sed -i 's/karagozsefa@gmail.com/pmadsen2013@gmail.com/g' *.php
+
+Sefa Karagöz <karagozsefa@gmail.com>
+Phillip Madsen <pmadsen2013@gmail.com>
+
+
+ sed -i 's/config.fully/config.grace/g' *.php
 
 extension_dir = "ext"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;

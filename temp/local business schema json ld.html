@@ -1,0 +1,77 @@
+local business schema json ld
+
+<script type="application/ld+json">
+	{
+  	"@context": "http://schema.org",
+  	"@type": "LocalBusiness",
+  	"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Irvine",
+    "addressRegion": "CA",
+    "postalCode":"92618",
+    "streetAddress": "123 Happy Lane"
+  	},
+  	"description": "This is your business description.",
+  	"name": "Gene’s Delicious Donuts",
+  	"telephone": "555-111-2345",
+  	"openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
+  	"geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "40.75",
+    "longitude": "73.98"
+ 		},
+  	"sameAs" : [ "http://www.facebook.com/your-profile",
+    "http://www.twitter.com/your-profile",
+    "http://plus.google.com/your-profile"]
+	}
+</script>
+
+<script>
+
+	{
+  "@context":
+  {
+    "name": "http://schema.org/name",  ← This means that 'name' is shorthand for 'http://schema.org/name'
+    "image": {
+      "@id": "http://schema.org/image",  ← This means that 'image' is shorthand for 'http://schema.org/image'
+      "@type": "@id"  ← This means that a string value associated with 'image' should be interpreted as an identifier that is an IRI
+    },
+    "homepage": {
+      "@id": "http://schema.org/url",  ← This means that 'homepage' is shorthand for 'http://schema.org/url'
+      "@type": "@id"  ← This means that a string value associated with 'homepage' should be interpreted as an identifier that is an IRI
+    }
+  }
+}
+
+
+{
+  "@context": "http://json-ld.org/contexts/person.jsonld",
+  "name": "Manu Sporny",
+  "homepage": "http://manu.sporny.org/",
+  "image": "http://manu.sporny.org/images/manu.png"
+}
+
+{
+  "@context":
+  {
+    "name": "http://schema.org/name",
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
+    "homepage": {
+      "@id": "http://schema.org/url",
+      "@type": "@id"
+    }
+  },
+  "name": "Manu Sporny",
+  "homepage": "http://manu.sporny.org/",
+  "image": "http://manu.sporny.org/images/manu.png"
+}
+
+
+{
+	"homepage": { "@id": "http://example.com/" }
+	 "http://schema.org/name": "Manu Sporny",
+}
+</script>
