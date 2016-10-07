@@ -1,0 +1,128 @@
+
+alias bkdevbuild='tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=*.rar --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf qnique-oct-6-2016.tar.gz /var/www/vhosts/qniquequilter.com && mv ./qnique-oct-6-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R'
+
+alias bkdevbuild='tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=*.rar --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf fungames-oct-6-2016.tar.gz /var/www/vhosts/fungamesandtoys.com && mv ./fungames-oct-6-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R'
+
+
+
+
+tar
+--exclude-vcs
+--exclude=*.mov
+--exclude=*.wmv
+--exclude=*.avi
+--exclude=.git/*
+--exclude=storage/*
+--exclude=cache/*
+--exclude=nbproject/*
+--exclude=zipa/*
+--exclude=zips/*
+--exclude=*.rar
+--exclude=*.tar.gz
+--exclude=*.zip
+--exclude=*.psd
+--exclude=*.tiff
+--exclude=*.tif
+--exclude=.phils/*
+--exclude=.idea/*
+--exclude=*.mp4
+ -zcvf
+dev-grace-oct-6-2016.tar.gz
+/var/www/vhosts/gracecompany/dev.grace
+&& mv ./dev-grace-oct-6-2016.tar.gz /var/www/vhosts/.down
+&&  chmod 777 /var/www/vhosts/.down -R
+
+
+alias bkdevbuild='tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf dev-build-oct-6-2016.tar.gz /var/www/vhosts/gracecompany/dev-build && mv ./dev-build-oct-6-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R'
+
+
+qniquequilter.co.za
+
+buildingsets.toys/
+.down/
+fungamesandtoys.com/
+gracecompany/
+handquiltingframe.com/
+management/
+.newbackups/
+qniquequilter.ca/
+qniquequilter.com/
+qniquequilter.com.au/
+qniquequilter.com-notused/
+qniquequilter.co.za/
+qniquequilter.eu/
+qniquequilter.international/
+qniquequilter-Sept-27-2016.tar.gz*
+qniquequilter.uk.com/
+quiltingindustry.com/
+.repos/
+stage.grace/
+test
+warehouse/
+
+
+
+
+
+qniquequilter-uk
+
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf warehouse-oct-6-2016.tar.gz /var/www/vhosts/warehouse && mv ./warehouse-oct-6-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+
+
+
+tar
+--exclude-vcs
+--exclude=*.mov
+--exclude=*.wmv
+--exclude=*.avi
+--exclude=.git/*
+--exclude=storage/*
+--exclude=cache/*
+--exclude=nbproject/*
+--exclude=zipa/*
+--exclude=zips/*
+--exclude=*.rar
+--exclude=*.tar.gz
+--exclude=*.zip
+--exclude=*.psd
+--exclude=*.tiff
+--exclude=*.tif
+--exclude=.phils/*
+--exclude=.idea/*
+--exclude=*.mp4
+ -zcvf
+qniquequilter-au-oct-5-2016.tar.gz
+/var/www/vhosts/qniquequilter.com.au
+&& mv ./qniquequilter-au-oct-5-2016.tar.gz /var/www/vhosts/.down
+&&  chmod 777 /var/www/vhosts/.down -R
+
+
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf qniquequilter-uk-oct-5-2016.tar.gz /var/www/vhosts/qniquequilter.uk.com && mv ./qniquequilter-uk-oct-5-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf qniquequilter-co-za-oct-5-2016.tar.gz /var/www/vhosts/qniquequilter.co.za && mv ./qniquequilter-co-za-oct-5-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf qniquequilter-eu-oct-5-2016.tar.gz /var/www/vhosts/qniquequilter.eu && mv ./qniquequilter-eu-oct-5-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=storage/* --exclude=cache/* --exclude=nbproject/* --exclude=zipa/* --exclude=zips/* --exclude=*.rar --exclude=*.tar.gz --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=*.tif --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf qniquequilter-au-oct-5-2016.tar.gz /var/www/vhosts/qniquequilter.com.au && mv ./qniquequilter-au-oct-5-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+
+
+zipandmove
+
+
+
+zipandmove
+
+
+
+
+
+zipandmove
+
+
+
+zipandmove

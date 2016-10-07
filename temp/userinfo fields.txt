@@ -1,0 +1,70 @@
+'status'
+'office_status'
+'availability'
+'slug'
+'ispromo'
+'is_published '
+'name'
+'subtitle'
+'details'
+'description'
+'price_heading'
+'features_heading'
+'additional_heading'
+'reviews_heading'
+'price'
+'model'
+'sku'
+'upc'
+'quantity'
+'thumbnail'
+'thumbnail2'
+'thumbnail3'
+'photo_album'
+'pubished_at'
+'video_url'
+'meta_title'
+'meta_description'
+'meta_keywords'
+'facebook_title'
+'google_plus_title'
+'twitter_title'
+'filter_class'
+'datalayer'
+'tracking'
+'reviews_tab'
+'warranty_tab'
+'docs_tab'
+'support_tab'
+'lang'
+
+
+
+'status',
+ 'office_status', 'availability', 'slug', 'ispromo', 'is_published ', 'name', 'subtitle', 'details', 'description', 'price_heading', 'features_heading', 'additional_heading', 'reviews_heading', 'price', 'model', 'sku', 'upc', 'quantity', 'thumbnail', 'thumbnail2', 'thumbnail3', 'photo_album', 'pubished_at', 'video_url', 'meta_title', 'meta_description', 'meta_keywords', 'facebook_title', 'google_plus_title', 'twitter_title', 'filter_class', 'datalayer', 'tracking', 'reviews_tab', 'warranty_tab', 'docs_tab', 'support_tab', 'lang'
+
+'photo' => $request->photo,
+'address' => $request->address,
+'city' => $request->city,
+'state' => $request->state,
+'zipcode' => $request->zipcode,
+'country' => $request->country,
+'about_me' => $request->about_me,
+'website' => $request->website,
+'company' => $request->company,
+'gender' => $request->gender,
+'phone' => $request->phone,
+'mobile' => $request->mobile,
+'work' => $request->work,
+'other' => $request->other,
+'dob' => $request->dob,
+'skypeid' => $request->skypeid,
+'githubid' => $request->githubid,
+'twitter_username' => $request->twitter_username,
+'instagram_username' => $request->instagram_username,
+'facebook_username' => $request->facebook_username,
+'facebook_url' => $request->facebook_url,
+'linked_in_url' => $request->linked_in_url,
+'google_plus_url' => $request->google_plus_url,
+'slug' => $request->slu,
+'display_name' => $request->display_name

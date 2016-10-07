@@ -1,0 +1,53 @@
+{
+	"animation_enabled": false,
+	"color_scheme": "Packages/Theme - Windows 10/Widget - Windows 10.tmTheme",
+	"date_format": "(%m-%d-%y)",
+	"delete_empty_lines": true,
+	"exclude_git_folder": true,
+	"exclude_hidden_files": true,
+	"exclude_hidden_folders": true,
+	"folders":
+	[
+		{
+			"path": "G:\\GraceRepos\\grace.repo"
+		},
+		{
+			"path": "G:\\GraceRepos\\grace.repo\\storage\\logs"
+		},
+		{
+			"path": "G:\\GraceRepos\\shop-default"
+		}
+	],
+	"font_face": "Encode Sans Compressed SemiBold",
+	"format_on_save": true,
+	"format_on_save_extensions":
+	[
+		"js",
+		"json",
+		"sublime-project",
+		"sublime-settings"
+	],
+	"ignore_sublime_settings": true,
+	"ignored_words":
+	[
+		"☐",
+		"✔",
+		"✘",
+		"✄"
+	],
+	"indent_style": "tab",
+	"indent_with_tabs": true,
+	"index_exclude_patterns":
+	[
+		"*.log"
+	],
+	"index_files": true,
+	"path_mapping":
+	{
+		"/home/vagrant/gr/grace.repo": "G:\\GraceRepos\\grace.repo"
+	},
+	"tab_size": 4,
+	"taskpaper_compatible": true,
+	"translate_tabs_to_spaces": false,
+	"url": "http://grace.repo/"
+}

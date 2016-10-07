@@ -34,6 +34,220 @@ alias restartl='service lsyncd restart'
 alias blay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend/layout'
 alias flay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/layout'
 
+E:\A_LOCAL\bbb\part1\resources\views\admin\layout
+
+"filp/whoops": "^2.1"
+
+gzip -c qniquequilter.com-error.log > qniquequilter.com-error.log.gz
+
+tar -zcvf date +"%m_%d_%Y".tar.gz /var/www/vhosts/fungamesandtoys.com/wp-content/themes/knucklestrutz
+
+git archive --format=tar -o ~/buildingsets.toys-dec-15-2015.tar -v HEAD
+
+tar
+--exclude='*.jpg'
+--exclude='*.png'
+--exclude='*.mp3'
+--exclude='*.mov'
+--exclude='*.wmv'
+--exclude='*.avi'
+--exclude='*.mp4'
+--exclude='*.pdf'
+-czf site.com.20130924.tgz /var/httpd/site.com
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf stage-grace-oct-5-2016.tar.gz /var/www/vhosts/gracecompany/stage.grace && mv /var/www/vhosts/gracecompany/stage-grace-oct-5-2016.tar.gz /var/www/vhosts/.down && chmod 777 /var/www/vhosts/.down && chmod 777 /var/www/vhosts/.down/stage-grace-oct-5-2016.tar.gz
+
+
+tar
+--exclude-vcs
+--exclude=*.mov
+--exclude=*.wmv
+--exclude=*.avi
+--exclude=.git/*
+--exclude=.phils/*
+--exclude=.idea/*
+--exclude=*.mp4
+ -zcvf
+live-grace-oct-5-2016.tar.gz
+/var/www/vhosts/gracecompany/stage.grace
+&& mv /var/www/vhosts/gracecompany/live-grace-oct-5-2016.tar.gz /var/www/vhosts/.down
+&& chmod 777 /var/www/vhosts/.down
+&& chmod 777 /var/www/vhosts/.down/live-grace-oct-5-2016.tar.gz
+
+
+\Illuminate\Database\Eloquent\Relations\BelongsToMany
+ \Illuminate\Database\Eloquent\Relations\MorphTo
+
+
+tar --exclude-vcs --exclude=*.mov --exclude=*.wmv --exclude=*.avi --exclude=.git/* --exclude=*.rar --exclude=*.zip --exclude=*.psd --exclude=*.tiff --exclude=.phils/* --exclude=.idea/* --exclude=*.mp4 -zcvf live-grace-oct-5-2016.tar.gz /var/www/vhosts/gracecompany/live.grace && mv ./live-grace-oct-5-2016.tar.gz /var/www/vhosts/.down &&  chmod 777 /var/www/vhosts/.down -R
+
+
+zipandmove
+
+<div class="divider divider-center"><a href="#" data-scrollto="#header"><i class="icon-chevron-up"></i></a></div>
+
+tabs tabs-bordered clearfix ui-tabs ui-widget ui-widget-content ui-corner-all
+
+
+
+find . -type f | grep -v -E "(.idea|.git)" | while read file
+do
+  # Do something with $file
+done
+
+
+
+
+
+
+apidoc -i example/ -o doc/
+
+Auto javaDocify Plugin for CFML
+===============================
+Running..
+Adding comments to cftags
+Adding comments to cfscript
+Done!
+
+{ "keys": ["super+ctrl+alt+space"], "command": "simple_phpspec" }
+
+
+view.sel()[0].begin()).rpartition('.')[2].strip()
+
+        "",
+        "",
+        "",
+        ""
+
+
+
+
+<div class="divider"><i class="icon-circle"></i></div>
+<div class="divider divider-right"><i class="icon-heart"></i></div>
+<div class="divider divider-center"><i class="icon-cloud"></i></div>
+<div class="divider divider-short"><i class="icon-screen"></i></div>
+<div class="divider divider-short divider-right"><i class="icon-pill"></i></div>
+<div class="divider divider-short divider-center"><i class="icon-crop"></i></div>
+<div class="divider divider-rounded"><i class="icon-connection-empty"></i></div>
+<div class="divider divider-rounded divider-right"><i class="icon-chat"></i></div>
+<div class="divider divider-rounded divider-center"><i class="icon-map-marker"></i></div>
+<div class="divider divider-short divider-rounded"><i class="icon-barbell"></i></div>
+<div class="divider divider-short divider-rounded divider-right"><i class="icon-atom"></i></div>
+<div class="divider divider-short divider-rounded divider-center"><i class="icon-pencil"></i></div>
+<div class="divider divider-border"><i class="icon-refresh"></i></div>
+<div class="divider divider-border divider-right"><i class="icon-paperclip"></i></div>
+<div class="divider divider-border divider-center"><i class="icon-email2"></i></div>
+
+<div class="divider divider-short divider-border"><i class="icon-stack"></i></div>
+<div class="divider divider-short divider-border divider-right"><i class="icon-diamond"></i></div>
+<div class="divider divider-short divider-border divider-center"><i class="icon-like"></i></div>
+
+
+
+
+
+
+In PHP, some of the magic methods have their values prefilled:
+__construct, __destruct, __set, __unset, __wakeup have no @return tag.
+__sleep returns an array.
+__toString returns a string.
+__isset returns a bool.
+In ES6 Javascript, generator functions get a @yield tag instead of @return
+
+
+--exclude-vcs
+
+tar -czvf archive.tar.gz /home/ubuntu --exclude=*.mp4
+
+
+tar -czvf archive.tar.gz /home/ubuntu --exclude=/home/ubuntu/Downloads --exclude=/home/ubuntu/.cache
+
+
+
+tar
+--exclude-vcs
+--exclude=*.mov
+--exclude=*.wmv
+--exclude=*.avi
+--exclude=.git/*
+--exclude=.phils/*
+--exclude=.idea/*
+--exclude=*.mp4
+ -zcvf
+dev-build-oct-5-2016.tar.gz
+/var/www/vhosts/gracecompany/dev-build
+&& mv /var/www/vhosts/gracecompany/dev-build-oct-5-2016.tar.gz /var/www/vhosts/.down
+&& chmod 777 /var/www/vhosts/.down
+&& chmod 777 /var/www/vhosts/.down/dev-build-oct-5-2016.tar.gzip
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @include('layouts.meta')
+
+    @yield('title')
+
+    @include('layouts.css')
+
+    @yield('css')
+
+    @include('layouts.shim')
+
+</head>
+
+<body role="document">
+
+
+    @include('layouts.nav')
+
+    <div class="container theme-showcase" role="main">
+
+    @yield('content')
+
+    @include('layouts.bottom')
+
+    </div> <!-- /container -->
+
+    @include('layouts.scripts')
+
+    @yield('scripts')
+
+    @include('flash')
+
+</body>
+</html>
+
+
+
+UA-77046605-2
+
+ public function add() {
+
+        $file = Request::file('file');
+        $extension = $file->getClientOriginalExtension();
+        Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+
+        $entry = new \App\File();
+        $entry->mime = $file->getClientMimeType();
+        $entry->original_filename = $file->getClientOriginalName();
+        $entry->filename = $file->getFilename().'.'.$extension;
+
+        $entry->save();
+
+        $product  = new \App\Product();
+        $product->file_id=$entry->id;
+        $product->name =Request::input('name');
+        $product->description =Request::input('description');
+        $product->price =Request::input('price');
+        $product->imageurl =Request::input('imageurl');
+
+        $product->save();
+
+        return redirect('/admin/products');
+
+    }
+
 
 "cartalyst/cart": "2.0.*@dev"
 composer create-project --prefer-dist laravel/laravel ./ "5.1.*"
@@ -44,16 +258,102 @@ Auth::getUser() or Sentinel::getUser().
 $full_path1 = $full_size_dir        . $sessionImage->filename;
 
 
+@include('frontend/layout/parts/default-styles')
+@include('frontend/layout/parts/default-scripts')
+
+
+@include('backend.layout.parts.default-styles')
+@include('backend.layout.parts.default-scripts')
+@include('backend.layout.parts.additional-scripts')
 
 
 
+   <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', '{!! $settings['ga_code']  or 'UA-78414244-1' !!}', 'auto');
+          ga('create', 'UA-78414244-2', 'auto', {'name': 'devTracker'});
+          ga('require', 'ec');
+            ga('require', 'displayfeatures');
+            ga('require', 'linkid');
+@yield('inline-ga-func')
+@yield('inline-ga-pi')
+@yield('inline-ga-atc')
+@yield('inline-ga-action')
+          ga('send', 'pageview');
+          ga('devTracker.send', 'pageview');
+    </script>
+
+If you wish to see all files over 100M and to see where they are and what is their size try this:
+
+find . -type f -size +100M -exec ls -lh {} \;
+
+cat /c/Users/Phillip/.ssh/id_rsa.gracecompany.pub | ssh github "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"
+
+{!! $product->categories()[0] !!}
+
+@param Request $request
+@return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{!! $settings['ga_code']  or 'UA-78414244-1' !!}', 'auto');
+        ga('require', 'ec');
+        @yield('inline-ga-func')
+        @yield('inline-ga-pi')
+        @yield('inline-ga-atc')
+        @yield('inline-ga-action')
+        ga('send', 'pageview');
+
+    </script>
+
+<?php $i=0 ?>
+@foreach ($products as $product)
+ga('ec:addImpression', {
+  'id': 'product-{!! $product->id !!}',                   // Product details are provided in an impressionFieldObject.
+  'name': '{!! $product->name !!}',
+  'category': 'Quilting',
+  'brand': 'Grace',
+  'variant': 'Normal',
+  'list': 'Shop Listing',
+  'position': '<?php echo $i++ ?>'
+});
+ga('ec:setAction', 'detail');
+ga('send', 'event', 'catalog', 'impression', {'nonInteraction': true});
+@endforeach
 
 
+
+@include('frontend/layout/parts/meta')
+
+  if (!Sentinel::getUser()->inRole(['Admin', 'SuperAdmin'])){}
+
+
+  if (Sentinel::check()) {
+ if (!Sentinel::inRole('superadmin')) {
+ if (!$request->route()->getName()) {
+
+  if ($user = Sentinel::getUser())
+    {
+        if ($user->inRole('administrator'))
+        {
+            // Your logic
+        }
+    }
+
+
+      $methods = ['getRoles', 'inRole', 'hasAccess', 'hasAnyAccess'];
 
  if (File::exists($full_path1)) {File::delete($full_path1);}
 
 
-
+@if(!Request::url(getLang() . '/qnique'))
+@endif
 
 private function getProductVariants($variants = [])
 {

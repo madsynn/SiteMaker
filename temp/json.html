@@ -1,0 +1,213 @@
+ <script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement":
+ [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item":
+   {
+    "@id": "https://example.com/dresses",
+    "name": "Dresses"
+    }
+  },
+  {
+   "@type": "ListItem",
+  "position": 2,
+  "item":
+   {
+     "@id": "https://example.com/dresses/real",
+     "name": "Real Dresses"
+   }
+  }
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ItemList",
+  "url": "http://multivarki.ru?filters%5Bprice%5D%5BLTE%5D=39600",
+  "numberOfItems": "315",
+  "itemListElement": [{
+      "@type": "Product",
+      "image": "http://img01.multivarki.ru.ru/c9/f1/a5fe6642-18d0-47ad-b038-6fca20f1c923.jpeg",
+      "url": "http://multivarki.ru/brand_502/",
+      "name": "Brand 502"
+    },{
+      "@type": "Product",
+      "name": "..."
+    }
+  ],
+    "offers": {
+      "@type": "Offer",
+      "price": "4399 p."
+    }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": ["ItemList", "CreativeWork"],
+  "name": "Top 5 covers of Bob Dylan Songs",
+  "author": "John Doe",
+  "about": {
+    "@type": "MusicRecording",
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "Bob Dylan"
+    }
+  },
+  "itemListOrder": "http://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "If Not For You",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "George Harrison"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "The Times They Are A-Changin'",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Tracy Chapman"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "It Ain't Me Babe",
+        "byArtist": [
+          {
+            "@type": "MusicGroup",
+            "name": "Johnny Cash"
+          },
+          {
+            "@type": "MusicGroup",
+            "name": "June Carter Cash"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "Don't Think Twice It's Alright",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Waylon Jennings"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "All Along the Watchtower",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Jimi Hendrix"
+        }
+      }
+    }
+  ]
+}
+</script>
+
+
+ "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": ,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "If Not For You",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "George Harrison"
+        }
+      }
+    },
+
+
+{
+  "@context": "http://schema.org",
+  "@type": "ItemList",
+  "url": "{{ url() }}",
+  "numberOfItems": "{!! App\Models\Product::count() !!}",
+  "itemListElement": [
+
+    {
+      "@type": "Product",
+      "image": "{!! url() !!}{!! $product->thumbnail !!}",
+      "url": "{!! url(getLang().'/product/'. $product->slug) !!}",
+      "name": "{!! $product->name !!}"
+    },
+        "offers": {
+          "@type": "Offer",
+          "price": "{!! $product->price !!}"
+        },
+
+
+
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@graph": [
+{
+  "@type": "Product",
+  "name": "tshirt",
+  "description": "test copy 1.",
+  "image": "image.jpg"
+},
+{
+  "@type": "Product",
+  "name": "tshirt 2",
+  "description": "test copy 2.",
+  "image": "image2.jpg"
+}
+]
+}
+</script>
+
+
+    <div itemscope itemtype=”http://schema.org/Product”>
+    <h1 itemprop=”name”>Some Amazing Product</h1>
+    <img src=”some-amazing-product.png” alt=”Amazing product picture” itemprop=”image” />
+    <p itemprop=”description”>
+        This is a really amazing product. In fact, we think you will be amazed.
+        <span itemprop=”sku”>123456789</span>
+    </p>
+    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <span itemprop=”ratingValue”>4</span> stars, based on
+        <span itemprop=”reviewCount”>1,987</span> reviews.
+    </div>
+    <div itemprop=”offers” itemscope itemtype=”http://schema.org/Offer”>
+        <meta itemprop=”priceCurrency” content=”USD” />
+        $<span itemprop=”price”>9.99</span> |
+        <span itemprop=”availability”>In-stock</span>
+    </div>
+</div>

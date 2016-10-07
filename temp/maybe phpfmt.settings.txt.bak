@@ -1,0 +1,64 @@
+{
+    "autocomplete": true,
+    "autoimport": true,
+    "enable_auto_align": true,
+    "engine": "fmt.phar",
+    "format_on_save": false,
+    "indent_with_space": 4,
+    "options":
+    [
+        "fix",
+        "-n"
+    ],
+    "passes":
+    [
+        "AlignPHPCode",
+        "AlignTypehint",
+        "ShortArray",
+        "AlignEquals",
+        "AlignGroupDoubleArrow",
+        "AutoSemicolon",
+        "DoubleToSingleQuote",
+        "GeneratePHPDoc ",
+        "PHPDocTypesToFunctionTypehint",
+        "PrettyPrintDocBlocks",
+        "ReindentAndAlignObjOps",
+        "ReplaceBooleanAndOr",
+        "ReplaceIsNull",
+        "StripExtraCommaInArray",
+        "StripNewlineAfterClassOpen",
+        "StripNewlineAfterCurlyOpen",
+        "StripSpaces",
+        "StripSpaceWithinControlStructures",
+        "TightConcat",
+        "TrimSpaceBeforeSemicolon"
+
+    ],
+    "php_bin":"c:/tools/PHP/php.exe",
+    "psr1": true,
+    "psr2": true,
+    "psr3": true,
+    "psr4": true,
+    "version": 4
+}
+
+        "AlignPHPCode",
+        "AlignTypehint",
+        "ShortArray",
+        "AlignEquals",
+        "AlignGroupDoubleArrow",
+        "AutoSemicolon",
+        "DoubleToSingleQuote",
+        "GeneratePHPDoc ",
+        "PHPDocTypesToFunctionTypehint",
+        "PrettyPrintDocBlocks",
+        "ReindentAndAlignObjOps",
+        "ReplaceBooleanAndOr",
+        "ReplaceIsNull",
+        "StripExtraCommaInArray",
+        "StripNewlineAfterClassOpen",
+        "StripNewlineAfterCurlyOpen",
+        "StripSpaces",
+        "StripSpaceWithinControlStructures",
+
+        "TrimSpaceBeforeSemicolon"

@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+
+tar
+--exclude-vcs
+--exclude=*.mov
+--exclude=*.wmv
+--exclude=*.avi
+--exclude=.git/*
+--exclude=storage/*
+--exclude=cache/*
+--exclude=nbproject/*
+--exclude=zipa/*
+--exclude=zips/*
+--exclude=*.rar
+--exclude=*.tar.gz
+--exclude=*.zip
+--exclude=*.psd
+--exclude=*.tiff
+--exclude=*.tif
+--exclude=.phils/*
+--exclude=.idea/*
+--exclude=*.mp4
+ -zcvf
+${1:this}-${2:oct-5-2016}.tar.gz
+${3:/var/www/vhosts/gracecompany/}${4:stage.grace}
+&& mv ./$1-$2.tar.gz ${5:/var/www/vhosts/.down}
+&&  chmod 777 $5 -R
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>zipandmove</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

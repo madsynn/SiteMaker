@@ -1408,6 +1408,10 @@ barricuda
 php -i > phpinfo.txt
 alias pear="cmd //c /c/Users/sandbox/pear.bat"
 
+find . -name '*.php' -exec sed -ie 's#<?#<?php#' {} \;
+
+find . -type f -exec sed -i 's/AppCache/FullyCache/g' {} +
+
 
 zip recruiter
 

@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+{
+    "folders": [{
+        "path": "E:\\GraceRepos\\github.grace.dev",
+        "folder_exclude_patterns": ["backup", ".idea", ".phils"],
+        "follow_symlinks": true
+    }, {
+        "path": "E:\\GraceRepos\\github.grace.dev\\docs",
+        "name": "Documentation",
+        "file_exclude_patterns": ["*.css"]
+    }],
+    "settings": {
+        "animation_enabled": false,
+        "color_scheme": "Packages/Theme - Windows 10/Widget - Windows 10.tmTheme",
+        "tab_size": 4,
+        "indent_style": "tab",
+        "indent_with_tabs": true,
+        "date_format": "(%m-%d-%y)",
+        "delete_empty_lines": true,
+        "exclude_git_folder": true,
+        "exclude_hidden_files": true,
+        "exclude_hidden_folders": true,
+        "indent_style": "tab",
+        "indent_with_tabs": true,
+        "index_files": true,
+        "taskpaper_compatible": true,
+        "translate_tabs_to_spaces": false,
+        "url": "http://github.grace.dev/",
+        "ignored_words": ["☐", "✔", "✘", "✄"],
+        "path_mapping": {
+            "/home/vagrant/gr/github.grace.dev": "E:\\GraceRepos\\github.grace.dev"
+        },
+    },
+    "build_systems": [{
+        "name": "List",
+        "shell_cmd": "ls -l"
+    }]
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>projecttemplate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

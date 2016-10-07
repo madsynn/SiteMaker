@@ -1,0 +1,3457 @@
+67 54 17
+alias listsshkeys='ls -al ~/.ssh'
+
+ssh root@104.130.169.19
+2fv0BItgMHnG
+cd ../var/www/vhosts/gracecompany/live.grace/resources/views/backend/
+
+php -i > phpinfo.txt
+alias pear="cmd //c /c/Users/sandbox/pear.bat"
+
+ssh root@104.130.169.19
+2fv0BItgMHnG
+cd ../var/www/vhosts/gracecompany/stage.grace/
+
+alias vc="composer du && php artisan cache:clear && php artisan view:clear"
+alias largefiles="git lfs ls-files"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gundo='git reset HEAD~ && git clean -df'
+alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
+
+
+function routes()
+{
+    if [ $# -eq 0 ]; then
+        php artisan route:list
+    else
+        php artisan route:list | grep ${1}
+    fi
+}
+
+@if(Auth::user()->isSeller == 1) //html for seller
+@elseif (Auth::user()->isSeller == 0) //html for buyer
+@endif
+
+
+{!! Form::open(['route' => ['addUserImage', $user->id],
+          'class' => 'dropzone',
+          'method' => 'post',
+          'files' => 'true'
+          ]) !!}
+
+
+    {!! Form::open( ['route' => [getLang(). '.admin.user.update', $user->id], 'method' => 'PATCH']) !!}
+
+  {!! Form::open(['' => '\Fully\Http\Controllers\Admin\UserController@addPhoto',
+
+{!! Form::open(array('action' => '\Fully\Http\Controllers\Admin\UserController@store')) !!}
+
+
+  {!! Form::open(['action' => ['\Fully\Http\Controllers\Admin\UserController@addUserImage', $user->id],
+          'class' => 'dropzone',
+          'method' => 'post',
+          'files' => 'true'
+          ]) !!}
+
+
+
+  public function addPhoto($user, Request $request)
+  {
+    //dd($request->file('file'));
+    $file = $request->file('file');
+    $name = time() . $file->getClientOriginalName();
+    $file->move('users/', $name);
+    $user = $this->user->find($id);
+    ////$user = Sentinel::findUserById($id);
+    //$user = Sentinel::findById($id);
+    $user->photos()->create(['path' => "/user/{$name}"]);
+    return 'done';
+  }
+
+
+        'list_item_1' => 'string',
+        'list_item_2' => 'string',
+        'list_item_3' => 'string',
+        'list_item_4' => 'string',
+        'list_item_5' => 'string',
+        'list_item_6' => 'string',
+
+        infyom:publish
+
+   'file_name' => 'string',
+        'file_size' => 'integer',
+        'image_alt' => 'string',
+        'primary_image_label' => 'string',
+        'primary_image_file_size' => 'integer',
+        'primary_image' => 'string',
+        'second_image_label' => 'string',
+        'second_image_file_size' => 'integer',
+        'second_image' => 'string',
+        'third_image_label' => 'string',
+        'third_image_file_size' => 'integer',
+        'third_image' => 'string',
+        'fourth_image_label' => 'string',
+        'fourth_image_file_size' => 'integer',
+        'fourth_image' => 'string',
+        'fifth_image_label' => 'string',
+        'fifth_image_file_size' => 'integer',
+        'fifth_image' => 'string',
+        'product_doc' => 'string',
+        'product_doc_label' => 'string',
+        'product_doc_file_size' => 'integer',
+
+
+
+
+
+
+
+Color Scheme - Default.sublime-package
+
+
+Color Scheme - Default.zip
+
+
+Reply-To: [email-input]
+Cc:  jaren@graceframe.com ; chris@graceframe.com ; karla@graceframe.com
+Bcc: pmadsen2013@gmail.com
+
+John Smith <john@example.com>
+
+on_sent_ok: "ga('send', 'event', 'Contact Form', 'sent', 'successful');"
+
+Bcc: MarkM@graceframe.com
+Reply-To: contact@qniquequilter.com
+
+[name-input] <contact@qniquequilter.com>
+ <contact@qniquequilter.com>
+
+
+git clone git://github.com/andrewcooke/docco.git
+npm install docco
+docco src/*.c src/*.h
+
+
+new credit inquiries:
+FIRST INVST SVC/FIRST IN on Date:   June 30, 2016
+PRESTIGE FINANCIAL SERVICES on Date:   June 30, 2016
+RATEGENIUS LOAN SERVICES on Date:   June 30, 2016
+SANTANDER CONSUMER USA on Date:   June 30, 2016
+CARFINANCE.COM on Date:   June 29, 2016
+FIRST INVST SVC/FIRST IN on Date:   June 29, 2016
+
+
+Cc: jaren@graceframe.com, chris@graceframe.com, karla@graceframe.com
+Bcc: sales@qniquequilter.com
+Reply-To: [footer-contact-email]
+
+
+// https://laracasts.com/series/build-project-flyer-with-me/episodes/11
+art make:migration create_user_images_table --create=user_images
+art make:migration create_pages_images_table --create=pages_images
+
+
+
+
+
+'name',
+'surname',
+'email',
+'password',
+'facebook_id',
+'avatar',
+'social_facebook',
+'social_twitter',
+'social_google',
+'social_website'
+
+a.ct-active>span
+li#menu-item-1178>a, li#menu-item-1371>a
+ul#menu-bottom-menu
+li.topcart>a
+span.ct-active
+
+.woocommerce-account ul#menu-bottom-menu li
+.woocommerce-page
+
+resources/views/admin/layout.blade.php
+
+<?php
+// This Is A Header
+
+// ----------------
+?>
+
+
+
+.woocommerce-account li.topcart>a
+
+.woocommerce-account ul#menu-bottom-menu li span.ct-active
+
+
+
+
+
+docco comments.js
+
+
+sudo npm install -g coffee-script
+
+sudo npm install pygments
+sudo npm install -g pygments
+
+ docco /home/vagrant/bbb/uploadmanager/resources/views/admin/layout.blade.php
+
+
+                {!! Form::model($article, ['route' => [getLang(). '.admin.article.update', $article->id], 'method' => 'PATCH', 'files'=>true]) !!}
+                    @include('backend.article.fields')
+                    {!! Form::submit('Update', array('class' => 'btn btn-success')) !!}
+                {!! Form::close() !!}
+
+
+
+ "syntax_override": {
+          "\\.html$": ["HTML Underscore Syntax", "HTML (Underscore)"]
+      }
+      "\\.sublime-project$": ["JavaScriptNext - ES6 Syntax", "JSON (JavaScriptNext)"]
+
+
+CRUD Create, Read, Update and Delete
+
+
+
+
+
+
+orders, users.id orders_user_id
+
+{!! $product->features[0]->feature_name !!}
+
+  {!! $product->features[0]->feature_name !!}
+<ul class="list-group">
+@if($product->features)
+    @foreach($product->features as $feature)
+        <li> {!! $feature->feature_name !!}</li>
+    @endforeach
+@endif
+</ul>
+ <i class="icon-caret-right"></i>
+
+{!! $product->images[0]->image !!}
+{!! $product->images[1]->image !!}
+{!! $product->images[2]->image !!}
+{!! $product->images[3]->image !!}
+{!! $product->images[4]->image !!}
+
+
+            // We'll need to ensure that MySQL uses the InnoDB engine to
+            // support the indexes, other engines aren't affected.
+            $table->engine = 'InnoDB';
+            $table->unique('email');
+            $table->index('activation_code');
+            $table->index('reset_password_code');
+
+
+https://maxoffsky.com/code-blog/laravel-first-framework-chapter-5-understanding-controllers/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {!! Form::select('category_id', $categories, (isset($product)? $product->category_id:null), ['id'=>'category_id','class' => 'form-control']) !!}
+
+
+
+
+
+<div class="form-group required {{ $errors->has('category_id') ? 'has-error' : '' }}">
+    {!! Form::label('category_id', trans('product.category_id'), array('class' => 'control-label required')) !!}
+    <div class="controls">
+        {!! Form::select('category_id', $categories, null, array('id'=>'category_id','class' => 'form-control')) !!}
+        <span class="help-block">{{ $errors->first('category_id', ':message') }}</span>
+    </div>
+</div>
+
+
+
+ <div class="form-group required {{ $errors->has('quantity_on_hand') ? 'has-error' : '' }}">
+            {!! Form::label('quantity_on_hand', trans('product.quantity_on_hand'), array('class' => 'control-label required')) !!}
+            <div class="controls">
+                {!! Form::input('number','quantity_on_hand', null, array('class' => 'form-control')) !!}
+                <span class="help-block">{{ $errors->first('quantity_on_hand', ':message') }}</span>
+            </div>
+        </div>
+        <div class="form-group required {{ $errors->has('quantity_available') ? 'has-error' : '' }}">
+            {!! Form::label('quantity_available', trans('product.quantity_available'), array('class' => 'control-label required')) !!}
+            <div class="controls">
+                {!! Form::input('number','quantity_available', null, array('class' => 'form-control')) !!}
+                <span class="help-block">{{ $errors->first('quantity_available', ':message') }}</span>
+            </div>
+        </div>
+        <div class="form-group required {{ $errors->has('product_type') ? 'has-error' : '' }}">
+            {!! Form::label('product_type', trans('product.product_type'), array('class' => 'control-label required')) !!}
+            <div class="controls">
+                {!! Form::select('product_type', $product_types, (isset($product)?$product->product_type:null), array('id'=>'product_type','class' => 'form-control')) !!}
+                <span class="help-block">{{ $errors->first('product_type', ':message') }}</span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="{{ asset('js/jquery.charcounter.js')}}"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#title").charCounter(70,{
+        container: '<small></small>'
+      });
+      $("#description").charCounter(160,{
+        container: '<small></small>'
+      });
+      $("#keywords").charCounter(255,{
+        container: '<small></small>'
+      });
+      $('#typeSelect').change(function(){
+        $('#selectForm').submit();
+      });
+    });
+    </script>
+
+class PostsController extends BaseController
+{
+  // View all posts
+  public function getIndex(){ ... }
+  // Show an individual post
+  public function getView($id){ ... }
+  // Show the form for the creation of a new post
+  public function getNew(){ ... }
+  // Process submission of a new post
+  public function postNew(){ ... }
+  // Show a form editing a post
+  public function getEdit($id){ ... }
+  // Process submission of edited post
+  public function postEdit($id){ ... }
+  // Delete a specific post
+  public function deletePost($id){ ... }
+}
+
+
+
+    public function uploadAvatar(UploadedFile $file)
+    {
+        $destinationPath = public_path() . '/uploads/avatar/';
+        $extension = $file->getClientOriginalExtension() ?: 'png';
+        $fileName = str_random(10) . '.' . $extension;
+        return $file->move($destinationPath, $fileName);
+    }
+
+
+
+
+
+
+    // public function create($attributes)
+    // {
+    //     $attributes['is_published'] = isset($attributes['is_published']) ? true : false;
+    //     if ($this->isValid($attributes)) {
+    //         //--------------------------------------------------------
+    //         $file = null;
+    //         if (isset($attributes['image'])) {
+    //             $file = $attributes['image'];
+    //         }
+    //         if ($file) {
+    //             $destinationPath = public_path().$this->imgDir;
+    //             $fileName = $file->getClientOriginalName();
+    //             $fileSize = $file->getClientSize();
+    //             $upload_success = $file->move($destinationPath, $fileName);
+    //             if ($upload_success) {
+    //                 // resizing an uploaded file
+    //                 Image::make($destinationPath.$fileName)->resize($this->width, $this->height)->save($destinationPath.$fileName);
+    //                 // thumb
+    //                 Image::make($destinationPath.$fileName)->resize($this->thumbWidth, $this->thumbHeight)->save($destinationPath.'thumb_'.$fileName);
+    //                 $this->product->lang = $this->getLang();
+    //                 $this->product->file_name = $fileName;
+    //                 $this->product->file_size = $fileSize;
+    //                 $this->product->path = $this->imgDir;
+    //             }
+    //         }
+    //         //--------------------------------------------------------
+    //         // $this->product->lang = $this->getLang();
+    //         // if ($this->product->fill($attributes)->save()) {
+    //         //     $category = Category::find($attributes['category']);
+    //         //     $category->products()->save($this->product);
+    //         // }
+    //         //Event::fire('article.created', $this->article);
+    //         Event::fire('product.creating', $this->product);
+    //         return true;
+    //     }
+    //     throw new ValidationException('product validation failed', $this->getErrors());
+    // }
+
+
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+
+
+
+
+
+    <script>
+
+$(document).ready(function(){
+    $('#add').click(function(){
+        var inp = $('#box');
+        var i = $('input').size() + 1;
+        $('<div id="box' + i +'"><input type="text" id="name" class="name" name="name' + i +'" placeholder="Input '+i+'"/><img src="remove.png" width="32" height="32" border="0" align="top" class="add" id="remove" /> </div>').appendTo(inp);
+        i++;
+    });
+    $('body').on('click','#remove',function(){
+        $(this).parent('div').remove();
+    });
+});
+
+</script>
+
+TABS
+
+ADDITIONAL
+DATES
+DESCRIPTIONS
+IDENTIFIERS
+IMAGES
+PRICING
+SEO
+SIZE
+STOCK
+
+ONSALE
+ISPROMO
+SEO
+"\\.php$": ["PHP", "PHP"]
+"\\.php$": ["laravel-blade"]
+
+!
+
+[*.php]
+end_of_line = lf|crlf|cr
+indent_style = space|tab
+charset = utf-8|latin1|utf-16be|utf-16le
+trim_trailing_whitespace = true|false
+insert_final_newline = true|false
+indent_size = 4
+
+
+{!! Button::primary('Primary') !!}}
+
+{!! Button::primary('Primary') !!}
+
+‘files’=>true
+
+@if(Session::has('success'))
+  <div class="alert-box success">
+  <h2>{!! Session::get('success') !!}</h2>
+  </div>
+@endif
+
+
+
+ protected $dates = ['from', 'to'];
+
+
+
+ public static function lastRecord()
+ {
+  return static::select(DB::raw('SUBSTR(id, 3) AS id'))->orderBy('id', 'DESC')->first();
+ }
+
+
+
+Route::any('form-submit', function(){
+ return Input::file('file')->getFilename();
+});
+
+Route::any('form-submit', function(){
+ return Input::file('file')->getClientOriginalName();
+});
+
+Route::any('form-submit', function(){
+ return Input::file('file')->getClientSize();
+});
+
+Route::any('form-submit', function(){
+ return Input::file('file')->getClientMimeType();
+});
+
+
+Route::any('form-submit', function(){
+ return Input::file('file')->guessClientExtension();
+});
+
+
+Route::any('form-submit', function(){
+ return Input::file('file')->getRealPath();
+});
+
+// Input::file(‘file’)->move(storage_path(),Input::file(‘file’)->getClientOriginalName());
+
+
+Route::any('form-submit', function(){
+ return Input::file('file')->move(__DIR__.'/storage/',Input::file('file')->getClientOriginalName());
+});
+
+// HTML::image('/public/storage/app/' . $user->original_filename)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+object(Symfony\Component\HttpFoundation\File\UploadedFile)[9]
+  private 'test' => boolean false
+  private 'originalName' => string 'test.jpg' (length=22)
+  private 'mimeType' => string 'image/jpeg' (length=10)
+  private 'size' => int 667220
+  private 'error' => int 0
+
+
+'Accordion' => Bootstrapper\Facades\Accordion::class,
+'Alert' => Bootstrapper\Facades\Alert::class,
+'Badge' => Bootstrapper\Facades\Badge::class,
+'Breadcrumb' => Bootstrapper\Facades\Breadcrumb::class,
+'Button' => Bootstrapper\Facades\Button::class,
+'ButtonGroup' => Bootstrapper\Facades\ButtonGroup::class,
+'Carousel' => Bootstrapper\Facades\Carousel::class,
+'ControlGroup' => Bootstrapper\Facades\ControlGroup::class,
+'DropdownButton' => Bootstrapper\Facades\DropdownButton::class,
+'Form' => Bootstrapper\Facades\Form::class,
+'Helpers' => Bootstrapper\Facades\Helpers::class,
+'Icon' => Bootstrapper\Facades\Icon::class,
+'InputGroup' => Bootstrapper\Facades\InputGroup::class,
+'Image' => Bootstrapper\Facades\Image::class,
+'Label' => Bootstrapper\Facades\Label::class,
+'MediaObject' => Bootstrapper\Facades\MediaObject::class,
+'Modal' => Bootstrapper\Facades\Modal::class,
+'Navbar' => Bootstrapper\Facades\Navbar::class,
+'Navigation' => Bootstrapper\Facades\Navigation::class,
+'Panel' => Bootstrapper\Facades\Panel::class,
+'ProgressBar' => Bootstrapper\Facades\ProgressBar::class,
+'Tabbable' => Bootstrapper\Facades\Tabbable::class,
+'Table' => Bootstrapper\Facades\Table::class,
+'Thumbnail' => Bootstrapper\Facades\Thumbnail::class,
+
+
+'Accordion' => 'Bootstrapper\Facades\Accordion',
+'Alert' => 'Bootstrapper\Facades\Alert',
+'Badge' => 'Bootstrapper\Facades\Badge',
+'Breadcrumb' => 'Bootstrapper\Facades\Breadcrumb',
+'Button' => 'Bootstrapper\Facades\Button',
+'ButtonGroup' => 'Bootstrapper\Facades\ButtonGroup',
+'Carousel' => 'Bootstrapper\Facades\Carousel',
+'ControlGroup' => 'Bootstrapper\Facades\ControlGroup',
+'DropdownButton' => 'Bootstrapper\Facades\DropdownButton',
+'Form' => 'Bootstrapper\Facades\Form',
+'Helpers' => 'Bootstrapper\Facades\Helpers',
+'Icon' => 'Bootstrapper\Facades\Icon',
+'InputGroup' => 'Bootstrapper\Facades\InputGroup',
+'Image' => 'Bootstrapper\Facades\Image',
+'Label' => 'Bootstrapper\Facades\Label',
+'MediaObject' => 'Bootstrapper\Facades\MediaObject',
+'Modal' => 'Bootstrapper\Facades\Modal',
+'Navbar' => 'Bootstrapper\Facades\Navbar',
+'Navigation' => 'Bootstrapper\Facades\Navigation',
+'Panel' => 'Bootstrapper\Facades\Panel',
+'ProgressBar' => 'Bootstrapper\Facades\ProgressBar',
+'Tabbable' => 'Bootstrapper\Facades\Tabbable',
+'Table' => 'Bootstrapper\Facades\Table',
+'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',
+
+
+php artisan make:migration create_table_carts
+php artisan make:migration create_table_carts_item
+
+php artisan make:foundation Product master vue Slug=true
+
+php artisan remove:foundation Product
+
+php artisan make:parent-child Media Image master vue
+php artisan make:child-of Media Video master vue
+
+
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' view='index,create,edit'
+
+php artisan make:child-of Schema html app vue
+
+php artisan make:parent-child Schema Type master vue
+
+
+
+
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' view='index,create,edit'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+php artisan make:foundation {ModelName} {MasterPageName} {TemplateType} {Slug=false} {IndexOnly=false}
+
+
+
+php artisan make:foundation DataLayer app vue
+
+
+
+config('shop.uploads.storage')
+config('shop.uploads.webpath')
+
+
+
+
+
+
+php artisan make:foundation Datalayer app vue
+
+
+
+
+
+<script>
+
+$('.btn-add-cat').on('click', fuction(e){
+    e.preventDefault();
+    var template =  '<div class="form-group">'+
+                    '<label for="">Product Images</label>'+
+                    '<select name="product_image[]" class="input-sm">'+
+                    '@foreach($product_image as $product_image)'+
+                    '<option value="{{ $$product_image->id}}">{{ $$product_image->image_name }}</option>'+
+                    '@endforeach'+
+                    '</select>'+
+                    '<a href="#" class="btn btn-danger btn-xs btn-remove-cat">Remove</a>'+
+                    '</div>';
+
+        $(this).before(template);
+})
+
+$(document).on('click', '.btn-remove-cat', function(e) {
+     e.preventDefault();
+     $(this).parent('.form-group').remove();
+});
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+$('.btn-add-cat').on('click', fuction(e){
+    e.preventDefault();
+    var template =  '<div class="form-group">'+
+                    '<label for="">Category</label>'+
+                    '<select name="categories[]" class="input-sm">'+
+                    '@foreach($categories as $category)'+
+                    '<option value="{{ $category->id}}">{{ $category->title }}</option>'+
+                    '@endforeach'+
+                    '</select>'+
+                    '<a href="#" class="btn btn-danger btn-xs btn-remove-cat">Remove</a>'+
+                    '</div>';
+
+        $(this).before(template);
+})
+
+$(document).on('click', '.btn-remove-cat', function(e) {
+     e.preventDefault();
+     $(this).parent('.form-group').remove();
+});
+
+</script>
+
+
+php artisan make:migration:pivot products images
+
+php artisan make:migration:schema create_images_table --schema="image:string,alt:string:nullable, file_size:integer:unsigned:nullable,mime:string,path:string:nullable"
+
+php artisan make:migration:schema create_files_table --schema="file:string,alt:string:nullable, file_size:integer:unsigned:nullable,mime:string,path:string:nullable"
+
+
+composer dumpauto
+
+
+ php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' --views='index,create,edit' --skipMigration
+
+
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
+
+subl ../var/www/vhosts/gracecompany/stage.grace/database/migrations/2016_06_06_115309_create_table_carts
+
+
+
+subl ../var/www/vhosts/gracecompany/stage.grace/database/migrations/2016_06_06_115410_create_table_carts_item
+
+
+
+php artisan make:model Models\\Cart
+php artisan make:model Models\\CartItem
+
+
+subl ../var/www/vhosts/gracecompany/stage.grace/app/Models/Cart.php
+subl ../var/www/vhosts/gracecompany/stage.grace/app/Models/CartItem.php
+
+
+
+
+ onclick="onProductClick(); return !ga.loaded;"
+
+php artisan db:seed --class=ProductsTableSeeder
+
+
+function onProductClick() {
+  ga('ec:addProduct', {
+    'id': '{!! $product->id !!}',
+    'name': '{!! $product->name !!}',
+    'category': 'Machine Quilting',
+    'brand': 'Grace',
+    'variant': 'Normal',
+    'position': 1
+  });
+  ga('ec:setAction', 'click', {list: 'Shop Listing'});
+
+  // Send click with an event, then send user to product page.
+  ga('send', 'event', 'Ecom', 'click', '{!! $product->name !!}', {
+    hitCallback: function() {
+      document.location = '{!! url(getLang()."/shop/") !!}{!! $product->slug !!}';
+    }
+  });
+}
+
+
+
+/shop/addProduct/{{$product->id}}
+
+
+
+
+
+action
+
+
+
+
+
+if ($user = Sentinel::stateless($credentials))
+{
+    // Authentication successful and the user is assigned to the `$user` variable.
+}
+else
+{
+    // Authentication failed.
+}
+
+
+
+
+
+
+
+
+    // public function getUrlAttribute()
+    // {
+    //     return 'shop/product_details/' . $this->attributes['name'] . $this->attributes['id'];
+    // }
+
+
+php artisan make:migration create_table_carts
+
+ <a href="{!! langRoute('admin.article.edit', array($article->id)) !!}" class="btn btn-link btn-xs">
+
+
+                                <td class="center">
+                                    <div class="visible-md visible-lg hidden-sm hidden-xs">
+                                        <a href="{!! route('admin.products.edit', [$product->id]) !!}" class="btn btn-xs btn-teal tooltips" data-placement="top" data-original-title="Edit"><i class="fa fa-edit"></i> </a>
+
+                                {{--         <a target="_blank" href="{!! URL::route('admin.products.show', ['id' => $product->id]) !!}" class="btn btn-xs btn-green tooltips" data-placement="top" data-original-title="Preview"><i class="fa fa-share"></i> </a> --}}
+
+                                        <a target="_blank" href="{!! URL::route('admin.products.show', ['id' => $product->id]) !!}" class="btn btn-xs btn-red tooltips"  data-placement="top" data-original-title="Preview on Site">
+                                                   <i class="fa fa-eye"></i>
+                                                </a>
+
+                                {{--         <a href="{!! URL::route('admin.products.destroy', array($product->id)) !!}" class="btn btn-xs btn-bricky tooltips" data-placement="top" data-original-title="Remove"><i class="fa fa-times fa fa-white"></i> </a> --}}
+                                    </div>
+                                </td>
+
+
+
+
+en/admin/products/store
+admin.products.store
+Fully\Http\Controllers\Admin\ProductController@store
+
+
+jquery.bootstrap.js
+jquery.chart.js
+jquery.color.js
+jquery.cookie.js
+jquery.countdown.js
+jquery.countto.js
+jquery.dribbble.js
+jquery.fitvids.js
+jquery.flexslider.js
+jquery.flickrfeed.js
+jquery.form.js
+jquery.important.js
+jquery.infinitescroll.js
+jquery.instagram.js
+jquery.isotope.js
+jquery.magnific.js
+jquery.owlcarousel.js
+jquery.pagetransition.js
+jquery.paginate.js
+jquery.parallax.js
+jquery.piechart.js
+jquery.superfish.js
+jquery.swiper.js
+jquery.tabs.js
+jquery.textrotator.js
+jquery.toastr.js
+jquery.twitterfeed.js
+jquery.validation.js
+jquery.youtube.js
+
+
+
+
+ Fully\Http\Controllers\Admin\ProjectController@store
+
+
+
+
+Fully\Http\Controllers\Admin\VideoController@store
+
+/var/www/vhosts/gracecompany/stage.grace/resources/views/backend/products
+
+composer require yinx/treelogger
+Yinx\TreeLogger\TreeLoggerServiceProvider::class,
+
+php artisan log:controller
+
+
+subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ProductController.php
+
+
+
+cd /var/www/vhosts/gracecompany/stage.grace/resources/views/backend
+subl /var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin/ProductController.php
+
+
+
+
+
+
+
+
+php artisan make:model Models\\Marketingimage -m
+
+php artisan make:controller Admin\\MarketingImageController
+        "font_face": "Fira Code",
+        "font_size": 14,
+
+    "phoenix_color_yellow": true,
+    "phoenix_color_pink": true,
+    "phoenix_color_blue": true,
+    "phoenix_color_green": true,
+
+$lightbox = Image::make($file->getRealPath())->resize(720, 960);
+$catalog_size = Image::make($file->getRealPath())->resize(440, 586);
+$grid_size = Image::make($file->getRealPath())->resize(270, 360);
+$additional_size = Image::make($file->getRealPath())->resize(64, 64);
+$prod_thumb_size = Image::make($file->getRealPath())->resize(100, 75);
+$admin_size = Image::make($file->getRealPath())->resize(300, 300);
+
+
+        $destinationFolder = '/imgs/marketing/';
+        $destinationThumbnail = '/imgs/marketing/thumbnails/';
+        $destinationLightbox = '/imgs/marketing/lightbox/';
+        $destinationProdThumb = '/imgs/marketing/prod_thumb/';
+        $destinationCatalog = '/imgs/marketing/catalog/';
+        $destinationCatalogNC = '/imgs/marketing/catalog/nc/';
+        $destinationAdditional = '/imgs/marketing/additional/';
+        $destinationAdmin = '/imgs/marketing/admin/';
+        $destinationGrid = '/imgs/marketing/grid/';
+
+        if(Input::file())
+        {
+
+            $image = Input::file('image_1');
+            $filename  = time() . '.' . $image->getClientOriginalExtension();
+
+            $path = public_path('products/' . $filename);
+
+
+            Image::make($image->getRealPath())->resize(200, 200)->save($path);
+            $product->image_1 = $filename;
+            $product->save();
+        }
+
+
+ "phoenix_color_red": true,
+
+
+
+
+"phoenix_color_darkblue": true,
+
+
+
+
+
+
+
+
+
+
+[FIX HOMESTEAD FIND PHP]
+
+sudo subl /etc/php/7.0/fpm/php.ini
+sudo subl /etc/php/7.0/cli/php.ini
+
+extension=php_curl.dll
+extension=php_fileinfo.dll
+extension=php_mbstring.dll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTTP Method
+
+Route
+
+Corresponding Action
+
+GET     r                                       Closure
+GET     /                                       Closure
+GET     marketingimage                          Fully\Http\Controllers\Admin\MarketingImageController@index
+GET     marketingimage/create                   Fully\Http\Controllers\Admin\MarketingImageController@create
+POST    marketingimage                          Fully\Http\Controllers\Admin\MarketingImageController@store
+GET     marketingimage/{marketingimage}         Fully\Http\Controllers\Admin\MarketingImageController@show
+GET     marketingimage/{marketingimage}/edit    Fully\Http\Controllers\Admin\MarketingImageController@edit
+PUT     marketingimage/{marketingimage}         Fully\Http\Controllers\Admin\MarketingImageController@update
+PATCH   marketingimage/{marketingimage}         Fully\Http\Controllers\Admin\MarketingImageController@update
+DELETE  marketingimage/{marketingimage}         Fully\Http\Controllers\Admin\MarketingImageController@destroy
+
+
+
+
+
+
+
+
+$products =  new Fully\Models\Product();
+
+
+
+$products->feature =  new Fully\Models\feature();
+
+
+$products->feature->save();
+
+$products->save();
+
+
+
+$products = Fully\Models\Product::latest()->toArray();
+
+
+
+
+
+// Controller
+
+// Change the page name before you make the paginator:
+
+Paginator::setPageName('page_a');
+$collection_A = ModelA::paginate(10);
+
+Paginator::setPageName('page_b');
+$collection_B = ModelB::paginate(10);
+
+
+// View
+
+// Do the same: change the page name before you print the links
+
+Paginator::setPageName('page_a');
+$collection_A->links();
+
+Paginator::setPageName('page_b');
+$collection_B->links();
+// If you don't want to lose any page state while you navigate to another page, append to the links the current page from all collections:
+
+Paginator::setPageName('page_a');
+$collection_A->appends('page_b', Input::get('page_b',1))->links();
+
+Paginator::setPageName('page_b');
+$collection_B->appends('page_a', Input::get('page_a',1))->links();
+
+
+-------------------------------------------------
+
+
+public function store(Request $request){
+        $arr = ['user'=> 'Elegant'];    // ['key' => 'value']
+        $data = array_merge($request::all(), $arr);
+
+        Profile::create($data); // table name = Profile
+        return back();
+}
+
+
+
+-------------------------------------------------
+
+
+Extend user model for Sentry
+Submitted by Mahmoud_Zalt - 1 year ago
+Using Sentry With Eloquent
+
+It works with me as follow:
+
+1:
+go to the sentry config file file (app/config/packages/cartalyst/sentry/config.php)
+and make the user model point to the default laravel's user model
+
+'model' => 'User',
+// 'model' => 'Cartalyst\Sentry\Users\Eloquent\User',
+2:
+then extend the sentry default user like this:
+
+<?php
+
+use Cartalyst\Sentry\Users\Eloquent\User as SentryUserModel;
+
+class User extends SentryUserModel {
+
+    protected $hashableAttributes = array(
+        'persist_code',
+    );
+
+}
+
+in the above example I am preventing sentry from hashing the password field by overriding the $hashableAtrributes array.
+
+
+
+
+
+
+
+
+
+F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public function update($id)
+    {
+        if(strcmp($_GET['type'], 'Movie_basic'))
+        {
+            $movie = $this->movieBasic->find($id);
+            $this->movieBasic->update($id, MovieBasicRequest $this->request);
+        }
+
+        return redirect()->action('MovieController@show', compact('movie'));
+    }
+
+
+
+
+
+
+
+-------------------------------------------------
+// I have course and subscriber where subscriber can view a courses and other models, all are viewables.
+
+// the course model relation:
+
+public function voters()
+{
+    return $this->morphToMany('Moubarmij\Models\Subscriber', 'votables');
+}
+
+
+// the subscriber model relation:
+
+
+public function views()
+{
+    return $this->morphedByMany('Moubarmij\Models\Video', 'viewables');
+}
+
+
+
+// to get the number of votes of the course:
+
+// add this scope to the course model:
+
+
+public function scopeWithNumberOfVotes($query)
+{
+    return $query->with(['voters' => function($q)
+    {
+        return $q->select(DB::raw('count(votables_id) as number_of_votes'))->groupBy('votables_id');
+    }]);
+}
+
+ // usage when queuing the course call this scope:
+
+// ...->withNumberOfVotes()...
+-------------------------------------------------
+
+/**
+in One to One:
+u have to use HasOne on the first model and BelongsTo on the second model
+
+to add record on the first model (HasOne) use the save function
+example:    $post->comments()->save($comment);
+
+to add record on the second model (BelongsTo) use the associate function
+example:
+$user->account()->associate($account);
+$user->save();
+
+
+
+
+in One to Many:
+u have to use HasMany on the first model and BelongsTo on the second model
+
+to add record on the first table (HasMany) use the save or saveMany functions
+example:    $post->comments()->saveMany($comments);
+
+to add record on the second model (BelongsTo) use the associate function
+example:    $user->account()->associate($account);    $user->save();
+
+
+
+
+in Many to Many:
+u have to use BelongsToMany on the first model and BelongsToMany on the second model
+
+to add records on the pivot table use attach or sync functions
+- both functions accepts single ID or array of ID’s
+- the difference is attach checks if the record already exist on the pivot table while sync don’t
+
+
+
+
+in Polymorphic One to Many:
+u have to use MorphMany on the main model and MorphTo on all the (***able) models
+
+
+to add records on all the other models use the save
+example:    $course->tags()->save($tag);
+
+the pivot table should have the following columns:
+. main model ID
+. (***able) ID
+. (***able) Type
+
+
+
+
+in Polymorphic Many to Many:
+u have to use MorphByMany on the main model and MorphToMany on all the (***able) models
+
+to add records on all the other models use the save or saveMany
+example:    $course->tags()->save($tag);
+example:    $course->tags()->saveMany([$tag_1, $tag_2, $tag_3]);
+
+the pivot table should have the following columns:
+. main model ID
+. (***able) ID
+. (***able) Type
+
+
+{!! route('$ROUTE_PREFIX$.$MODEL_NAME_PLURAL_CAMEL$.show', [$$MODEL_NAME_CAMEL$->id]) !!}
+
+in Has Many Through (shortcut):
+u have to use HasManyThrough on the first table and have the normal relations on the other 2 tables
+
+this doesn’t work for ManyToMany relationships (where there’s a pivot table)
+however there’s a nice and easy solution {check out another note}
+
+Updated to use new prefixes
+
+'route' => '', = $ROUTE_PREFIX$  ex: admin.? uses
+'view' => '',  = $VIEW_PREFIX$  in: backend  :example views directory
+
+
+
+
+```
+    'namespace' => [
+        'model'             => 'Test\Models',
+        'datatables'        => 'Test\DataTables',
+        'repository'        => 'Test\Repositories',
+        'controller'        => 'Test\Http\Controllers',
+        'api_controller'    => 'Test\Http\Controllers\API',
+        'request'           => 'Test\Http\Requests',
+        'api_request'       => 'Test\Http\Requests\API',
+    ],
+```
+
+```
+    'namespace' => [
+        'model'             => 'App\Models',
+        'datatables'        => 'App\DataTables',
+        'repository'        => 'App\Repositories',
+        'controller'        => 'App\Http\Controllers',
+        'api_controller'    => 'App\Http\Controllers\API',
+        'request'           => 'App\Http\Requests',
+        'api_request'       => 'App\Http\Requests\API',
+    ],
+```
+
+
+
+
+*/
+
+-------------------------------------------------
+
+
+/**
+     * This determines the foreign key relations automatically to prevent the need to figure out the columns.
+     *
+     * @param \Illuminate\Database\Query\Builder $query
+     * @param string $relation_name
+     * @param string $operator
+     * @param string $type
+     * @param bool   $where
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public function scopeModelJoin($query, $relation_name, $operator = '=', $type = 'left', $where = false) {
+        $relation = $this->$relation_name();
+        $table = $relation->getRelated()->getTable();
+        $one = $relation->getQualifiedParentKeyName();
+        $two = $relation->getForeignKey();
+
+        if (empty($query->columns)) {
+            $query->select($this->getTable().".*");
+        }
+        foreach (\Schema::getColumnListing($table) as $related_column) {
+            $query->addSelect(new Expression("`$table`.`$related_column` AS `$table.$related_column`"));
+        }
+        return $query->join($table, $one, $operator, $two, $type, $where); //->with($relation_name);
+
+    }
+
+
+-------------------------------------------------
+
+
+
+
+
+
+-------------------------------------------------
+-------------------------------------------------
+
+https://github.com/sseffa/fullycms.git
+
+<?php
+namespace Fully\Http\Controllers\Admin;
+use View;
+use Flash;
+use Input;
+use Response;
+use Fully\Services\Pagination;
+use Fully\Http\Controllers\Controller;
+use Fully\Repositories\Article\ArticleInterface;
+use Fully\Repositories\Category\CategoryInterface;
+use Fully\Exceptions\Validation\ValidationException;
+use Fully\Repositories\Article\ArticleRepository as Article;
+use Fully\Repositories\Category\CategoryRepository as Category;
+/**
+ * Class ArticleController.
+ *
+ * @author Sefa Karagöz <karagozsefa@gmail.com>
+ */
+class ArticleController extends Controller
+{
+    protected $article;
+    protected $category;
+    protected $perPage;
+    public function __construct(ArticleInterface $article, CategoryInterface $category)
+    {
+        View::share('active', 'blog');
+        $this->article = $article;
+        $this->category = $category;
+        $this->perPage = config('fully.modules.article.per_page');
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        $pagiData = $this->article->paginate(Input::get('page', 1), $this->perPage, true);
+        $articles = Pagination::makeLengthAware($pagiData->items, $pagiData->totalItems, $this->perPage);
+        return view('backend.article.index', compact('articles'));
+    }
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function create()
+    {
+        $categories = $this->category->lists();
+        return view('backend.article.create', compact('categories'));
+    }
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function store()
+    {
+        try {
+            $this->article->create(Input::all());
+            Flash::message('Article was successfully added');
+            return langRedirectRoute('admin.article.index');
+        } catch (ValidationException $e) {
+            return langRedirectRoute('admin.article.create')->withInput()->withErrors($e->getErrors());
+        }
+    }
+    /**
+     * Display the specified resource.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function show($id)
+    {
+        $article = $this->article->find($id);
+        return view('backend.article.show', compact('article'));
+    }
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function edit($id)
+    {
+        $article = $this->article->find($id);
+        $tags = null;
+        foreach ($article->tags as $tag) {
+            $tags .= ','.$tag->name;
+        }
+        $tags = substr($tags, 1);
+        $categories = $this->category->lists();
+        return view('backend.article.edit', compact('article', 'tags', 'categories'));
+    }
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function update($id)
+    {
+        try {
+            $this->article->update($id, Input::all());
+            Flash::message('Article was successfully updated');
+            return langRedirectRoute('admin.article.index');
+        } catch (ValidationException $e) {
+            return langRedirectRoute('admin.article.edit')->withInput()->withErrors($e->getErrors());
+        }
+    }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function destroy($id)
+    {
+        $this->article->delete($id);
+        Flash::message('Article was successfully deleted');
+        return langRedirectRoute('admin.article.index');
+    }
+    public function confirmDestroy($id)
+    {
+        $article = $this->article->find($id);
+        return view('backend.article.confirm-destroy', compact('article'));
+    }
+    public function togglePublish($id)
+    {
+        return $this->article->togglePublish($id);
+    }
+}
+
+https://github.com/sseffa/fullycms.git
+
+
+
+skylr
+zack
+taylan
+
+
+/var/www/vhosts/gracecompany/stage.grace/app/Http/Controllers/Admin
+
+
+/var/www/vhosts/gracecompany/stage.grace/recources/views/backend/article
+
+
+
+
+
+alias ccca='composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear && restartall'
+
+
+
+alias ccc='composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear'
+
+alias ccc='sudo service php7.0-fpm restart && composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear'
+
+{!! $article->category_id.[0]->title !!}
+
+/var/www/vhosts/gracecompany/stage.grace/resources/views/frontend/pages/qnique
+/var/www/vhosts/gracecompany/live.grace/resources/views/frontend/pages/qnique
+
+                     @foreach($categories as $category)
+                                <a href="{!! URL::route('dashboard.category', ['category'=>$category->slug]) !!}" itemprop="url" ><span itemprop="name" >{!! $category->title !!}</span></a>
+                                @endforeach
+
+
+
+{{ Request::is('admin/dashboard') ? 'active' : '' }}
+
+<script type="application/ld+json">
+{
+   "@context":"http:\/\/schema.org\/",
+   "name":"{!! $article->title !!}",
+   "@type":"Article",
+   "author":"The Grace Company",
+   "ArticleSection":"",
+   "datePublished":"{!! $article->created_at !!}",
+   "Publisher":"The Grace Company",
+   "url":"{!! echo $url = Request::path() !!}"
+}
+</script>
+
+@section('sidebar')
+    @parent
+
+{{--  This is appended to the parent dsidebar.  --}}
+@endsection
+
+{!! DB::table('articles')->count(); !!}
+
+
+
+
+
+
+"PrettyPrintDocBlocks", "ReindentAndAlignObjOps", "ShortArray", "StripExtraCommaInArray", "PHPDocTypesToFunctionTypehint", "AlignGroupDoubleArrow", "AlignEquals", "AlignDoubleArrow", "AlignConstVisibilityEquals", "AddMissingParentheses", "DocBlockToComment", "DoubleToSingleQuote", "AutoSemicolon", "StripNewlineAfterClassOpen", "StripNewlineAfterCurlyOpen", "StripNewlineWithinClassBody", "AllmanStyleBraces", "GeneratePHPDoc", "ReindentAndAlignObjOps", "ReindentSwitchBlocks"
+
+
+
+  $menuOptions = array(
+            'General' => array(
+            'home' => 'Home',
+            'automation' => 'Automation',
+            'blog' => 'Blog',
+            'contact' => 'Contact',
+            'events' => 'Events',
+            'faq' => 'Faq',
+            'hand-quilting' => 'Hand Quilting',
+            'machine-frames' => 'Machine Frames',
+            'news' => 'News',
+            'project' => 'Project',
+            'quilting-industry' => 'Quilting Industry',
+            'qnique' => 'Qnique',
+            'sewing-machines' => 'Sewing Machines',
+            'shop' => 'Shop',
+            'truecut' => 'True Cut',
+            'videos' => 'Videos', ),
+            'Page' => (isset($opts['Page']) ? $opts['Page'] : array()),
+            'Photo Gallery' => (isset($opts['PhotoGallery']) ? $opts['PhotoGallery'] : array()), );
+
+        return $menuOptions;
+
+            case 'home':                $url = "/";                             break;
+            case 'automation':          $url = "/automation/qct";               break;
+            case 'blog':                $url = '/quilting-industry/blog';       break;
+            case 'contact':             $url = '/contact';                      break;
+            case 'events':              $url = "/quilting-industry/events";     break;
+            case 'faq':                 $url = '/quilting-industry/faq';        break;
+            case 'hand-quilting':       $url = "/hand-quilting";                break;
+            case 'machine-frames':      $url = "/machine-frames";               break;
+            case 'news':                $url = '/quilting-industry/news';       break;
+            case 'project':             $url = '/quilting-industry/project';    break;
+            case 'qnique':              $url = "/sewing-machines/qnique";       break;
+            case 'quilting-industry':   $url = "/quilting-industry";            break;
+            case 'sewing-machines':     $url = "/sewing-machines/qnique";       break;
+            case 'shop':                $url = "/shop";                         break;
+            case 'truecut':             $url = "/truecut";                      break;
+            case 'videos':              $url = "/quilting-industry/videos";     break;
+
+
+
+ foreach ($menu as $item)
+    {
+        if ($item->parent_id == $parentId)
+        {
+            $childItem = $this->hasChildItems($item->id);
+
+            $result .= "<li class='menu-item " . (($childItem) ? 'dropdown' : null) . (($childItem && $item->parent_id != 0) ? ' dropdown-submenu' : null) . "'>";
+            $result .= "<a href='" . url($item->url) . "' " . (($childItem) ? 'class="dropdown-toggle" data-toggle="dropdown"' : null) . '>';
+            if ($item->icon_class !== '')
+            {
+                $result .= "<i class='fa " . $item->icon_class . "'></i>";
+            }
+            $result .= '<span>' . $item->title . '</span>';
+            $result .= (($childItem && $item->parent_id == 0) ? '<b class="caret"></b>' : null) . '</a>' . $this->generateFrontMenu($menu, $item->id) . '</li>';
+        }
+    }
+
+
+
+ alias ccc='sudo service php7.0-fpm restart && composer dump-autoload && composer clear-cache && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan config:clear'
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="{{ asset('js/jquery.charcounter.js')}}"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#title").charCounter(70,{
+        container: '<small></small>'
+      });
+      $("#description").charCounter(160,{
+        container: '<small></small>'
+      });
+      $("#keywords").charCounter(255,{
+        container: '<small></small>'
+      });
+      $('#typeSelect').change(function(){
+        $('#selectForm').submit();
+      });
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td>{{ @$user->username }}</td>
+    <td>{{ @$user->email }}</td>
+    <td>{{ @$user->password }}</td>
+    <td>{{ @$user->display_name }}</td>
+    <td>{{ @$user->first_name }}</td>
+    <td>{{ @$user->last_name }}</td>
+    <td>{{ @$user->user_api_key }}</td>
+    <td>{{ @$user->user_api_secret }}</td>
+    <td>{{ @$user->user_activation_key }}</td>
+    <td>{{ @$user->activation_code }}</td>
+    <td>{{ @$user->confirmation_code }}</td>
+    <td>{{ @$user->activated_at }}</td>
+    <td>{{ @$user->last_login }}</td>
+    <td>{{ @$user->published_on }}</td>
+    <td>{{ @$user->published }}</td>
+    <td>{{ @$user->activated }}</td>
+    <td>{{ @$user->remember }}</td>
+    <td>{{ @$user->is_fake }}</td>
+    <td>{{ @$user->confirmed }}</td>
+    <td>{{ @$user->is_employee }}</td>
+    <td>{{ @$user->name }}</td>
+    <td>{{ @$user->slug }}</td>
+    <td>{{ @$user->user_role }}</td>
+    <td>{{ @$user->salt }}</td>
+    <td>{{ @$user->address_id }}</td>
+    <td>{{ @$user->billing_id }}</td>
+    <td>{{ @$user->profile_id }}</td>
+    <td>{{ @$user->shipping_id }}</td>
+    <td>{{ @$user->software_id }}</td>
+    <td>{{ @$user->article_id }}</td>
+
+    \DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+        \DB::table('tags')->truncate();
+        \DB::table('articles')->truncate();
+        \DB::table('news')->truncate();
+        \DB::table('categories')->truncate();
+        \DB::table('pages')->truncate();
+        \DB::table('menus')->truncate();
+        \DB::table('sliders')->truncate();
+        \DB::table('projects')->truncate();
+        \DB::table('videos')->truncate();
+        \DB::table('settings')->truncate();
+        \DB::table('faqs')->truncate();
+        \DB::table('photo_galleries')->truncate();
+        \DB::table('products')->truncate();
+        \DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+
+{{ HTML::ul($errors->all()) }}
+
+
+{{ Form::text('user[display_name]', Input::old('user.display_name')) }}
+
+{{ Form::text('profile[last_login]', Input::old('profile.last_login')) }}
+
+    <td>{{ @$user->Shipping->shipping_nickname }}</td>
+    <td>{{ @$user->Shipping->shipping_address }}</td>
+    <td>{{ @$user->Shipping->shipping_street }}</td>
+    <td>{{ @$user->Shipping->shipping_street_additional }}</td>
+    <td>{{ @$user->Shipping->shipping_city }}</td>
+    <td>{{ @$user->Shipping->shipping_state }}</td>
+    <td>{{ @$user->Shipping->shipping_country }}</td>
+    <td>{{ @$user->Shipping->shipping_zipcode }}</td>
+    <td>{{ @$user->Shipping->shipping_latitude }}</td>
+    <td>{{ @$user->Shipping->shipping_longitude }}</td>
+    <td>{{ @$user->Shipping->user_id }}</td>
+
+{{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
+
+{{{ isset(Auth::user()->profile()->google_plus_url) ? Auth::user()->name : Auth::user()->email }}}
+
+
+{{{ isset($user->profile->google_plus_url) ? $user->profile->google_plus_url : 'The Grace Company' }}}
+
+ {{Form::label('category1', 'category1')}}
+    {{Form::select('category1',array('' => 'Please select') + $category1) }}
+
+@yield('content', '<span style="background:red">MISSING CONTENT</span>')
+
+@section('bottom')
+  This is the bottom
+@stop
+@section('top')
+  This is the top
+@stop
+@yield('top')
+@yield('bottom')
+
+
+<div class='normal-sharrre-container normal-post-sharrre'>
+    <div class='twitter-share-block'
+      data-url='http://www.qniquequilter.com/product/qnique-quilter-14/'
+      data-text='Qnique 14+ Quilter'
+      data-title='Tweet'></div>
+    <div class='facebook-share-block'
+      data-url='http://www.qniquequilter.com/product/qnique-quilter-14/'
+      data-text='Qnique 14+ Quilter'
+      data-title='Like'></div>
+    <div class='googleplus-share-block'
+      data-url='http://www.qniquequilter.com/product/qnique-quilter-14/'
+      data-text='Qnique 14+ Quilter'
+      data-title='Share'></div>
+    <div class='pinterest-share-block'
+      data-url='http://www.qniquequilter.com/product/qnique-quilter-14/'
+      data-text='Qnique 14+ Quilter'
+      data-title='Pin'></div>
+  </div>
+
+
+
+$table->string('layout')->default('blog.layouts.index');
+
+
+{!! Form::select('name',($nameArray = ['' => 'Please Select'] + $nameArray), null, ['class' => 'form-control']) !!}
+
+
+{{-- @if ($category->title && ! $category->title->isEmpty())
+@endif --}}
+
+{{-- @if($categories->count())
+@foreach($categories as $category)
+@foreach($category->slice(0, $category->limit) as $category)
+{{-- @if ($category->active) -- }}
+{{ $category->title }}
+@endforeach
+@endforeach
+@endif --}}
+@foreach($categories as $category)
+@if ($category->title && ! $category->title->isEmpty())
+@foreach($category->title->slice(0, $category->limit) as $title)
+{{ $title->title }}
+
+@endforeach
+@endif
+@endforeach
+
+
+  public function posts()
+  {
+    return $this->belongsToMany('App\Post', 'post_tag_pivot');
+  }
+
+
+
+            @foreach($article->categories as $category)
+                            <a href="{{url('admin/category/'.$category->id)}}">{{$category->name}}</a>,
+                        @endforeach
+
+    // AUTOMATION
+    public function qct() {return view('frontend.pages.qct.qct'); }
+    public function qctfeatures() {return view('frontend.pages.qct.features'); }
+    public function qctcompare() {return view('frontend.pages.qct.compare'); }
+    public function qctspecs() {return view('frontend.pages.qct.specs'); }
+    public function qcttutorials() {return view('frontend.pages.qct.tutorials'); }
+    public function qctsupport() {return view('frontend.pages.qct.support'); }
+    public function qctpurchase() {return view('frontend.pages.qct.purchase'); }
+
+
+
+    //AUTOMATED QCT
+    Route::group(array('prefix' => '/automated/qct'), function () {
+        Route::get('/', ['as' => 'automated.qct', 'uses' => 'PageController@qct']);
+        Route::get('/features', array('as' => 'automated.qct.features', 'uses' => 'PageController@qctfeatures'));
+        Route::get('/compare', array('as' => 'automated.qct.compare', 'uses' => 'PageController@qctcompare'));
+        Route::get('/specs', array('as' => 'automated.qct.specs', 'uses' => 'PageController@qctspecs'));
+        Route::get('/tutorials', array('as' => 'automated.qct.tutorials', 'uses' => 'PageController@qcttutorials'));
+        Route::get('/support', array('as' => 'automated.qct.support', 'uses' => 'PageController@qctsupport'));
+        Route::get('/purchase', array('as' => 'automated.qct.purchase', 'uses' => 'PageController@qctpurchase'));
+    });
+
+
+
+
+
+ alias cd="composer dumpautoload"
+
+
+    public function cuttingMats() {return view('frontend.pages.truecut.cutting-mats');}
+    public function cuttingTable() {return view('frontend.pages.truecut.cutting-table');}
+    public function linearSharpener() {return view('frontend.pages.truecut.linear-sharpener');}
+    public function rotaryCuttingAccessories() {return view('frontend.pages.truecut.rotary-cutting-accessories');}
+    public function rulers() {return view('frontend.pages.truecut.rulers');}
+    public function truesharp() {return view('frontend.pages.truecut.truesharp');}
+    public function truecut360() {return view('frontend.pages.truecut.truecut360');}
+
+
+cd /home/vagrant/aaa/frontend
+
+        Route::get('/cutting-mats', ['as' => 'cutting-mats', 'uses' => 'PageController@cuttingMats']);
+        Route::get('/cutting-table', ['as' => 'cutting-table', 'uses' => 'PageController@cuttingTable']);
+        Route::get('/linear-sharpener', ['as' => 'linear-sharpener', 'uses' => 'PageController@linearSharpener']);
+        Route::get('/rotary-cutting-accessories', ['as' => 'accessories', 'uses' => 'PageController@rotaryCuttingAccessories']);
+        Route::get('/rulers', ['as' => 'rulers', 'uses' => 'PageController@rulers']);
+        Route::get('/truesharp', ['as' => 'truesharp', 'uses' => 'PageController@truesharp']);
+        Route::get('/truecut360', ['as' => 'truecut360', 'uses' => 'PageController@truecut360']);
+
+
+cd /home/vagrant/newsites/build2
+
+
+        Menu::make('truecut', function($menu) {
+            $menu->add('TrueCut', getLang() . '/truecut');
+            $menu->add('TrueCut 360', getLang() . '/truecut/truecut360');
+            $menu->add('Comfort Cutter', getLang() . '/truecut/comfort-cutter/');
+            $menu->add('TrueSharp', getLang() . '/truecut/truesharp');
+
+            $menu->add('Rulers', getLang() . '/truecut/rulers');
+            $menu->add('Cutting Table', getLang() . '/truecut/cutting-table');
+            $menu->add('Cutting Mats', getLang() . '/truecut/cutting-mats');
+            $menu->add('Linear Sharpener', getLang() . '/truecut/linear-sharpener');
+            $menu->add('Accessories', getLang() . '/truecut/rotary-cutting-accessories');
+        });
+
+  Menu::make('homepage', function($menu) {
+            $about = $menu->add('The Grace Company', getLang() . '/about');
+                $about->add('WHAT WE DO', getLang() . "/");
+                $about->add('ABOUT US', getLang() . "/");
+            $menu->add('Community', getLang() . '/');
+            $menu->add('News', getLang() . '/');
+            $menu->add('FAQ\'s', getLang() . '/');
+            $menu->add('Tutorials', getLang() . '/');
+            $menu->add('MANUFACTURING', getLang() . "/");
+            $menu->add('CAREERS', getLang() . "/");
+            $menu->add('INVESTORS', getLang() . "/");
+            $menu->add('Support', getLang() . '/');
+
+            $menu->add('Shop Now', getLang() . '/', ['class' => 'button button-rounded button-border']);
+        });
+
+        Menu::make('truecut', function($menu) {
+            $menu->add('TrueCut', getLang() . '/truecut');
+            $menu->add('Confort Cutter', getLang() . '/truecut/comfort-cutter/');
+            $menu->add('WHAT WE DO', getLang() . '/');
+            $menu->add('ABOUT US', getLang() . '/');
+            $menu->add('MANUFACTURING ', getLang() . '/');
+            $menu->add('INVESTORS', getLang() . '/');
+            $menu->add('NEWS', getLang() . '/');
+            $menu->add('CAREERS', getLang() . '/');
+            $menu->add('CONTACT', getLang() . '/');
+        });
+
+
+
+
+
+php artisan make:model Models\\File
+php artisan make:model Models\\Product
+
+
+
+php artisan make:controller Admin\\ProductController
+
+
+lightbox_size
+catalog_size
+grid_size
+additional_size
+thumb_size
+
+            $table->string('path_lightbox');
+            $table->string('path_catalog');
+            $table->string('path_grid');
+            $table->string('path_additional');
+            $table->string('path_thumb');
+
+
+            $table->string('path_lightbox_size');
+            $table->string('path_catalog_size');
+            $table->string('path_grid_size');
+            $table->string('path_additional_size');
+            $table->string('path_thumb_size');
+
+
+        //   Route::group(['prefix' => '/shop'], function () {
+        //     Route::get('/', ['as' => 'shop', 'uses' => 'ShopController@index']);
+        //     Route::get('/{product}', ['as' => 'shop.{product}', 'uses' => 'ShopController@product']);
+        //     Route::get('/cart', function () {return view('frontend.ecom.cart'); });
+        //     Route::get('/cart/checkout', function () {return view('frontend.ecom.checkout');
+        // });
+
+    //Route::get('authors',['as'=> 'authors', 'uses' => 'AuthorsController@index']);
+    //Route::get('authors/(:any)',['as'=> 'author', 'uses' => 'AuthorsController@show']);
+
+
+ gtm.element
+
+input#reg_email.input-text
+input#reg_password.input-text
+
+php artisan infyom:rollback Page api_scaffold
+
+
+php artisan infyom:scaffold Product --fieldsFile='resources/model_schemas/Product.json' --prefix=backend
+
+
+php artisan infyom:api_scaffold Page --fieldsFile='resources/model_schemas/Page.json' --prefix=admin
+
+
+
+
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' --prefix=admin
+
+
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json'
+
+
+php artisan infyom:scaffold Article --fromTable --tableName=articles --save
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json'
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' --prefix=admin
+
+php artisan infyom:scaffold Product --fromTable --tableName=products --save
+
+
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+php artisan infyom:api_scaffold Post --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json'
+
+
+
+'path_prefix' => ''
+'path_prefix_layout' => ''
+'path_prefix_views' => ''
+
+'route_prefix' => ''
+'route_prefix_layout' => ''
+'route_prefix_views' => ''
+
+
+
+       'path_prefix' => ''
+       'path_prefix_layout' => ''
+       'path_prefix_views' => ''
+
+       'route_prefix' => ''
+       'route_prefix_layout' => ''
+       'route_prefix_views' => ''
+
+```php
+   'options' => [
+        'softDelete' => true,
+        'tables_searchable_default' => false,
+       'path_prefix' => 'backend'
+       'path_prefix_layout_theme' => 'core-templates'
+    //   'path_prefix_views' => 'index,create,edit,delete,datatable' // generated using the theme layout specified above
+       'route_prefix' => 'Admin'
+    ],
+```
+```php
+   'options' => [
+        'softDelete' => true,
+        'tables_searchable_default' => false,
+        'path_prefix' => 'frontend'
+        'path_prefix_layout_theme' => 'live-site-theme'
+    //   'path_prefix_views' => 'index,show' // generated using the theme layout specified above
+        'route_prefix' => ''
+    ],
+```
+```
+```
+
+|- views
+    |- backend
+         |- layouts
+             |- partials
+             |- includes
+             |- app.blade.php // based off core-templates
+         |- pages
+             |- index.blade.php
+             |- datatable.blade.php
+             |- create.blade.php
+             |- edit.blade.php
+             |- delete.blade.php
+
+    |- frontend
+         |- layouts
+             |- partials
+             |- includes
+             |- app.blade.php // based off live-site-theme
+         |- pages
+             |- index.blade.php
+             |- datatable.blade.php
+             |- create.blade.php
+             |- edit.blade.php
+             |- delete.blade.php
+```
+
+
+
+|- views
+    |- themes
+        |- admin
+             |- layouts
+                 |- partials
+                 |- includes
+                 |- app.blade.php
+        |- backend
+             |- layouts
+                 |- partials
+                 |- includes
+                 |- app.blade.php
+        |- frontend
+             |- layouts
+                 |- partials
+                 |- includes
+                 |- app.blade.php
+    |- emails
+        |- password.blade.php
+    |- auth
+        |- login.blade.php
+        |- register.blade.php
+        |- reset.blade.php
+        |- password.blade.php
+    |- common
+        |- errors.blade.php
+        |- paginate.blade.php
+```
+
+
+
+
+
+
+Route::get('/r', function ()
+{
+    function philsroutes()
+    {
+        $routeCollection = Route::getRoutes();
+        echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">';
+        echo "<div class='container'><div class='col-md-12'><table class='table table-striped' style='width:100%'>";
+        echo '<tr>';
+        echo "<td width='10%'><h4>HTTP Method</h4></td>";
+        echo "<td width='45%'><h4>Route</h4></td>";
+        echo "<td width='45%'><h4>Corresponding Action</h4></td>";
+        echo '</tr>';
+        foreach ($routeCollection as $value)
+        {
+            echo '<tr>';
+            echo '<td>' . $value->getMethods()[0] . '</td>';
+            echo "<td><a href='" . $value->getPath() . "' target='_blank'>" . $value->getPath() . '</a> </td>';
+            echo '<td>' . $value->getActionName() . '</td>';
+            echo '</tr>';
+        }
+        echo '</table></div></div>';
+        echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>';
+    }
+    return philsroutes();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\ProgramData\ComposerSetup\bin\composer.phar
+
+
+&#39;
+
+composer require webpatser/laravel-uuid
+
+php artisan iseed articles
+
+o quickly generate a UUID just do
+
+Uuid::generate()
+
+Generate a version 1, time-based, UUID. You can set the optional node to the MAC address. If not supplied it will generate a random MAC address.
+
+Uuid::generate(1,'00:11:22:33:44:55');
+Generate a version 3, name-based using MD5 hashing, UUID
+
+Uuid::generate(3,'test', Uuid::NS_DNS);
+Generate a version 4, truly random, UUID
+
+Uuid::generate(4);
+Generate a version 5, name-based using SHA-1 hashing, UUID
+
+Uuid::generate(5,'test', Uuid::NS_DNS);
+
+<div class="section-top-ribon" style="background-color:black; height: 31px;"></div>
+
+
+ pluggables
+art pluggables:disable
+art pluggables:enable
+art pluggables:list
+art pluggables:make
+art pluggables:make:migration
+art pluggables:make:model
+art pluggables:make:request
+art pluggables:migrate
+art pluggables:migrate:refresh
+
+
+
+
+@if (Request::is(getLang() . '/'))
+<h1 style="color:black;">this is index</h1>
+@endif
+{{-- @if(Request::url(getLang() . '/')) --}}
+{{-- @if (Request::path() == '/view') --}}
+
+@if(!Request::is(getLang() . '/'))
+<script type="application/ld+json">{"@context": "http://schema.org/","@type": "Brand", "logo": "http://stage.grace/frontend/images/grace-logo-light.png", "alternateName": "Brand Grace", "description": "The Grace Company Branding Logo", "url": "http://stage.grace/"}
+</script>
+<script type="application/ld+json">{"@context": "http://schema.org/","@type": "Organization", "name": "The Grace Company", "legalName": "GraceWood Inc", "telephone": "18002640644", "address": { "@type": "PostalAddress", "streetAddress": "2225 South 3200 west", "postalCode": "84119", "addressLocality": "West Valley City", "addressRegion": "UT", "addressCountry": "United States"}, "employee": { "@type": "Person", "jobTitle": "CEO", "name": "Jaren Gibson"}}
+</script>
+@endif
+
+
+find and list
+find . -name '*.db' -exec ls -l {} \;
+find remove
+find . -name '*.db' -exec rm -rf {} \;
+
+{
+  "font_face": "Dejavu Sans Condensed ",
+  "font_size": 12,
+  "line_numbers": true,
+  "tab_size": 4,
+  "auto_indent": true,
+  "font_size": 10,
+  "font_face": "Andale Mono",
+  "trim_automatic_white_space": false,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "font_face": "Linowrite",
+  "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+  "extensions":
+  [
+    "log"
+  ]
+}
+{
+
+  "line_numbers": true,
+  "tab_size": 4,
+  "auto_indent": true,
+  "font_size": 12,
+  "font_face": "Andale Mono",
+  "trim_automatic_white_space": false,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+
+  "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+  "extensions":
+  [
+    "sublime*", "sublime-settings", "*Results"
+  ]
+}
+get()
+
+gtm.element: <input#reg_email.input-text>, gtm.elementClasses: "input-text", gtm.elementId: "reg_email", gtm.elementTarget: "", event: "gtm.click", gtm.elementUrl: ""
+
+ gtm.element: <input#reg_password.input-text>, gtm.elementClasses: "input-text", gtm.elementId: "reg_password", gtm.elementTarget: "", event: "gtm.click", gtm.elementUrl: ""
+
+ Object { gtm.element: <input#reg_password2.input-text>, gtm.elementClasses: "input-text", gtm.elementId: "reg_password2", gtm.elementTarget: "", event: "gtm.click", gtm.elementUrl: "" }
+
+
+
+<a href="{!! langRoute('admin.article.edit', array($article->id)) !!}" class="btn btn-link btn-xs">
+{!! $article->title !!}
+</a>
+
+<div class="space12">
+    <div class="btn-group btn-group-lg">
+        <a class="btn btn-default active" href="javascript:;">
+            News
+        </a>
+        <a class="btn btn-default hidden-xs" href="{!! langRoute('admin.article.create') !!}">
+         <i class="fa fa-plus"></i> Add Article
+        </a>
+        <a class="btn btn-default" href="{!! langRoute('admin.category.create') !!}">
+          <i class="fa fa-plus"></i> Add Category
+        </a>
+
+    </div>
+</div>
+
+/var/www/vhosts/gracecompany/live.grace/storage/logs
+<div class="space12">
+    <div class="btn-group btn-group-lg">
+        <a class="btn btn-default active" href="javascript:;">
+            News
+        </a>
+        <a class="btn btn-default hidden-xs" href="{!! langRoute('admin.news.create') !!}">
+         <i class="fa fa-plus"></i> Add Article
+        </a>
+
+
+    </div>
+</div>
+
+body > div.main-container > div.navbar-content > div > ul > li:nth-child(5) > a > i.fa.fa-angle-left.pull-right
+
+ ul.main-navigation-menu ul li > ul li > a > i {
+    color: #007AFF;
+    font-weight: normal;
+    background: yellow;
+}
+ul.main-navigation-menu li > ul li > ul.sub-menu > li > a {
+outline:solid 1px red;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-left: 40px !important;
+    padding-right: 0;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+
+ecommerce.checkout.products[n].name
+ecommerce.checkout.products[n].id
+ecommerce.checkout.products[n].price
+ecommerce.checkout.products[n].brand
+ecommerce.checkout.products[n].category
+ecommerce.checkout.products[n].variant
+ecommerce.checkout.products[n].quantity
+
+ecommerce.checkout.products[n].coupon
+ecommerce.checkout.products[n].list
+ecommerce.checkout.products[n].position
+
+
+https://www.qniquequilter.com/shop/checkout/
+
+http://www.qniquequilter.com/product-category/qnique-model/
+http://www.qniquequilter.com/product-category/frame-combo/
+http://www.qniquequilter.com/product-category/quilting-frame-accessory/
+
+http://www.qniquequilter.com/product/grace-quilting-machine-m-class-bobbins/
+
+http://www.qniquequilter.com/product/qnique-bobbin-case/
+
+http://www.qniquequilter.com/product/grace-quilting-frame-cloth-leaders/
+
+
+scx-form scx-form-prechat
+
+
+#scx-widget
+
+#scx-btn  .scx-chat-btn ._scx-open
+
+span.scx-title
+
+
+#scx-popup-prechat scx-popup scx-popup-prechat scx-active _scx-open
+
+#scx-widget
+    #scx-btn .scx-chat-btn
+
+#scx-popup-init
+    scx-popup scx-popup-init
+
+#scx-popup-offline
+    scx-form scx-form-offline
+
+#scx-popup-prechat
+    scx-form scx-form-prechat
+
+
+Object {gtm.element: a.scx-btn-end-chat, gtm.elementClasses: "scx-btn-end-chat", gtm.elementId: "", gtm.elementTarget: "", event: "gtm.click"…}
+
+2016-05-04 15:15:28.326 VM5636:1 data layer push:  Object {gtm.element: input.scx-field.scx-field-phone, gtm.elementClasses: "scx-field scx-field-phone", gtm.elementId: "", gtm.elementTarget: "", event: "gtm.click"…}
+2016-05-04 15:15:28.882 VM5636:1 data layer push:  Object {gtm.element: textarea.scx-field.scx-field-question, gtm.elementClasses: "scx-field scx-field-question", gtm.elementId: "", gtm.elementTarget: "", event: "gtm.click"…}
+2016-05-04 15:15:29.735 VM5636:1 data layer push:  Object {gtm.element: a.scx-button.scx-send-btn.scx-send-prechat.scx-primary, gtm.elementClasses: "scx-button scx-send-btn scx-send-prechat scx-primary", gtm.elementId: "", gtm.elementTarget: "", event: "gtm.click"…}
+
+event:"gtm.click"
+gtm.element :textarea.scx-reply
+
+gtm.elementClasses :"scx-reply"
+gtm.elementId :"
+gtm.elementTarget :""
+gtm.elementUrl:""
+
+{
+  gtm: {
+    start: 1462395066894,
+    uniqueEventId: 1462395067113,
+    element: [object HTMLTextAreaElement],
+    elementClasses: 'scx-reply',
+    elementId: '',
+    elementTarget: '',
+    elementUrl: ''
+  },
+  event: 'gtm.click'
+
+
+gtm.click
+
+             <td>
+                        <div class="btn-group">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
+                                Action
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{!! langRoute('admin.faq.show', array($faq->id)) !!}">
+                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Show Faq
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{!! langRoute('admin.faq.edit', array( $faq->id)) !!}">
+                                        <span class="glyphicon glyphicon-edit"></span>&nbsp;Edit Faq
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="{!! URL::route('admin.faq.delete', array($faq->id)) !!}">
+                                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Delete Faq
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+                                <li>
+                                    <a target="_blank" href="{!! $faq->url !!}">
+                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;View On Site
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+
+{
+  gtm: {
+    start: 1462395066894,
+    uniqueEventId: 1462395067113,
+    element: [object HTMLTextAreaElement],
+    elementClasses: 'scx-reply',
+    elementId: '',
+    elementTarget: '',
+    elementUrl: ''
+  },
+  event: 'gtm.click'
+
+
+{
+  gtm: {
+    start: 1462395066894,
+    uniqueEventId: 1462395067113,
+    element: [object HTMLTextAreaElement],
+    elementClasses: 'scx-reply',
+    elementId: '',
+    elementTarget: '',
+    elementUrl: ''
+  },
+  event: 'gtm.click'
+
+
+
+
+
+
+
+
+
+ Object
+ event: "gtm.click"
+ gtm.element: a.scx-button.scx-send-btn.scx-send-prechat.scx-primary
+ gtm.elementClasses: "scx-button scx-send-btn scx-send-prechat scx-primary"
+ gtm.elementId: ""
+ gtm.elementTarget: ""
+ gtm.elementUrl: "javascript:;"
+
+
+
+
+if ($request->is('admin/*')) {
+
+
+
+
+
+
+
+
+
+
+
+
+digitalData
+
+https://www.qniquequilter.com/?s=needles
+
+
+  {
+  "page": {
+    "pageInfo": {
+      "destinationURL": "http://www.qniquequilter.com/product/qnique-quilter-14/",
+      "pageID": "Qnique 14+ Quilter",
+      "pageName": "Qnique 14+ Quilter"
+    }
+  }
+}
+
+scx-button scx-send-btn scx-send-prechat scx-primary scx-disabled
+
+<script>
+dataLayer.push({
+  "event": "checkout",
+  "ecommerce": {
+    "checkout": {   // Optional. Dynamic.
+      "actionField": {  // Optional. Dynamic.
+        "step": 1,  // Optional. Dynamic. Numeric value.
+        "option": "Visa"    // Optional. Dynamic. String value.
+      },
+      "products": [{    // Optional. Dynamic.
+          "name": "Triblend Android T-Shirt",   // Required. Dynamic. String value.
+          "id": "12345",    // Required. Dynamic. String value.
+          "price": "15.25", // Required. Dynamic. String value.
+          "brand": "Google",    // Required. Dynamic. String value.
+          "category": "Apparel",    // Required. Dynamic. String value.
+          "variant": "Gray",    // Required. Dynamic. String value.
+          "quantity": 1,    // Required. Dynamic. Numeric value.
+          "coupon": "XMAS10",   // Required. Dynamic. String value.
+          "list": "Search Results", // Required. Dynamic. String value.
+          "position": 1 // Required. Dynamic. Numeric value.
+        }, {
+          "name": "Triblend Android T-Shirt",   // Required. Dynamic. String value.
+          "id": "12345",    // Required. Dynamic. String value.
+          "price": "15.25", // Required. Dynamic. String value.
+          "brand": "Google",    // Required. Dynamic. String value.
+          "category": "Apparel",    // Required. Dynamic. String value.
+          "variant": "Gray",    // Required. Dynamic. String value.
+          "quantity": 1,    // Required. Dynamic. Numeric value.
+          "coupon": "XMAS10",   // Required. Dynamic. String value.
+          "list": "Search Results", // Required. Dynamic. String value.
+          "position": 1 // Required. Dynamic. Numeric value.
+      }]
+    }
+  }
+});
+</script>
+
+
+<script>
+dataLayer = [{
+  "ecommerce": {
+    "currencyCode": "EUR",  // Optional. Dynamic. String value.
+    "impressions": [{   // Optional. Dynamic.
+        "name": "Triblend Android T-Shirt", // Required. Dynamic. String value.
+        "id": "12345",  // Required. Dynamic. String value.
+        "price": "15.25",   // Required. Dynamic. String value.
+        "brand": "Google",  // Required. Dynamic. String value.
+        "category": "Apparel",  // Required. Dynamic. String value.
+        "variant": "Gray",  // Required. Dynamic. String value.
+        "quantity": 1,  // Required. Dynamic. Numeric value.
+        "coupon": "XMAS10", // Required. Dynamic. String value.
+        "list": "Search Results",   // Required. Dynamic. String value.
+        "position": 1   // Required. Dynamic. Numeric value.
+      }, {
+        "name": "Triblend Android T-Shirt", // Required. Dynamic. String value.
+        "id": "12345",  // Required. Dynamic. String value.
+        "price": "15.25",   // Required. Dynamic. String value.
+        "brand": "Google",  // Required. Dynamic. String value.
+        "category": "Apparel",  // Required. Dynamic. String value.
+        "variant": "Gray",  // Required. Dynamic. String value.
+        "quantity": 1,  // Required. Dynamic. Numeric value.
+        "coupon": "XMAS10", // Required. Dynamic. String value.
+        "list": "Search Results",   // Required. Dynamic. String value.
+        "position": 1   // Required. Dynamic. Numeric value.
+    }]
+  }
+}];
+</script>
+
+
+
+
+
+
+
+<script>
+dataLayer = [{
+  "ecommerce": {
+    "detail": { // Optional. Dynamic.
+      "actionField": {  // Optional. Dynamic.
+        "list": "Ssearch Results"   // Optional. Dynamic. String value.
+      },
+      "products": [{    // Optional. Dynamic.
+          "name": "Triblend Android T-Shirt",   // Required. Dynamic. String value.
+          "id": "12345",    // Required. Dynamic. String value.
+          "price": "15.25", // Required. Dynamic. String value.
+          "brand": "Google",    // Required. Dynamic. String value.
+          "category": "Apparel",    // Required. Dynamic. String value.
+          "variant": "Gray",    // Required. Dynamic. String value.
+          "quantity": 1,    // Required. Dynamic. Numeric value.
+          "coupon": "XMAS10",   // Required. Dynamic. String value.
+          "list": "Search Results", // Required. Dynamic. String value.
+          "position": 1 // Required. Dynamic. Numeric value.
+      }]
+    }
+  }
+}];
+</script>
+
+
+cp -ru /var/www/vhosts/gracecompany/live.grace /var/www/vhosts/gracecompany/live.grace_copied
+
+
+\cp -ru /var/www/vhosts/qniquequilter.com/wp-content/plugins/interactive-world-maps/* /var/www/vhosts/qniquequilter.ca/wp-content/plugins/interactive-world-maps
+
+
+
+{{--
+<div class="space12">
+    <div class="btn-group btn-group-lg">
+        <a class="btn btn-default active" href="javascript:;"> Articles </a>
+        <a class="btn btn-default hidden-xs" href="{!! langRoute('admin.article.create') !!}"> <i class="fa fa-plus"></i> Add Article </a>
+        <a class="btn btn-default" href="{!! langRoute('admin.category.create') !!}"> <i class="fa fa-plus"></i> Add Category </a>
+    </div>
+</div>
+
+{!! langRoute('admin.user.show', array($user->id)) !!}
+{!! langRoute('admin.user.edit', array($user->id)) !!}
+{!! URL::route('admin.user.delete', array($user->id)) !!}
+ --}}
+
+
+
+
+
+
+
+
+
+
+
+/shop/checkout/order-received/3994/?key=wc_order_57279b6493507
+
+
+
+
+gtm.elementId reg_password2
+ reg_password2
+
+
+
+
+
+
+
+history | grep ssh
+
+composer require yajra/laravel-datatables-oracle:~6.0
+
+
+Yajra\Datatables\DatatablesServiceProvider::class,
+
+
+'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+
+/shop/checkout/order-received/3994/?key=wc_order_57279b6493507
+
+php artisan infyom:api_scaffold Product --fieldsFile='resources/model_schemas/Product.json' --prefix=admin
+
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+php artisan infyom:api_scaffold Post --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+composer require yajra/laravel-datatables-oracle:~6.0
+
+
+alias usergrace="git config --global user.name gracecompany && git config --global user.email management@qniquequilter.com git commit --amend --reset-author"
+
+git lfs track "*.psd"
+git lfs track "*.mpeg"
+git lfs track "*.mp4"
+git lfs track "*.avi"
+git lfs track "*.ai"
+git lfs track "*.eas"
+git lfs track "*.zip"
+git lfs track "*.rar"
+
+
+git add .gitattributes
+git push .gitattributes
+[master dc5a71f] updated ignore
+ Committer: vagrant <vagrant@homestead>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name gracecompany && git config --global user.email management@qniquequilter.com git commit --amend --reset-author
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+vagrant@homestead:~/aaa/frontend$
+
+php artisan make:model Models\\Admin\\File
+
+
+
+php artisan make:model Models\\File
+php artisan make:model Models\\Product
+
+
+alias br='git branch -a'
+
+git reset --hard HEAD origin/addEcom
+git clean -i
+git clean
+git clean -d -f if there are untracked directories present.
+
+git clean -ffdx
+
+
+'origin/addEcom
+
+
+ git commit --amend --reset-author
+
+          after image
+                http://lorempixel.com/860/400/fashion
+
+make tables
+make models
+make controller
+add relationships
+edit checkbox to pull from other table
+
+alias nolargefile='find . -size +10M >> .gitignore'
+
+{!! $article->created_at->format('M-j-Y');  !!} <br>
+{!! $article->created_at->format('Y-m-d H:i:s');  !!} <br>
+{!! $article->created_at->format('d/m/Y');  !!} <br>
+{!! $article->created_at->format('m/d/Y');  !!}
+
+
+55.00 MB
+
+$categories = $this->category->all();
+
+git lfs track "*.psd"
+
+https://git-lfs.github.com/
+
+
+Route::get('/r', function ()
+{
+    function philsroutes()
+    {
+        $routeCollection = Route::getRoutes();
+        echo "<table style='width:100%'>";
+        echo '<tr>';
+        echo "<td width='10%'><h4>HTTP Method</h4></td>";
+        echo "<td width='10%'><h4>Route</h4></td>";
+        echo "<td width='80%'><h4>Corresponding Action</h4></td>";
+        echo '</tr>';
+        foreach ($routeCollection as $value)
+        {
+            echo '<tr>';
+            echo '<td>' . $value->getMethods()[0] . '</td>';
+            echo "<td><a href='" . $value->getPath() . "' target='_blank'>" . $value->getPath() . '</a> </td>';
+            echo '<td>' . $value->getActionName() . '</td>';
+            echo '</tr>';
+        }
+        echo '</table>';
+    }
+    return philsroutes();
+});
+
+
+    git config user.name "gracecompany"
+    git config user.email management@qniquequilter.com
+ git commit --amend --reset-author
+
+Route::group(array('prefix' => LaravelLocalization::getCurrentLocale()), function () {
+
+
+        Route::get('backend/products/', ['as' => 'admin.products.index', 'uses' => 'ProductController@index']);
+        Route::get('backend/products/create', ['as' => 'admin.products.create', 'uses' => 'ProductController@create']);
+        Route::post('backend/products/store', ['as' => 'admin.products.store', 'uses' => 'ProductController@store']);
+
+});
+
+
+
+
+You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+
+Route::get('admin.products.create', ['as' => 'admin.products.create', 'uses' => 'AdminController@showDashboard']);
+Route::get('/admin/products', 'ProductController@index');
+Route::get('/admin/product/destroy/{id}', 'ProductController@destroy');
+Route::post('/admin/product/save', 'ProductController@store');
+
+
+
+
+            <li class="treeview {{ setActive('admin/products*') }}"><a href="#"> <i class="fa fa-bookmark"></i> <span>eCommerce</span>
+                    <i class="fa fa-angle-left pull-right"></i> </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ url(getLang() . '/admin/products') }}"><i class="fa fa-folder"></i> All Products</a>
+                    </li>
+                    <li><a href="{{ url(getLang() . '/admin/products/create') }}"><i class="fa fa-plus-square"></i> Add Page</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+@extends('backend/layout/layout')
+
+
+
+@section('content')
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">New Product</div>
+        </div>
+        <div class="panel-body" >
+            <form method="POST" action="/admin/product/save" class="form-horizontal" enctype="multipart/form-data" role="form">
+                {!! csrf_field() !!}
+                <fieldset>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Name</label>
+                        <div class="col-md-9">
+                            <input id="name" name="name" type="text" placeholder="Product name" class="form-control input-md" required="">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="textarea">Description</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" id="textarea" name="description"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="price">Price</label>
+                        <div class="col-md-9">
+                            <input id="price" name="price" type="text" placeholder="Product price" class="form-control input-md" required="">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="imageurl">Image URL</label>
+                        <div class="col-md-9">
+                            <input id="imageurl" name="imageurl" type="text" placeholder="Image URL" class="form-control input-md" >
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="file">File</label>
+                        <div class="col-md-9">
+                            <input id="file" name="file" class="input-file" type="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="submit"></label>
+                        <div class="col-md-9">
+                            <button id="submit" name="submit" class="btn btn-primary">Insert</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+@endsection
+
+
+
+
+
+
+
+
+
+
+ php artisan vendor:publish --tag=datatables
+
+php artisan infyom.scaffold:controller Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+php artisan infyom.scaffold:requests Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+php artisan infyom.scaffold:views Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+
+
+
+php artisan infyom:api_scaffold News --fromTable --tableName=news --prefix=admin --save
+php artisan infyom:api_scaffold News --fieldsFile='resources/model_schemas/News.json' --prefix=admin
+
+
+
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin
+
+
+<textarea id="messageArea" name="messageArea" rows="7" class="form-control ckeditor" placeholder="Write your message.."></textarea>
+
+
+http://www.joelonsoftware.com/articles/fog0000000043.html
+
+
+The Joel Test
+
+Do you use source control?
+Can you make a build in one step?
+Do you make daily builds?
+Do you have a bug database?
+Do you fix bugs before writing new code?
+Do you have an up-to-date schedule?
+Do you have a spec?
+Do programmers have quiet working conditions?
+Do you use the best tools money can buy?
+Do you have testers?
+Do new candidates write code during their interview?
+Do you do hallway usability testing?
+
+
+
+
+
+
+
+
+
+
+
+   /**
+     * Responds to requests to GET /users/admin-profile
+     */
+    public function getAdminProfile()
+    {
+        //
+    }
+
+    /**
+     * Responds to requests to POST /users/profile
+     */
+    public function postProfile()
+    {
+        //
+    }
+
+
+C:\ProgramData\ComposerSetup\bin\composer.phar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+composer require laravel/homestead --dev
+
+
+
+php artisan infyom:scaffold $MODEL_NAME$ --fromTable --tableName=$TABLE_NAME$
+
+
+"infyomlabs/generator-builder": "dev-master"
+
+
+
+php artisan infyom:scaffold Product --fromTable --tableName=products --prefix=admin {{--theme=admin }}  --save --skipDumpOptimized
+
+     "cartalyst/sentinel": "2.0.*",
+        "mcamara/laravel-localization": "1.0.*",
+        "barryvdh/laravel-debugbar": "2.2.*",
+        "davejamesmiller/laravel-breadcrumbs": "3.0.*",
+
+        "laracasts/flash": "^1.3",
+        "rap2hpoutre/laravel-log-viewer": "^0.5.3",
+        "cviebrock/eloquent-sluggable": "^3.1",
+        "intervention/image": "^2.3"
+
+
+
+@if
+
+
+home controller change index to homepage from dashboard
+
+
+Collective\Html\HtmlServiceProvider::class,
+Laracasts\Flash\FlashServiceProvider::class,
+Prettus\Repository\Providers\RepositoryServiceProvider::class,
+
+\InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
+\InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
+
+Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+\InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+Yajra\Datatables\DatatablesServiceProvider::class,
+
+
+'Form'      => Collective\Html\FormFacade::class,
+'Html'      => Collective\Html\HtmlFacade::class,
+'Flash'     => Laracasts\Flash\Flash::class,
+'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+
+php artisan vendor:publish
+
+php artisan vendor:publish
+
+php artisan infyom.publish:generator-builder
+
+
+
+
+<?php
+   $uri = $request->path();
+     $url = $request->url();
+ $url = $request->fullUrl();
+      ?>
+
+
+
+
+
+
+
+
+
+touch file{0..9}{0..9}
+
+
+no_of_files=10;
+counter=1;
+while [[ $counter -le $no_of_files ]];
+ do echo Creating file no $counter;
+  dd bs=1024 count=$RANDOM skip=$RANDOM if=/dev/sda of=random-file.$counter;
+  let "counter += 1";
+ done
+
+
+-rw-r--r--  1 root root   844 Aug 17  2015 authorized_keys
+-rw-------  1 root root  1675 Aug 13  2015 buildingt_id_rsa
+-rw-r--r--  1 root root   403 Aug 13  2015 buildingt_id_rsa.pub
+-rw-r--r--  1 root root   247 Mar  7 15:40 config
+-rw-r--r--  1 root root 12288 Jan 21 16:54 .config.swp
+-rw-------  1 root root  1671 Apr 16  2015 id_rsa
+-rw-------  1 root root  1743 Apr 21 13:44 id_rsa_gc
+-rw-r--r--  1 root root   410 Apr 21 13:44 id_rsa_gc.pub
+-rw-------  1 root root  3311 Apr 21 14:32 id_rsa.gracecompany
+-rw-r--r--  1 root root   750 Apr 21 14:32 id_rsa.gracecompany.pub
+-rw-r--r--  1 root root   392 Apr 16  2015 id_rsa.pub
+-rw-r--r--  1 root root  3586 Apr 21 13:34 known_hosts
+
+
+$ ssh-add ~/.ssh/id_rsa.phillipmadsen
+$ ssh-add ~/.ssh/id_rsa.gracecompany
+
+
+ clip < ~/.ssh/id_rsa.gracecompany.pub
+
+~/.ssh/id_rsa.gracecompany.pub
+
+ clip < ~/.ssh/id_rsa.gracecompany.pub
+
+
+ssh-keygen -t rsa -C "management@qniquequilter.com"
+/root/.ssh/id_rsa.gracecompany
+
+eval "$(ssh-agent -s)"
+ssh-add /root/.ssh/id_rsa.gracecompany
+<enter passphrase> quilt
+
+/c/Users/sandbox/.ssh/id_rsa.gracecompany
+ssh-add -l
+
+ssh-add /c/Users/sandbox/.ssh/id_rsa.gracecompany
+
+
+git remote add origin git@github.com:gracecompany/madsencms.git
+
+
+
+git config --global credential.helper wincred
+
+
+ssh-add /root/.ssh/id_rsa.phillipmadsen
+
+#gracecompany account
+Host github.com:gracecompany
+    HostName github.com
+    User git
+    IdentityFile /root/.ssh/id_rsa.gracecompany
+
+#phillipmadsen account
+Host github.com:phillipmadsen
+    HostName github.com
+    User git
+    IdentityFile /root/.ssh/id_rsa.phillipmadsen
+
+/usr/local/bin/composer self-update
+
+…or create a new repository on the command line
+
+echo "# madsencms" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:gracecompany/madsencms.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:gracecompany/madsencms.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+alias pub="git push -u origin master"
+alias uplive="git push -u origin master"
+alias gitt='git status'
+alias showremotes="git remote -v"
+alias localpub="git push -u origin master"
+alias remotes="git remote -v"
+
+ssh user@host "tar -zcf - /path/to/dir" > dir.tar.gz
+/c:/Users/sandbox
+F:\Desktop
+ssh root@104.130.169.19    "tar -zcf - /var/www/vhosts/.fully" | gzip > /f:/Desktop/fully
+2fv0BItgMHnG
+
+scp root@104.130.169.19:/var/www/vhosts/.fully /f:/Desktop/.fully
+2fv0BItgMHnG
+
+scp /f/Desktop/fully  ssh root@104.130.169.19:/var/www/vhosts/.fully
+2fv0BItgMHnG
+
+
+ssh root@104.130.169.19 "cd ../var/www/vhosts/.fully; tar zcf fully.tar.gz" | tar zxf > /f:/Desktop/fully.tar.gz
+2fv0BItgMHnG
+
+rsync -z /f:/Desktop/fully  root@104.130.169.19:/var/www/vhosts/.fully
+
+
+
+
+ssh root@104.130.169.19 "cd ../var/www/vhosts/.fully; tar zcf fully"
+2fv0BItgMHnG
+
+
+ssh root@104.130.169.19 'tar -czf - /f:/Desktop/fully.tarball.tgz' >  /var/www/vhosts/.fully
+
+ssh root@104.130.169.19 tar cvfz - -T /directory/allfiles.txt > remote_files.tar.gz
+
+
+tar cvzf - -T f:/Desktop/fully | ssh root@104.130.169.19:/var/www/vhosts/.fully tar xzf -
+2fv0BItgMHnG
+
+
+
+
+qniquequilter.com
+
+tar -zcvf fungamesandtoys.com.initial.bk-4-22-2016.tar.gz /var/www/vhosts/buildingsets.toys
+ scp root@104.130.169.19:/var/www/vhosts/.backups/qniquequilter.com-oct-2015.tar.gz /c:/Users/sandbox
+
+
+
+ssh root@104.130.169.19    "tar -zcf - /var/www/vhosts/.fully"  > /f/Desktop/fully.tar.gz
+2fv0BItgMHnG
+
+ssh root@104.130.169.19 "cd /var/www/vhosts/.fully; tar -cf - . | gzip" > dir.tar.gz
+ssh root@104.130.169.19 "tar -cf - /path/to/dir | gzip" > dir.tar.gz
+
+
+git clone ssh://root@104.130.169.19/../var/www/vhosts/.repos/grace.git
+2fv0BItgMHnG
+
+
+ssh-keygen -t rsa -C "phillipmadsen@gmail.com"
+/root/.ssh/id_rsa.phillipmadsen
+
+
+ssh-keygen -t rsa -C "management@qniquequilter.com"
+/root/.ssh/id_rsa.gracecompany
+
+
+cp -rufv /var/www/vhosts/gracecompany/live.grace2/public/** /var/www/vhosts/gracecompany/live.grace/
+
+
+rsync -uv /var/www/vhosts/gracecompany/live.grace2/public/** /var/www/vhosts/gracecompany/live.grace/
+
+git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+
+git config --local user.email management@qniquequilter.com
+git config --local user.name gracecompany
+git config color.status=auto
+git config color.branch=auto
+git config color.interactive=auto
+git config color.diff=auto
+
+ssh-keygen -t rsa -C "management@qniquequilter.com"
+
+/root/.ssh/id_rsa.gracecompany
+
+ssh-add /root/.ssh/id_rsa.gracecompany
+
+ssh-add /root/.ssh/id_rsa.phillipmadsen
+
+#activehacker account
+Host github.com:gracecompany
+    HostName github.com
+    User git
+    IdentityFile /root/.ssh/id_rsa.gracecompany
+
+#jexchan account
+Host github.com:phillipmadsen
+    HostName github.com
+    User git
+    IdentityFile /root/.ssh/id_rsa.phillipmadsen
+
+
+admin@grace2015
+
+
+
+ssh-keygen -t rsa -b 4096 -C "management@qniquequilter.com"
+
+passphrase quilt
+
+/root/.ssh/id_rsa.gracecompany
+
+
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+Please refer to github ssh issues for common problems.
+
+for example, 2 keys created at:
+
+~/.ssh/id_rsa_activehacker
+~/.ssh/id_rsa_jexchan
+then, add these two keys as following
+
+$ ssh-add ~/.ssh/id_rsa_activehacker
+$ ssh-add ~/.ssh/id_rsa_jexchan
+you can delete all cached keys before
+
+$ ssh-add -D
+finally, you can check your saved keys
+
+$ ssh-add -l
+
+Host gitolite-as-alice
+  HostName git.company.com
+  User git
+  IdentityFile /home/whoever/.ssh/id_rsa.alice
+  IdentitiesOnly yes
+
+Host gitolite-as-bob
+  HostName git.company.com
+  User git
+  IdentityFile /home/whoever/.ssh/id_dsa.bob
+  IdentitiesOnly yes
+Then you just use gitolite-as-alice and gitolite-as-bob instead of the hostname in your URL:
+
+git remote add alice git@gitolite-as-alice:whatever.git
+git remote add bob git@gitolite-as-bob:whatever.git
+
+
+
+#phillipmadsen account
+Host github.com:phillipmadsen
+    HostName github.com
+    User phillipmadsen
+    IdentityFile ~/.ssh/github_rsa
+
+#gracecompany account
+Host github.com:gracecompany
+    HostName github.com
+    User gracecompany
+    IdentityFile ~/.ssh/id_rsa.gracecompany
+
+Case No. 124401262
+Judge Barry Lawrence
+Commissioner Michelle Tack
+
+IN THE THIRD JUDICIAL DISTRICT COURT, WEST JORDAN DEPARTMENT
+IN AND FOR SALT LAKE COUNTY, STATE OF UTAH
+
+[user]
+    name = Your Name
+    email = your.email@gmail.com
+
+
+git commit --author=Phillip at Grace Company
+
+
+git config --global color.diff.meta "blue black bold"
+
+
+git remote add origin remote repository URL
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
+
+alias gitsettings='git config --list'
+
+git config GIT_COMMITTER_NAME=Phillip at Grace Company
+git config GIT_AUTHOR_NAME=Phillip at Grace Company
+
+
+
+git remote add origin git@github.com:gracecompany/madsencms.git
+
+
+echo "# madsencms" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:gracecompany/madsencms.git
+git push -u origin master
+
+
+  cp [options]... Source Dest
+      cp [options]... Source... Directory
+
+-a, --archive                same as -dpR
+-b, --backup                 make backup before removal
+-d, --no-dereference         preserve links
+-f, --force                  remove existing destinations, never prompt
+-i, --interactive            prompt before overwrite
+-l, --link                   link files instead of copying
+-p, --preserve               preserve file attributes if possible
+-P, --parents                append source path to DIRECTORY
+-r                           copy recursively, non-directories as files
+  --sparse=WHEN            control creation of sparse files
+-R, --recursive              copy directories recursively
+-s, --symbolic-link          make symbolic links instead of copying
+-S, --suffix=SUFFIX          override the usual backup suffix
+-u, --update                 copy only when the SOURCE file is newer
+                             than the destination file or when the
+                             destination file is missing
+-v, --verbose                explain what is being done
+-V, --version-control=WORD   override the usual version control
+-x, --one-file-system        stay on this file system
+
+ /var/www/vhosts/gracecompany/live.grace
+
+php artisan make:model Models\\Admin\\File
+php artisan make:model Models\\Admin\\Product
+
+php artisan make:controller ProductController
+
+php artisan infyom:api_scaffold Page --fieldsFile='resources/model_schemas/Page.json' --prefix=admin --paginate=15
+
+php artisan infyom:api_scaffold Article --fieldsFile='resources/model_schemas/Article.json' --prefix=admin --paginate=15
+
+php artisan infyom:api_scaffold Profile --fieldsFile='resources/model_schemas/Profile.json' --prefix=admin --save
+
+php artisan infyom.scaffold:controller Profile
+php artisan infyom.scaffold:requests
+php artisan infyom.scaffold:views
+
+php artisan infyom.scaffold:controller ProfileController
+
+php artisan make:migration create_admins_table
+
+php artisan infyom.scaffold:controller Profile --fieldsFile='resources/model_schemas/Profile.json' --prefix=admin
+
+
+ls
+
+php artisan infyom:api_scaffold Page --fieldsFile='resources/model_schemas/Page.json' --prefix=todo --save
+
+php artisan infyom.scaffold:controller Admin//Profile
+
+php artisan infyom:api_scaffold Profile --fieldsFile='resources/model_schemas/Profile.json' --prefix=del --save
+
+
+use Authenticatable;
+protected $table = 'admin';
+protected $primaryKey  = 'admin_id';
+public $timestamps = false;
+
+
+//  {
+//   "fieldInput": "is_published:toggle",
+//   "htmlType": "toggle-switch",
+//   "validations": "",
+//   "searchable": false,
+//   "fillable": true,
+//   "primary": false,
+//   "inForm": true,
+//   "inIndex": false
+// }, {
+//   "fieldInput": "is_draft:toggle",
+//   "htmlType": "toggle-switch",
+//   "validations": "",
+//   "searchable": false,
+//   "fillable": true,
+//   "primary": false,
+//   "inForm": true,
+//   "inIndex": false
+// },
+
+public function retrieveById($identifier)
+{
+    // TODO: Implement retrieveById() method.
+
+
+    $qry = UserPoa::where('admin_id','=',$identifier);
+
+    if($qry->count() >0)
+    {
+        $user = $qry->select('admin_id', 'username', 'first_name', 'last_name', 'email', 'password')->first();
+
+        $attributes = array(
+            'id' => $user->admin_id,
+            'username' => $user->username,
+            'password' => $user->password,
+            'name' => $user->first_name . ' ' . $user->last_name,
+        );
+
+        return $user;
+    }
+    return null;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77046605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

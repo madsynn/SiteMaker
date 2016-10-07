@@ -1,0 +1,90 @@
+{
+    "autocomplete": true,
+    "autoimport": true,
+    "enable_auto_align": true,
+    "engine": "fmt.phar",
+    "format_on_save": false,
+    "indent_with_space": 4,
+    "options":
+    [
+        "fix",
+        "-n"
+    ],
+    "passes":
+    [
+        "AlignPHPCode",
+        "AlignTypehint",
+        "ShortArray",
+        "AlignEquals",
+        "AlignGroupDoubleArrow",
+        "AutoSemicolon",
+        "DoubleToSingleQuote",
+        "GeneratePHPDoc ",
+        "PHPDocTypesToFunctionTypehint",
+        "PrettyPrintDocBlocks",
+        "ReindentAndAlignObjOps",
+        "ReplaceBooleanAndOr",
+        "ReplaceIsNull",
+        "StripExtraCommaInArray",
+        "StripNewlineAfterClassOpen",
+        "StripNewlineAfterCurlyOpen",
+        "StripSpaces",
+        "StripSpaceWithinControlStructures",
+        "TightConcat",
+        "TrimSpaceBeforeSemicolon"
+
+    ],
+    "php_bin":"c:/tools/PHP/php.exe",
+    "psr1": true,
+    "psr2": true,
+    "psr3": true,
+    "psr4": true,
+    "version": 4
+}
+{
+    "autocomplete": true,
+    "autoimport": true,
+    "enable_auto_align": false,
+    "format_on_save": true,
+    "ignore": "Parent",
+    "indent_with_space": 4,
+    "passes":
+    [
+        "ReindentSwitchBlocks",
+        "OrderAndRemoveUseClauses",
+        "PSR2EmptyFunction",
+        "StripSpaceWithinControlStructures",
+        "ShortArray",
+        "SpaceBetweenMethods",
+        "AutoSemicolon",
+        "AlignEquals",
+        "AlignGroupDoubleArrow",
+        "StripExtraCommaInArray"
+    ],
+    "php_bin":"c:/tools/PHP/php.exe",
+    "psr2": true,
+    "smart_linebreak_after_curly": true,
+    "version": 4,
+    "visibility_order": true,
+    "yoda": true
+}
+        "AlignPHPCode",
+        "AlignTypehint",
+        "ShortArray",
+        "AlignEquals",
+        "AlignGroupDoubleArrow",
+        "AutoSemicolon",
+        "DoubleToSingleQuote",
+        "GeneratePHPDoc ",
+        "PHPDocTypesToFunctionTypehint",
+        "PrettyPrintDocBlocks",
+        "ReindentAndAlignObjOps",
+        "ReplaceBooleanAndOr",
+        "ReplaceIsNull",
+        "StripExtraCommaInArray",
+        "StripNewlineAfterClassOpen",
+        "StripNewlineAfterCurlyOpen",
+        "StripSpaces",
+        "StripSpaceWithinControlStructures",
+
+        "TrimSpaceBeforeSemicolon"
