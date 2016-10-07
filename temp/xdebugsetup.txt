@@ -107,7 +107,54 @@ Affiliate Disclosure
 FB Policy
 
 
+{"fieldInput": "created_at:dateTime:nullable", "htmlType": "date", "validations": "", "searchable": false, "fillable": true, "primary": false, "inForm": false, "inIndex": true },
+{"fieldInput": "updated_at:dateTime:nullable", "htmlType": "date", "validations": "", "searchable": false, "fillable": true, "primary": false, "inForm": false, "inIndex": false },
 
+
+
+status
+office_status
+availability
+slug
+ispromo
+is_published
+name
+subtitle
+manufacturer
+details
+description
+price_heading
+features_heading
+additional_heading
+reviews_heading
+waranty_heading
+support_heading
+docs_heading
+price
+model
+sku
+upc
+quantity
+thumbnail
+thumbnail2
+thumbnail3
+photo_album
+pubished_at
+video_url
+meta_title
+meta_description
+meta_keywords
+facebook_title
+google_plus_title
+twitter_title
+datalayer
+tracking
+reviews_tab
+warranty_tab
+docs_tab
+support_tab
+lang
+filter_class
 
 
         factory(App\Models\Product::class, 50)->create();

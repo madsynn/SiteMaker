@@ -36,6 +36,13 @@ alias flay='cd /var/www/vhosts/gracecompany/stage.grace/resources/views/frontend
 
 E:\A_LOCAL\bbb\part1\resources\views\admin\layout
 
+
+
+{{ str_limit(htmlspecialchars_decode(strip_tags($product->details)),45,' ...') }}
+
+
+
+
 "filp/whoops": "^2.1"
 
 gzip -c qniquequilter.com-error.log > qniquequilter.com-error.log.gz
@@ -425,13 +432,15 @@ private function getListitem($listitems = [])
 
 
 
- ->setUpdatedAt(\Carbon::now());
+ $product->setUpdatedAt(\Carbon::now());
 
 $product->published_at = \Carbon::now();;
 
+      $location->created_at = \Carbon::now();
+      $location->updated_at = \Carbon::now();
 
-
-
+      $location->setUpdatedAt(\Carbon::now());
+      $location->setCreatedAt(\Carbon::now());
 
 
 public function postimage($photo, $filename)
@@ -445,7 +454,18 @@ public function postimage($photo, $filename)
         return $image;
     }
 
-
+<script type="text/javascript">
+      (function($) {
+           $('#plus-qty').click(function() {
+            $('.quantity').val(Number($('.quantity').val()) + 1);
+        });
+        $('#minus-qty').click(function() {
+            if (Number($('.quantity').val()) != 1) {
+                $('.quantity').val(Number($('.quantity').val()) - 1);
+            };
+        });
+      });
+</script>
 
 
 
