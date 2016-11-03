@@ -1,0 +1,9 @@
+H ost wcl
+	HostName 107.180.47.3
+    IdentityFile /c/Users/Webmaster/.ssh/id_rsa_myhome
+    User madsynn
+    Compression yes
+    CompressionLevel 3
+    Port 22
+    HostbasedAuthentication yes
+    PasswordAuthentication no
